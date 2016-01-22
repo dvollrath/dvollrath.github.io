@@ -1,0 +1,77 @@
+---
+layout: post
+title: The Solow Model
+date: 2014-03-10 03:28:42.000000000 -05:00
+type: post
+published: true
+status: publish
+categories:
+- Book notes
+- Level effects
+- Solow
+tags:
+- bgp
+- capital
+- growth
+- model
+- solow
+- transition
+meta:
+  _edit_last: '8005175'
+  _publicize_pending: '1'
+author:
+  login: dvollrath
+  email: dietz.vollrath@gmail.com
+  display_name: dvollrath
+  first_name: ''
+  last_name: ''
+---
+<p><em>This is another idea for modifying how to teach the Solow model. One thing I'd like to do is go immediately to including productivity - it follows cleanly from the simplest growth model. Second, I think it might be nice to work with the K/Y ratio immediately. In this way, I think you can actually skip using the whole "k-tilde" thing. And, *gasp*, do away with the traditional Solow diagram. </em></p>
+<p>The simplest growth model doesn't allow for transitional growth, and this due to the fact that it does not allow for capital, a factor of production that can only be slowly accumulated over time. The Solow Model is a standard model of economic growth that includes capital, and will be better able to account for the transitional growth that we see in several countries.</p>
+<p>
+Production in the Solow Model takes place according to the following function
+<p align="center">$latex \displaystyle  Y = K^{\alpha}(AL)^{1-\alpha}. \ \ \ \ \ (1)&amp;fg=000000$</p>
+<p> $latex {K}&amp;fg=000000$ is the stock of physical capital used in production, and $latex {A}&amp;fg=000000$ and $latex {L}&amp;fg=000000$ are defined just as they were in our simple growth model. So the production function here is just a modification of the simple model to include capital. The coefficient $latex {\alpha}&amp;fg=000000$ is a weight telling us how important capital or $latex {AL}&amp;fg=000000$ are in determining output. </p>
+<p>
+To analyze this model, we're going to rewrite the production function. Divide both sides of the function by $latex {Y^{\alpha}}&amp;fg=000000$, giving us
+<p align="center">$latex \displaystyle  Y^{1-\alpha} = \left(\frac{K}{Y}\right)^{\alpha} (AL)^{1-\alpha} \ \ \ \ \ (2)&amp;fg=000000$</p>
+<p> and then take both sides to the $latex {1/(1-\alpha)}&amp;fg=000000$ power, which gives us the following expression
+<p align="center">$latex \displaystyle  Y = \left(\frac{K}{Y}\right)^{\alpha/(1-\alpha)} AL. \ \ \ \ \ (3)&amp;fg=000000$</p>
+<p> In per capita terms, this is <a name="eq_y">
+<p align="center">$latex \displaystyle  y = \left(\frac{K}{Y}\right)^{\alpha/(1-\alpha)} A.  \ \ \ \ \ (4)&amp;fg=000000$</p>
+<p></a> Output per worker thus depends not just on $latex {A}&amp;fg=000000$, but also on the capital-output ratio, $latex {K/Y}&amp;fg=000000$.</p>
+<p>
+So to understand the role of capital in economic growth, we need to understand the capital-output ratio and how it changes over time. We'll start by looking at the balanced growth path, and then turn to situations where the economy is not on the balanced growth path (BGP).</p>
+<p>
+One fact about the BGP is that the return to capital, $latex {r}&amp;fg=000000$, is constant. The return to capital is $latex {r = \alpha Y/K}&amp;fg=000000$, which depends (negatively) on the capital-output ratio (the return to capital is just the marginal product of capital). If $latex {r}&amp;fg=000000$ is constant on the BGP, then it must be that $latex {K/Y}&amp;fg=000000$ is constant on the BGP as well. What does this mean? It means that $latex {K/Y}&amp;fg=000000$ can have a level effect on output per worker, but has no growth effect. To see this more clearly, take logs of output per worker,
+<p align="center">$latex \displaystyle  \ln y(t) = \frac{\alpha}{1-\alpha} \ln\left(\frac{K}{Y}\right) + \ln A(t) \ \ \ \ \ (5)&amp;fg=000000$</p>
+<p> and then plug in what we know about how $latex {A(t)}&amp;fg=000000$ moves over time,
+<p align="center">$latex \displaystyle  \ln y(t) = \frac{\alpha}{1-\alpha} \ln\left(\frac{K}{Y}\right) + \ln A(0) + gt. \ \ \ \ \ (6)&amp;fg=000000$</p>
+<p> The capital-output ratio affects the intercept of this line -- a level effect -- alongside $latex {A(0)}&amp;fg=000000$. The slope of this line -- the growth rate -- is still $latex {g}&amp;fg=000000$.</p>
+<p>
+The capital/output ratio is constant along the BGP, and has no effect on the growth rate on the BGP. But what if the economy is not on the BGP? Then it will be the case that $latex {K/Y}&amp;fg=000000$ affects the growth rate of output per worker, because the $latex {K/Y}&amp;fg=000000$ ratio will not be constant. More precisely, the growth rate of capital/output is <a name="eq_ky">
+<p align="center">$latex \displaystyle  \frac{\dot{K/Y}}{K/Y} = \frac{\dot{K}}{K} - \frac{\dot{Y}}{Y}.  \ \ \ \ \ (7)&amp;fg=000000$</p>
+<p></a> So the $latex {K/Y}&amp;fg=000000$ ratio will change if capital grows more quickly or more slowly than output. First, capital accumulates as follows
+<p align="center">$latex \displaystyle  \dot{K} = s Y - \delta K \ \ \ \ \ (8)&amp;fg=000000$</p>
+<p> where $latex {\dot{K}}&amp;fg=000000$ is the change in the capital stock. $latex {s}&amp;fg=000000$ is the savings rate, the fraction of output that the economy sets aside to invest in new capital goods, so that $latex {sY}&amp;fg=000000$ is the total amount of new investment. $latex {\delta}&amp;fg=000000$ is the depreciation rate, the fraction of the existing capital stock that breaks or becomes obsolete at any given moment.</p>
+<p>
+To find the growth rate of capital, divide through the above equation by $latex {K}&amp;fg=000000$ to get
+<p align="center">$latex \displaystyle  \frac{\dot{K}}{K} = s\frac{Y}{K} - \delta. \ \ \ \ \ (9)&amp;fg=000000$</p>
+<p> You can see that the growth rate of capital depends on the capital/output ratio itself.</p>
+<p>
+The growth rate of output is
+<p align="center">$latex \displaystyle  \frac{\dot{Y}}{Y} = \alpha \frac{\dot{K}}{K} + (1-\alpha)\frac{\dot{A}}{A} + (1-\alpha)\frac{\dot{L}}{L}. \ \ \ \ \ (10)&amp;fg=000000$</p>
+<p> Now, with (<a href="#eq_ky">7</a>), and using what we know about growth in capital and output, we have
+<p align="center">$latex \displaystyle  \frac{\dot{K/Y}}{K/Y} = (1-\alpha)\left(s\frac{Y}{K} - \delta - g - n \right) \ \ \ \ \ (11)&amp;fg=000000$</p>
+<p> where we've plugged in that $latex {\dot{A}/A = g}&amp;fg=000000$, and $latex {\dot{L}/L = n}&amp;fg=000000$. </p>
+<p>
+Re-arranging a bit, the capital output ratio is growing if
+<p align="center">$latex \displaystyle  \frac{K}{Y} &lt; \frac{s}{\delta + n + g}, \ \ \ \ \ (12)&amp;fg=000000$</p>
+<p> and growing if the capital/output ratio is larger than the value on the right-hand side. In other words, if the capital stock is relatively small, then it will have a tendency to grow faster than output, raising the $latex {K/Y}&amp;fg=000000$ ratio. Eventually $latex {K/Y = s/(\delta+n+g)}&amp;fg=000000$, the steady state value, and the $latex {K/Y}&amp;fg=000000$ ratio stops changing.</p>
+<p>
+What is happening to growth in output per worker? If $latex {K/Y &lt; s/(\delta+n+g)}&amp;fg=000000$ then the $latex {K/Y}&amp;fg=000000$ ratio is growing, and so output per worker is growing faster than $latex {g}&amp;fg=000000$. So the temporarily fast growth in output per worker in Germany or Japan would be because they found themselves with a $latex {K/Y}&amp;fg=000000$ ratio below their steady state value. How would this occur? It's easier to see how this works if we re-write the $latex {K/Y}&amp;fg=000000$ ratio slightly
+<p align="center">$latex \displaystyle  \frac{K}{Y} = \frac{K}{K^{\alpha}(AL)^{1-\alpha}} = \left(\frac{K}{AL}\right)^{1-\alpha}. \ \ \ \ \ (13)&amp;fg=000000$</p>
+<p> From this we can see that the $latex {K/Y}&amp;fg=000000$ ratio would be particularly low if the capital stock, $latex {K}&amp;fg=000000$, were to be reduced. This is what happened in Germany, to a large extent, after World War II. The capital stock was destroyed, so $latex {K/AL}&amp;fg=000000$ fell sharply. This made $latex {K/Y}&amp;fg=000000$ fall below the steady state value, which meant that there was growth in the $latex {K/Y}&amp;fg=000000$ ratio, and so growth in output per worker greater than $latex {g}&amp;fg=000000$.</p>
+<p>
+A slightly different situation describes South Korea. There, we can think of there being a level effect on $latex {A}&amp;fg=000000$, an advance in productivity. This also makes $latex {K/AL}&amp;fg=000000$ fall sharply, and again causes growth in $latex {K/Y}&amp;fg=000000$ and growth in output per worker faster than $latex {g}&amp;fg=000000$. But in both this case and in Germany's, as the $latex {K/Y}&amp;fg=000000$ ratio grows it approaches the steady state value and growth in output per worker slows down to $latex {g}&amp;fg=000000$ again.</p>
+<p /></p></p></p></p></p>
