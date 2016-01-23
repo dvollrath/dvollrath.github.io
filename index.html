@@ -9,16 +9,28 @@ layout: default
   </header>
   </article>
 
+<article>
+    	<h2>About Me</h2>
+  		<ul>
+  		<li>I am an associate professor of economics at the <a href="http://www.uh.edu/class/economics/">University of Houston</a></li>
+  		<li>I am have a <a href="http://amzn.to/1OF8JAP">textbook on economic growth</a> with Chad Jones</li>
+  		<li>I write the Economic Growth Blog - you're reading it</li>
+  		<li>My research and teaching are linked above</li>
+  		<li>This is my current <a href="https://dl.dropboxusercontent.com/u/6823742/cv_current.pdf">CV</a></li>
+  		</ul>
+</article> 
+ 
+
 	<div class="posts">
 	{% for post in paginator.posts %}
 		{% include post_tags_category.html %}
 		<div class="post-teaser">
 		  <header>
-		    <h1>
+		    <h2>
 		      <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}">
 		        {{ post.title }}
 		      </a>
-		    </h1>
+		    </h2>
 		    <p id="subtitletrans" class="subtitlecontainer">
 		      <a class="subtitle">{{ post.date | date_to_string }}</a>
 		    <!--  {% if post.author %} | <a class="subtitle" href="{{ site.baseurl }}/about/">{{ post.author }}</a>{% endif %}
@@ -42,8 +54,8 @@ layout: default
 		{% endfor %}
 	</div>
 
-	<div class="wp-pagenavi">
-	    <span class='pages'>第 {{ paginator.page }} 页，共 {{ paginator.total_pages }} 页</span>
+<!--	<div class="wp-pagenavi">
+	    <span class='pages'> {{ paginator.page }} {{ paginator.total_pages }} </span>
 
 	    {% if paginator.previous_page %}
 	    	<a class="previouspostslink" rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" > « </a>
@@ -67,5 +79,6 @@ layout: default
 	    	<a class="nextpostslink" rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" > » </a>
 	    {% endif %}
 
-	</div>
+	</div> -->
+
 </div>

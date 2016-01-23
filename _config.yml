@@ -1,7 +1,7 @@
 # SITE CONFIGURATION
 baseurl: "" # Set it to "" if use for personal site. The subpath of your site, e.g. /blog/
 url: "https://dvollrath.github.io" # the base hostname & protocol for your site
-imageurl: "https://dl.dropboxusercontent.com/u/6823742/gdpmap.png" #"https://unsplash.it/2600/500?random"
+imageurl: "https://dl.dropboxusercontent.com/u/6823742/map_lights.jpg" #"https://unsplash.it/2600/500?random"
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
@@ -15,7 +15,7 @@ theme:
   visiblewords: 200
   # Header and footer text
   header_text: >
-     This blog takes Robert Solow seriously
+     
 
   header_text_feature_image: img/sample_feature_img.png
   place_holder_image: img/sample_feature_img.png
@@ -67,7 +67,7 @@ theme:
 
 # PAGINATION
 enforce_ssl: "dvollrath.github.io"
-paginate: 5
+paginate: 3
 paginate_path: "blog/page:num"
 permalink: blog/:title/ 
 
