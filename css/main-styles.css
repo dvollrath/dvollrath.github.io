@@ -19,7 +19,7 @@ article, aside, footer, header, hgroup, nav, section { display: block; }
 	body.et_cover_background { -moz-background-size: cover !important; -webkit-background-size: cover !important; background-size: cover !important; background-position: top center !important; background-repeat: no-repeat !important; background-attachment: fixed; }
 
 	/* Links */
-	a { text-decoration: none; color: #1ABC9C; }
+	a { text-decoration: none; color: #003399; }
 	a:hover { text-decoration: none; }
 
 	/* Inline Elements */
