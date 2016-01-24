@@ -96,7 +96,7 @@ blockquote{font-size:1.25em;line-height:1.25;padding:1% 2%}
 
 .posts li{margin-bottom:.5rem;position:relative;}
 .posts li:before{position:absolute;bottom:-2rem;left:0;background:#e6e6e6;height:2px;width:60px}
-.posts li a{text-decoration:none}
+.posts li a{text-decoration:none; color: #003399;}
 .posts li a:hover{text-decoration:underline}
 .posts li .date{color:gray;font-family:"Open Sans",Helvetica,Arial,sans-serif;font-weight:300;font-size:.8em}
 .posts li h3{margin:0 0 .5em}

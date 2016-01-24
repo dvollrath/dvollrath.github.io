@@ -6,15 +6,16 @@ layout: default
 
 <article {% if page.feature-img %}class="feature-image"{% endif %}>
   <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
-
-<!--article {% if page.feature-img %}class="feature-image"{% endif %} >
-  <div style="background-image: url('{{ site.baseurl }}/{{ page.feature-image }}')"/>
-  <header style="background-image: url('{{ site.imageurl }}')"-->
     <h1 class="title">{{ page.title }}</h1>
     <p id="subtitletrans" class="subtitlecontainer">
-    <a class="subtitle">{{ page.date | date_to_string }}</a>
-<!--    {% if page.author %} | <a class="subtitle" href="{{ site.baseurl }}/About/">{{ page.author }}</a>{% endif %}
-	{% if post.category and post.tags %} | <a class="subtitle">{{ category_content }}</a> <a class="subtitle">{{ tags_content }}</a>{% endif %} -->
+
+    {% if page.journal %}
+      <a class="subtitle">{{ page.journal }}</a> [<a href="{{ post.pdf }}"> PDF </a>]
+    {% elsif page.course %}
+      <a class="subtitle">{{ page.course }}</a>
+    {% else %}
+      <a class="subtitle">{{ page.date | date_to_string }}</a>
+    {% endif %}
     </p>
   </header>
   <section class="post-content">
@@ -24,8 +25,12 @@ layout: default
 </article>
 
 <!-- Post navigation -->
-{% if site.theme.post_navigation %}
-<div id="post-nav">
+{% if page.journal or page.course %}
+  <!-- If a journal article, skip navigation -->
+{% else %}
+  <!-- Check if navigation turned on-->
+  {% if site.theme.post_navigation %}
+  <div id="post-nav">
     {% if page.previous.url %}
     <a id="prev-post" href="{{ site.baseurl }}{{ page.previous.url }}">
       <span class="page-title">{{ page.previous.title }}</span>
@@ -42,7 +47,8 @@ layout: default
        </span>
      </a>
     {% endif %}
-</div>
+  </div>
+  {% endif %}
 {% endif %}
 
 <!-- Disqus -->
