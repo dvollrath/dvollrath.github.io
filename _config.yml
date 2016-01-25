@@ -48,7 +48,7 @@ theme:
   # Scripts
   google_analytics: UA-72839737-1
   disqus_shortname: growthecon
-  katex: true # Enable if using math markup
+  katex: false # Enable if using math markup
 
   # Localization strings
   str_follow_on: "Follow on"
