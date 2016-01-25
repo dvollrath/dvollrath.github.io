@@ -7,14 +7,15 @@ imageurl: "https://dl.dropboxusercontent.com/u/6823742/map_lights.jpg" #"https:/
 theme:
   # Meta
   title: Dietrich Vollrath
+  feedtitle: Growth Economics Blog
   #avatar: avatar.png
   hometitle: Home #display on navigation menu.
   yoursitetitle: Dietrich Vollrath
   gravatar: # Email MD5 hash
-  description: "used by search engines" # used by search engines
+  description: "Growth Economics Blog Dietrich Vollrath" # used by search engines
   visiblewords: 200
   # Header and footer text
-  header_text: >
+  header_text: > 
      
 
   header_text_feature_image: img/sample_feature_img.png

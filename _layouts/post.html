@@ -10,7 +10,11 @@ layout: default
     <p id="subtitletrans" class="subtitlecontainer">
 
     {% if page.journal %}
+      {% if page.replicate %}
+      <a class="subtitle">{{ page.journal }}</a> [<a href="{{ post.pdf }}"> PDF </a>] [<a href="{{ post.replicate }}"> Data </a>] 
+      {% else %}
       <a class="subtitle">{{ page.journal }}</a> [<a href="{{ post.pdf }}"> PDF </a>]
+      {% endif %}
     {% elsif page.course %}
       <a class="subtitle">{{ page.course }}</a>
     {% else %}
