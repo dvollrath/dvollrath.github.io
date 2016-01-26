@@ -59,7 +59,8 @@ h4,.h4{font-size:1.125em;line-height:1.11111111}
 blockquote{font-size:1.25em;line-height:1.25;padding:1% 2%}
 @media (min-width: 43.75em){blockquote{font-size:1.25em;line-height:1.25;padding:1% 2%}}
 
-.post ul ul,.post ul ol,.post ol ul,.post ol ol{margin:0}
+.post ul ul,.post ul ol,.post ol ul,.post ol ol{margin: 0}
+.post li {margin: 1em 0;}
 .pageTitle{margin:2rem auto 1em;text-align:center}
 .content{padding-top:1em}
 .header{background-color:seagreen;background-image:url("../img/touring.jpg");background-size:cover;background-position:center center;color:white;padding:0;height:3em}
