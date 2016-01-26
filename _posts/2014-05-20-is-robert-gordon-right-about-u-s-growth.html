@@ -28,33 +28,33 @@ author:
 How do I figure this out? I need to get a little wonky about statistical testing. The null hypothesis I am testing is that the growth rate is 2&#037; per year. But I don't want to do a typical kind of statistical test. The question I want to ask is this: how long will it be before I have enough evidence to reject this hypothesis? I need to do a power calculation.</p>
 <p>
 <i>IF</i> the null hypothesis is true, then log GDP per capita evolves over time according to
-<p align="center">$latex \displaystyle  \ln{y}_t = 0.02t + e_t \ \ \ \ \ (1)&amp;fg=000000$</p>
-<p> where $latex {e_t}&amp;fg=000000$ is some noise term that captures the fact that GDP per capita will not necessarily be exactly on the trend line. For the time series fans out there, I'm completely ignoring any kind of auto-correlation here. Why? Because I did not consume enough Diet Coke this morning to re-learn time series econometrics.</p>
+<p align="center">$$  \ln{y}_t = 0.02t + e_t $$</p>
+<p> where ${e_t}$ is some noise term that captures the fact that GDP per capita will not necessarily be exactly on the trend line. For the time series fans out there, I'm completely ignoring any kind of auto-correlation here. Why? Because I did not consume enough Diet Coke this morning to re-learn time series econometrics.</p>
 <p>
 <i>IF</i> Robert Gordon is right, then log GDP per capita evolves over time according to
-<p align="center">$latex \displaystyle  \ln{y}_t = 0.009t + e_t. \ \ \ \ \ (2)&amp;fg=000000$</p>
-<p> As $latex {t}&amp;fg=000000$ goes up and up into the future in Gordon's world, log GDP per capita will fall farther and farther behind the 2&#037; per year trend that I am using as the null hypothesis. Evenutally, it will fall so far behind that I will have to reject the null. </p>
+<p align="center">$$  \ln{y}_t = 0.009t + e_t. $$</p>
+<p> As ${t}$ goes up and up into the future in Gordon's world, log GDP per capita will fall farther and farther behind the 2&#037; per year trend that I am using as the null hypothesis. Evenutally, it will fall so far behind that I will have to reject the null. </p>
 <p>
-When will this happen? That depends on how quickly I am willing to reject the null. If I have an itchy trigger finger, then the first time that I see GDP per capita below the 2&#037; trend line, I'll dismiss the 2&#037; null hypothesis. But this is probably too hasty; remember the $latex {e_t}&amp;fg=000000$ term. Even if growth is really 2&#037; per year, there will be years where GDP per capita falls below the 2&#037; trend line. A recession, perhaps. So I don't want to reject the null too easily. </p>
+When will this happen? That depends on how quickly I am willing to reject the null. If I have an itchy trigger finger, then the first time that I see GDP per capita below the 2&#037; trend line, I'll dismiss the 2&#037; null hypothesis. But this is probably too hasty; remember the ${e_t}$ term. Even if growth is really 2&#037; per year, there will be years where GDP per capita falls below the 2&#037; trend line. A recession, perhaps. So I don't want to reject the null too easily. </p>
 <p>
 I'll assume a standard cut-off value for rejecting the null, 5&#037;. If, statistically, there was only a 5&#037; chance of observing the GDP per capita level that I did even though the 2&#037; null is true, then I'll reject the null. Basically, if I see a value for GDP that is a huge outlier given a 2&#037; growth assumption, then I'll reject that growth is equal to 2&#037; per year. Note the the 5&#037; is the chance that I reject the null even though it is true - it's my willingness to accept Type I error.</p>
 <p>
 Now, I can look at the data on GDP per capita over time in the U.S., and get some idea of what these cut-off levels of GDP per capita are.
-<p align="center">$latex \displaystyle  Lower_t = 0.02t - c SD(e_t) \ \ \ \ \ (3)&amp;fg=000000$</p>
-<p align="center">$latex \displaystyle  Upper_t = 0.02t + c SD(e_t). \ \ \ \ \ (4)&amp;fg=000000$</p>
-<p> The $latex {Lower_t}&amp;fg=000000$ is the one I'm really worried about here. This lower bound is basically what I'd expect GDP per capita to be at trend ($latex {0.02t}&amp;fg=000000$) minus some adjustment for the possibility of a negative shock from $latex {e_t}&amp;fg=000000$. How big is this adjustment? That depends on $latex {c}&amp;fg=000000$, a critical value that it tied to the 5&#037; probability of Type I error. The $latex {SE(e_t)}&amp;fg=000000$ tells me how variable the error term is; if shocks are really large, then it will be harder to reject the null when we see a low value of GDP per capita. The value of $latex {c}&amp;fg=000000$ is roughly 2 (1.96, actually), and from the data on GDP per capita the $latex {SD(e_t) = 0.032}&amp;fg=000000$. If you multiply these two together, this tells us that GDP per capita tends to be within +/-6.4&#037; of trend.</p>
+<p align="center">$$  Lower_t = 0.02t - c SD(e_t) $$</p>
+<p align="center">$$  Upper_t = 0.02t + c SD(e_t). $$</p>
+<p> The ${Lower_t}$ is the one I'm really worried about here. This lower bound is basically what I'd expect GDP per capita to be at trend (${0.02t}$) minus some adjustment for the possibility of a negative shock from ${e_t}$. How big is this adjustment? That depends on ${c}$, a critical value that it tied to the 5&#037; probability of Type I error. The ${SE(e_t)}$ tells me how variable the error term is; if shocks are really large, then it will be harder to reject the null when we see a low value of GDP per capita. The value of ${c}$ is roughly 2 (1.96, actually), and from the data on GDP per capita the ${SD(e_t) = 0.032}$. If you multiply these two together, this tells us that GDP per capita tends to be within +/-6.4&#037; of trend.</p>
 <p>
 Ok, to answer my question, I need to figure out the probability that GDP per capita given Gordon's assumption about growth falls below this lower limit:
-<p align="center">$latex \displaystyle  P(\ln{y}_t&lt;Lower_t|Gordon is right). \ \ \ \ \ (5)&amp;fg=000000$</p>
-<p> This is basically a power calculation. For any given year, I can calculate the probability that I'd reject the null (because $latex {\ln{y}_t&lt;Lower_t}&amp;fg=000000$) given that the null is false (and Gordon is right). </p>
+<p align="center">$$  P(\ln{y}_t&lt;Lower_t|Gordon is right). $$</p>
+<p> This is basically a power calculation. For any given year, I can calculate the probability that I'd reject the null (because ${\ln{y}_t&lt;Lower_t}$) given that the null is false (and Gordon is right). </p>
 <p>
 Using Gordon's assumption from above, I therefore want
-<p align="center">$latex \displaystyle  P[0.009t + e_t &lt; 0.02t - c SD(e_t) ] \ \ \ \ \ (6)&amp;fg=000000$</p>
+<p align="center">$$  P[0.009t + e_t &lt; 0.02t - c SD(e_t) ] $$</p>
 <p> or
-<p align="center">$latex \displaystyle  P[e_t &lt; (0.02 - .009)t - c SD(e_t)]. \ \ \ \ \ (7)&amp;fg=000000$</p>
-<p> Given that I know something about the distribution of the $latex {e_t}&amp;fg=000000$ terms, this probability is something I can figure out. As I mentioned above, the $latex {SD(e_t) = 0.032}&amp;fg=000000$. The mean of $latex {e_t}&amp;fg=000000$ is just zero, by construction. Finally, I'll assume that $latex {e_t}&amp;fg=000000$ is Normally distributed (probably not right, but see the Diet Coke comment from above). The value of $latex {c = 2}&amp;fg=000000$, given my choice of a 5&#037; chance of Type I error.</p>
+<p align="center">$$  P[e_t &lt; (0.02 - .009)t - c SD(e_t)]. $$</p>
+<p> Given that I know something about the distribution of the ${e_t}$ terms, this probability is something I can figure out. As I mentioned above, the ${SD(e_t) = 0.032}$. The mean of ${e_t}$ is just zero, by construction. Finally, I'll assume that ${e_t}$ is Normally distributed (probably not right, but see the Diet Coke comment from above). The value of ${c = 2}$, given my choice of a 5&#037; chance of Type I error.</p>
 <p>
-For any given year $latex {t}&amp;fg=000000$ I can back out this probability from a Normal distribution, using Stata (or Excel, or the appendix of your old stats book). So what do I get? Here are probabilities that I will reject the null of 2&#037; growth for some selected years: </p>
+For any given year ${t}$ I can back out this probability from a Normal distribution, using Stata (or Excel, or the appendix of your old stats book). So what do I get? Here are probabilities that I will reject the null of 2&#037; growth for some selected years: </p>
 <ul>
 <li> 2009: 4.9&#037; </li>
 <li> 2010: 9.5&#037; </li>

@@ -26,20 +26,20 @@ author:
 <p>I am kind of veering off of the typical growth topic in this post (although not as badly as the last <a href="https://growthecon.wordpress.com/2015/05/13/so-i-wrote-a-book/" title="So I Wrote a Book">post</a>). I was playing around trying to write questions for the first-year macro comp next month, and ended up thinking about how we distinguish trend from cycle in GDP. In particular, how do the assumptions built in to how we decompose GDP into trend and cycle tie into how we conceive of fluctuations? </p>
 <p>
 Let's take the simplest set-up, where log GDP follows a linear trend
-<p align="center">$latex \displaystyle  \ln{GDP}_t = \alpha + g t + u_t, \ \ \ \ \ (1)&amp;fg=000000$</p>
-<p> and $latex {g}&amp;fg=000000$ is the growth rate. $latex {\alpha}&amp;fg=000000$ is the intercept, and it fixes the level of GDP in period 0. What I'm going to say below is all related to this linear trend assumption, but the concepts would follow even if you allowed for some polynomial in $latex {t}&amp;fg=000000$ on the right-hand side, or if you did some kind of fancy filtering, like Hodrik-Prescott.</p>
+<p align="center">$$  \ln{GDP}_t = \alpha + g t + u_t, $$</p>
+<p> and ${g}$ is the growth rate. ${\alpha}$ is the intercept, and it fixes the level of GDP in period 0. What I'm going to say below is all related to this linear trend assumption, but the concepts would follow even if you allowed for some polynomial in ${t}$ on the right-hand side, or if you did some kind of fancy filtering, like Hodrik-Prescott.</p>
 <p>
-How do I do the decomposition? First, I get the estimated values $latex {\hat{\alpha}}&amp;fg=000000$ and $latex {\hat{g}}&amp;fg=000000$ from the data by running an ordinary least squares regression. I get the cycle as the deviations of log GDP from the estimated trend using these values. The cyclical deviations are just the residuals of that regression,
-<p align="center">$latex \displaystyle  \hat{u}_t = \ln{GDP}_t - \hat{\alpha} - \hat{g}t. \ \ \ \ \ (2)&amp;fg=000000$</p>
-<p> Voila. You have a trend/cycle decomposition of GDP. Now that I've extracted the trend, I can write down a model to explain business cycles and try to match the information in $latex {\hat{u}_t}&amp;fg=000000$. </p>
+How do I do the decomposition? First, I get the estimated values ${\hat{\alpha}}$ and ${\hat{g}}$ from the data by running an ordinary least squares regression. I get the cycle as the deviations of log GDP from the estimated trend using these values. The cyclical deviations are just the residuals of that regression,
+<p align="center">$$  \hat{u}_t = \ln{GDP}_t - \hat{\alpha} - \hat{g}t. $$</p>
+<p> Voila. You have a trend/cycle decomposition of GDP. Now that I've extracted the trend, I can write down a model to explain business cycles and try to match the information in ${\hat{u}_t}$. </p>
 <p>
 This seems really sensible as an approach. But there is a lot embedded in this procedure, and I think it has consequences (intended or unintended) for how people think about cycles. </p>
 <p>
 The first mathematical condition for running an ordinary least squares regression is
-<p align="center">$latex \displaystyle  \sum_{t=0}^T \hat{u}_t = 0. \ \ \ \ \ (3)&amp;fg=000000$</p>
+<p align="center">$$  \sum_{t=0}^T \hat{u}_t = 0. $$</p>
 <p> It always seems like a bit of a throw-away assumption when you teach econometrics. Yes, you say, make sure the errors add up to zero. If that were <i>not</i> true, then we could just adjust the intercept term until that assumption <i>was</i> true. </p>
 <p>
-But this is not an innocuous assumption from an economic standpoint. If you use this when you try to estimate trend GDP, then you are asserting that deviations of GDP from trend must <i>by necessity</i> cancel out over time. That is, after you have estimated trend GDP and recovered your cyclical component ($latex {\hat{u}_t}&amp;fg=000000$), the booms <i>must</i> be <i>exactly</i> offset by busts. </p>
+But this is not an innocuous assumption from an economic standpoint. If you use this when you try to estimate trend GDP, then you are asserting that deviations of GDP from trend must <i>by necessity</i> cancel out over time. That is, after you have estimated trend GDP and recovered your cyclical component (${\hat{u}_t}$), the booms <i>must</i> be <i>exactly</i> offset by busts. </p>
 <p>
 If you build a theory of business cycles around this trend/cycle decomposition, then you are limited to a theory that only admits symmetrical deviations. You are pushed towards using symmetrical, (log)-normally distributed shocks to create cycles, for example. </p>
 <p>
@@ -54,11 +54,11 @@ But this dynamic budget constraint doesn't have any implication for how much I c
 GDP is like calorie expenditures. Yes, real expenditures must add up to real production in a given period. Great. But that doesn't mean that GDP must conform to some infinite-period constraint. So if GDP is ``above trend'' for a while, that does <i>not</i> imply that it must fall ``below trend'' in order to balance that infinite-period constraint. Similarly, if we fall ``below trend'' for a while, there is nothing that requires us to necessarily have a boom in order to make up for the lost production. There is no lifetime budget constraint for GDP.</p>
 <p>
 Back to the decomposition. The assumption that
-<p align="center">$latex \displaystyle  \sum_{t=0}^T \hat{u}_t = 0 \ \ \ \ \ (4)&amp;fg=000000$</p>
+<p align="center">$$  \sum_{t=0}^T \hat{u}_t = 0 $$</p>
 <p> says that there <i>is</i> a lifetime budget constraint. It says that all deviations above trend must be precisely and exactly offset by deviations below trend. </p>
 <p>
 But that need not be the right assumption. Remember, our goal as economists is not to minimize the sum of squared residuals here, but to explain economic fluctuations from trend. So why not assume
-<p align="center">$latex \displaystyle  \sum_{t=0}^T \hat{u}_t = -.03 \times T, \ \ \ \ \ (5)&amp;fg=000000$</p>
+<p align="center">$$  \sum_{t=0}^T \hat{u}_t = -.03 \times T, $$</p>
 <p> which would imply that the typical period is 3&#037; below trend. That is, booms are <i>more</i> than offset over time by busts. You could set the summation to a larger number, and get that the economy is continually below trend, and never experiences a boom. Why not? Friedman proposed a ``<a href="http://employees.oxy.edu/mcintyre/Econ361-Spr07/Friedman-Plucking-Model.pdf">plucking model</a>'' of fluctuations, where there are occasional negative deviations from trend/potential GDP, but these are not necessarily offset by symmetrical booms.</p>
 <p>
 The point here is that the statistical techniques used to recover measures of cyclical deviations embed an assumption that is not true. The GDP of an economy is not subject to a lifetime budget constraint. Therefore, booms and busts are not required to cancel each other out. What is the right assumption to make? I have no idea. Maybe it's the -3&#037; assumption I mentioned above. Maybe it's -2&#037;, or +5&#037;.</p>
