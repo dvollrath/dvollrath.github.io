@@ -12,7 +12,7 @@ theme:
   hometitle: Home #display on navigation menu.
   yoursitetitle: Dietrich Vollrath
   gravatar: # Email MD5 hash
-  description: "Growth Economics Blog Dietrich Vollrath" # used by search engines
+  description: "Dietrich Vollrath Economic Growth Blog" # used by search engines
   visiblewords: 200
   # Header and footer text
   header_text: > 
