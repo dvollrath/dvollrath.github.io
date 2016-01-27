@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: "" # Set it to "" if use for personal site. The subpath of your site, e.g. /blog/
-url: "https://dvollrath.github.io" # the base hostname & protocol for your site
+url: "https://growthecon.com" # the base hostname & protocol for your site
 imageurl: "https://dl.dropboxusercontent.com/u/6823742/map_lights.jpg" #"https://unsplash.it/2600/500?random"
 
 # THEME-SPECIFIC CONFIGURATION
@@ -45,6 +45,9 @@ theme:
   twitter: "DietzVollrath"
   wordpress:
   youtube:
+
+  # Dropbox public link
+  dropbox: https://dl.dropboxusercontent.com/u/6823742
 
   # Scripts
   google_analytics: UA-72839737-1
