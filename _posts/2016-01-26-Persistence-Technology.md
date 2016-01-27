@@ -2,6 +2,7 @@
 layout: post
 title: The Persistence of Technology
 published: false
+category: feed
 ---
 
 CEG provide a nice summary of several lines of reasoning regarding the persistence of technology. 
