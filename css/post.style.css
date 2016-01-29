@@ -116,3 +116,31 @@ blockquote{font-size:1.25em;line-height:1.25;padding:1% 2%}
 	.contactContent{width:48.93617%;float:left;margin-right:2.12766%}
 	#contact form{width:48.93617%;float:right;margin-right:0}
 }
+
+.share-page {
+    text-align: center;
+    background: $secondary-color;
+    color: $light-color;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 1.5 * $spacing-unit 0;
+
+    a {
+        font-weight: 700;
+        color: #fff;
+        margin-left: 10px;
+
+        &:hover {
+            border-bottom: 1px dashed #fff;
+        }
+    }
+}
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
