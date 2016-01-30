@@ -2,7 +2,7 @@
 baseurl: "" # Set it to "" if use for personal site. The subpath of your site, e.g. /blog/
 url: "http://growthecon.com" # the base hostname & protocol for your site
 imageurl: "https://dl.dropboxusercontent.com/u/6823742/map_lights.jpg" #"https://unsplash.it/2600/500?random"
-timezone: Etc/GMT+12
+timezone: America/Chicago
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
