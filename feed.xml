@@ -5,7 +5,23 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Sun, 31 Jan 2016 09:42:42 -0600</pubDate>
+    <pubDate>Sun, 31 Jan 2016 10:05:28 -0600</pubDate>
+    
+      <item>
+        <title>Site Upgrades</title>
+        <link>https://growthecon.com/blog/Site-Upgrades/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Site-Upgrades/</guid>
+        <description>&lt;p&gt;Thanks to the Cavs/Spurs game turning into a snorer, I distracted myself by fixing up a few things on the new site. Rocking Saturday night, I know. I&amp;#39;m old.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SSL&lt;/strong&gt;: The site is now using SSL, which means you&amp;#39;ll see &amp;quot;https&amp;quot; in the web address. You don&amp;#39;t need to do anything, the site automatically redirects you to the https link. If you want to save yourself a millisecond, change your link to the site to say &amp;quot;https&amp;quot; explicitly.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RSS Equations&lt;/strong&gt;: One thing that came up in the transition was that the RSS feed was not rendering equations. You&amp;#39;d see markup code in your RSS reader, not a nicely formatted equation. This is fixed....I think. In fact, here&amp;#39;s a little test. If you can see &lt;img src=&quot;http://latex.codecogs.com/png.latex?y = x^2\inline&quot;/&gt; in your RSS feed as a nicely formatted equation, then apparently things are working well. If not, then I know what I&amp;#39;m doing next Saturday night.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Again, thanks for reading, and thanks for the patience with the tweaks.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 31 Jan 2016 00:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>The Persistence of Technology</title>
