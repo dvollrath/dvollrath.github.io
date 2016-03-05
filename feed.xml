@@ -5,7 +5,18 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Sun, 28 Feb 2016 09:28:48 -0600</pubDate>
+    <pubDate>Sat, 05 Mar 2016 14:26:26 -0600</pubDate>
+    
+      <item>
+        <title>Growth References</title>
+        <link>https://growthecon.com/blog/New-References/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/New-References/</guid>
+        <description>&lt;p&gt;A very quick post just to alert you that I&amp;#39;ve added a new page of &lt;a href=&quot;https://growthecon.com/references/&quot;&gt;references&lt;/a&gt; to the site. It is essentially a dump of my own BibTeX file, broken down by topic area. &lt;/p&gt;
+
+&lt;p&gt;It&amp;#39;s incomplete, but as I clean up and add to the references over time, they&amp;#39;ll populate to that page. Of course, I&amp;#39;ll probably be in my 70&amp;#39;s before I get around to it, but maybe announcing it publicly will act as a commitment device. It can&amp;#39;t make me go any &lt;em&gt;slower&lt;/em&gt; at fixing up my BibTeX file, that&amp;#39;s for sure.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 05 Mar 2016 00:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>How to Accelerate Growth Rates</title>
