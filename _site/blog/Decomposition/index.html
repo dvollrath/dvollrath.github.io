@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>Technology versus the Distribution of Workers in Aggregate Productivity | Dietrich Vollrath</title>
+	<meta name="description" content=", , There was a recent post by an engineer rebutting Robert Gordon’s (and others) thesis that technological change was slowing down. The evidence cited is a seri...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/Decomposition/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/references/">
+							 References 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">Technology versus the Distribution of Workers in Aggregate Productivity</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">01 May 2016</a> &nbsp; &nbsp;
+      <a href="/blog/Decomposition/#disqus_thread"></a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <p>There was a recent <a href="https://artir.wordpress.com/2016/04/25/no-great-technological-stagnation/">post</a> by an engineer rebutting Robert Gordon’s (and others) thesis that technological change was slowing down. The evidence cited is a series of plots and figures showing how specific technologies (battery storage, energy efficiency, computer speed, etc..) are advancing just as fast as they have for decades, if not faster. And there were a number of responses along the lines of “See, Gordon is wrong!”.</p>
+
+<p>The mistake here is that this doesn’t constitute evidence that Gordon is wrong. But the mistake is partly forgivable because Gordon himself indulges in these kinds of anecdotal arguments to advance his thesis, and so it seems as if you could refute his conclusions by offereing alternative anecdotes.</p>
+
+<p>But the important part of Gordon’s argument is not that specific technologies are or are not advancing. It is that <em>aggregate productivity growth</em> is slowing down. And aggregate productivity growth depends not only on individual technologies, but crucially on the distribution of workers using those technologies. Arguing about only those individual technologies is like using an increase in the price of milk to argue that inflation must be high.</p>
+
+<p>Aggregate productivity growth depends on what we can call “within-sector” growth, which is going to be tied closely to those individual technologies. But it also depends on “across-sector” growth, which is tied to the movement of workers from one sector (or job) to another. If workers are shifting from high- to low-productivity sectors or jobs, then aggregate productivity growth may fall even though nothing happened to actual technological change.</p>
+
+<p>I’ll make this more clear below, but here’s a quick summary of what I’ll try to establish. Gordon’s critics could well be right about their individual technologies, and yet wrong about this having anything to do with aggregate growth, because those sectors may not employ many people. And Gordon can be right about aggregate growth, but wrong about individual technologies stagnating, because the movement of workers to low-productivity sectors may be dragging down growth. In short, you cannot talk about aggregate productivity growth without talking about both technology <em>and</em> the distribution of workers across sectors.</p>
+
+<h3 id="gruesome-detail">Gruesome Detail</h3>
+<p>Yes, there is math. Gordon’s argument is about the growth rate of total factor productivity (TFP). But sector and industry level data on TFP isn’t available for the time frames I want, so I’m going to look instead at value-added per hour, a measure of labor productivity. TFP and value-added per hour are going to be highly correlated, but not perfectly.</p>
+
+<p>Value-added per hour, $y$, is the summation across all $J$ sectors of the economy</p>
+
+<script type="math/tex; mode=display">y = \sum_{j=1}^J s_j y_j</script>
+
+<p>where $s_j$ is the share of total hours worked in sector $j$, and $y_j$ is the value-added per hour in sector $j$. With that definition, the <em>change</em> in value-added per hour from time 0 to time $t$ can be written as</p>
+
+<script type="math/tex; mode=display">\Delta y_t = \sum_{j=1}^J s_{jt} y_{jt} - \sum_{j=1}^J s_{j0} y_{j0}.</script>
+
+<p>This isn’t very informative by itself, but by rearranging the terms in those two summations, adding and subtracting some other common terms, and a little algebra, we can get</p>
+
+<script type="math/tex; mode=display">\Delta y_t = \sum_{j=1}^J \Delta y_{jt} s_{j0} + \sum_{j=1}^J \Delta s_{jt} y_{j0} + \sum_{j=1}^J \Delta y_{jt} \Delta s_{jt}.</script>
+
+<p>A couple of notes on this equation. First, this is the absolute change in value-added per hour. This isn’t the growth rate. You could divide by sides by $y_0$ to get a growth rate, but as written the equation looks simpler. Second, I’ve made precisely zero assumptions about behavior to get this. This is pure accounting.</p>
+
+<p>The three separate summations on the right-hand side can be nicely interpreted.</p>
+
+<ol>
+  <li>
+    <p><strong>Within-sector growth</strong>: $\sum_{j=1}^J \Delta y_{jt} s_{j0}$ holds constant the allocation of hours seen at time zero. This is the growth we’d get if all that happened was that each sector got more productive, $\Delta y_{jt}$, but we did not allow anyone to change jobs. The idea is to measure just improvements in labor productivity within sectors.</p>
+  </li>
+  <li>
+    <p><strong>Across-sector growth</strong>: $\sum_{j=1}^J \Delta s_{jt} y_{j0}$ holds constant the value-added per hour seen at time zero. This is the growth we’d get if all that happened was that workers (and their hours of work) moved between jobs. Note that this will be positive if people move from low- to high-productivity jobs, or negative if they move from high- to low-.</p>
+  </li>
+  <li>
+    <p><strong>Covariance</strong>: $\sum_{j=1}^J \Delta y_{jt} \Delta s_{jt}$ captures the fact that not only do sectors vary in their time-zero level of productivity, but differ in their productivity growth. This term captures whether or not people are moving into sectors where productivity is <em>growing</em>, which would show up as a positive value. A negative means that workers are moving to sectors where productivity is shrinking.</p>
+  </li>
+</ol>
+
+<p>To illustrate the role of these three effects, I pulled down sector-level data from the <a href="http://www.rug.nl/research/ggdc/data/10-sector-database">Groningen 10-sector database</a> for the U.S., from 1950-2010. The 10 sectors are broad - agriculture, manufacturing, construction, etc. - but have the advantage of spanning a long time frame. I can pull data from the BLS at a much finer industry level at the cost of only going back to 1987. From what I found, the BLS data confirm the story I’ll tell with the Groningen data, so let’s stick with that.</p>
+
+<p>In each year, I calculated the three terms in the above equation, looking backward 10 years each time. So I have the rolling 10-year growth in value-added per hour (VAPH), as well as how it breaks down into within, across, and covariance terms. What I’ve plotted below is the total growth rate, not an annualized rate, so that everything still adds up exactly.</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/6823742/fig_us_decomp_10.png" alt="US Decomposition" /></p>
+
+<p>What is pretty clear is that within-sector growth is the dominant force in VAPH. And you can see the early high reported rates of growth of within-sector growth in the 1960’s (which capture growth from the 50’s into the 60’s). There is a clear slowdown in within sector growth from about 1975 to 1990, consistent with all the other evidence, and then things recover not quite back to the 1960’s level. The dip in 2009 and 2010 indicates that growth in VAPH from about 1999/2000 to 2009/2010 has been relatively slow, again consistent with our priors.</p>
+
+<p>Now look at the contributions of across-sector growth and the covariance term. Across-sector growth is consistently positive throughout most of this period, but starts declining significantly around 1990, so that over the last ten years across-sector growth is <em>negative</em> for overall growth in VAPH. That means between 2000 and 2010 workers were moving out of sectors with high productivity (in 2000), and into sectors with low productivity (in 2000). Without any slowdown in actual productivity growth, <em>measured</em> aggregate productivity growth is going to be lower.</p>
+
+<p>The negative contribution of the covariance term tells a similar story of negative effects, although this appears to be a consistent issue. Workers are not only moving into low productivity sectors to begin with, but into sectors with low productivity <em>growth</em>. This also drags down measured aggregate productivity growth.</p>
+
+<p>The 10-year growth rate, starting in the 1990’s (which means the effects started in the early 80’s), no longer lies <em>above</em> the within-sector growth rate. In other words, starting in the 80’s, we see the across-sector and covariance effects of structural change producing a negligible or even negative effect on VAPH growth. This is most apparent in those final few years of the graph.</p>
+
+<p>For Gordon’s critics, they can be right that individual technologies are still growing quickly, but what they do not account for is that labor may be moving <em>out</em> of those sectors and hence aggregrate growth could still be low. If we could get finer and finer levels of industry data, it is quite possible that what looks like a decline in within-sector growth in 2009/2010 is really just negative across-industry growth at those finer levels of industry. Gordon being wrong about whether specific technologies are improving does not make him wrong about aggregate growth declining.</p>
+
+<p>At the same time, the fact that aggregate growth was high in the 40’s and 50’s doesn’t necessarily mean that individual technologies were improving faster than they are today.I don’t have the data, but I’d be fascinated to know what this figure looks like going backwards in the 1950’s and 1940’s, during Gordon’s golden age of productivity growth. Were those decades really a time of amazing “true” technological growth - which might be proxied by the within-sector effect - or did they benefit as much from strong across-sector and covariance terms?</p>
+
+<p>One plausible reason for strong across-sector and covariance terms is the hump-shaped nature of demand for manufactured goods. In the 40’s and 50’s and 60’s, there was within-sector productivity growth in durable goods - refrigerators, TVs, cars - for sure. But this also generated large movements of people <em>into</em> those sectors, which would have produced big positive across-sector and covariance terms. Why? Because Americans didn’t own lots of refrigerators, cars, and TVs. Higher within-sector productivity would have lowered prices, and a high elasticity of demand would have meant those sectors pulled labor into those sectors.</p>
+
+<p>But by the 70’s and later, higher within-sector productivity growth in durables and other manufatures may not have generated the same across-sector and covariance effects. Why? Because there are limits to durable good demand. Once everyone has a refrigerator, they tend to want to buy other things, and not <em>another</em> refrigerator. I know that’s not totally true; I have a 2nd fridge in my garage that serves as a strategic beer reserve. But in general, demand for durable goods becomes less elastic as we get richer. Which means that within-sector productivity gains don’t pull workers into manufacturing employment, it actively pushes them <em>out</em>. And because the sectors that labor is moving into are relatively low productivity, and have low productivity growth, we get negative across-sector and covariance terms. By the way, there is nothing here that William Baumol couldn’t have told you thirty years ago.</p>
+
+<p>A comparison with South Korea is interesting, because they are several decades behind the US in this transformation. In the figure below I plotted the same rolling 10-year growth rates as for the US. It shows the big across-sector contribution to growth in South Korea in the 80’s and 90’s, as they were industrializing heavily and the elasticity of demand for those kinds of durable goods was still large. Compare the figures, and you’ll see that while the US may have had 8% total growth in VAPH due to across-sector effects at the maximum, in South Korea this maximum is closer to 40%. As South Korea got richer, this across-sector contribution has been falling, but is still adding about 6% to total growth in VAPH. The example of South Korea is why I think that part of the explanation for the rapid productivity growth in the US during the 40’s and 50’s could be across-sector effects, and not just a higher rate of innovation or technological change.</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/6823742/fig_kor_decomp_10.png" alt="SK Decomposition" /></p>
+
+<p>This has now gotten so long that I need to wrap it up. Let me try to do that by essentially repeating my summary from above. You cannot talk about aggregate productivity growth without talking about both technology <em>and</em> the distribution of workers across sectors. Anecdotes - positive or negative - about individual technologies are not informative about the aggregate level of productivity growth.</p>
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/Comp-Growth/">
+      <span class="page-title">Concentration and Growth</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+    <a id="next-post" href="/blog/More-Decomp/">
+       <span class="page-title">More on Decomposing US Productivity Growth</span>
+       <span class="nav-label">
+         <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/Decomposition/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+<!-- Disqus comment count script -->
+<script id="dsq-count-scr" src="//growthecon.disqus.com/count.js" async></script>
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2016 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>Deep Determinants of Development | Dietrich Vollrath</title>
+	<meta name="description" content=", , Acemoglu, D. &amp; Johnson, S., 2007. Disease and Development: The Effect of Life Expectancy on Economic Growth. Journal of Political Economy, 115(6), pp.925...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/Deep-Origins/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/references/">
+							 References 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">Deep Determinants of Development</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">22 Jan 2010</a> &nbsp; &nbsp;
+      <a href="/blog/Deep-Origins/#disqus_thread"></a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <ul class="bibliography"><li><span id="aj07">Acemoglu, D. &amp; Johnson, S., 2007. Disease and Development: The Effect of Life Expectancy on Economic Growth. <i>Journal of Political Economy</i>, 115(6), pp.925–985. Available at: <a href="http://ideas.repec.org/a/ucp/jpolec/v115y2007i6p925-985.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p> We exploit the major international health improvements from the 1940s to estimate the effect of life expectancy on economic performance. We construct predicted mortality using preintervention mortality rates from various diseases and dates of global interventions. Predicted mortality has a large impact on changes in life expectancy starting in 1940 but no effect before 1940. Using predicted mortality as an instrument, we find that a 1 percent increase in life expectancy leads to a 1.7-2 percent increase in population. Life expectancy has a much smaller effect on total GDP, however. Consequently, there is no evidence that the large increase in life expectancy raised income per capita. (c) 2007 by The University of Chicago. All rights reserved..</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{aj07,
+  author = {Acemoglu, Daron and Johnson, Simon},
+  date-added = {2015-03-16 21:09:40 +0000},
+  date-modified = {2015-03-17 17:15:40 +0000},
+  journal = {Journal of Political Economy},
+  keywords = {hc,pop},
+  month = dec,
+  number = {6},
+  pages = {925-985},
+  title = {Disease and Development: The Effect of Life Expectancy on Economic Growth},
+  url = {http://ideas.repec.org/a/ucp/jpolec/v115y2007i6p925-985.html},
+  volume = {115},
+  year = {2007},
+  bdsk-url-1 = {http://ideas.repec.org/a/ucp/jpolec/v115y2007i6p925-985.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="agn2013">Alesina, A., Giuliano, P. &amp; Nunn, N., 2013. On the Origins of Gender Roles: Women and the Plough. <i>The Quarterly Journal of Economics</i>, 128(2), pp.469–530. Available at: <a href="http://ideas.repec.org/a/oup/qjecon/v128y2013i2p469-530.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p> The study examines the historical origins of existing cross-cultural differences in beliefs and values regarding the appropriate role of women in society. We test the hypothesis that traditional agricultural practices influenced the historical gender division of labor and the evolution of gender norms. We find that, consistent with existing hypotheses, the descendants of societies that traditionally practiced plough agriculture today have less equal gender norms, measured using reported gender-role attitudes and female participation in the workplace, politics, and entrepreneurial activities. Our results hold looking across countries, across districts within countries, and across ethnicities within districts. To test for the importance of cultural persistence, we examine the children of immigrants living in Europe and the United States. We find that even among these individuals, all born and raised in the same country, those with a heritage of traditional plough use exhibit less equal beliefs about gender roles today. JEL Codes: D03, J16, N30. Copyright 2013, Oxford University Press.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{agn2013,
+  author = {Alesina, Alberto and Giuliano, Paola and Nunn, Nathan},
+  date-added = {2015-05-26 18:06:59 +0000},
+  date-modified = {2015-05-26 18:12:13 +0000},
+  journal = {The Quarterly Journal of Economics},
+  keywords = {biogeography},
+  number = {2},
+  pages = {469-530},
+  title = {{On the Origins of Gender Roles: Women and the Plough}},
+  url = {http://ideas.repec.org/a/oup/qjecon/v128y2013i2p469-530.html},
+  volume = {128},
+  year = {2013},
+  bdsk-url-1 = {http://ideas.repec.org/a/oup/qjecon/v128y2013i2p469-530.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="alesina_etal_2011">Alesina, A., Giuliano, P. &amp; Nunn, N., 2011. Fertility and the Plough. <i>NBER Working Papers</i>, (16718).</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>The current study finds that societies which historically engaged in plough agriculture today have lower fertility. We argue, and provide ethnographic evidence, that the finding is explained by the fact that with plough agriculture, children, like women, are relatively less useful in the field. The plough requires strength and eliminates the need for weeding, a task particularly suitable for women and children. This in turn generates a preference for fewer children, lowering fertility.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{alesina_etal_2011,
+  author = {Alesina, Alberto and Giuliano, Paola and Nunn, Nathan},
+  date-added = {2011-05-15 19:11:06 -0500},
+  date-modified = {2015-03-16 21:49:08 +0000},
+  journal = {NBER Working Papers},
+  keywords = {divergence;biogeography},
+  month = jan,
+  number = {16718},
+  title = {Fertility and the Plough},
+  year = {2011},
+  bdsk-file-1 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QHy4uL1BhcGVycy9BbGVzaW5hX2V0YWxfMjAxMS5QREbSFwsYGVdOUy5kYXRhTxEBmgAAAAABmgACAAAJRGlldHogU1NEAAAAAAAAAAAAAAAAAAAAAAAA0Hlj3EgrAAAABoARFUFsZXNpbmFfZXRhbF8yMDExLlBERgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG6bbJYvklAAAAAAAAAAAAAQACAAAJIAAAAAAAAAAAAAAAAAAAAAZQYXBlcnMAEAAIAADQeaosAAAAEQAIAADJY02FAAAAAQAQAAaAEQAGfpcABiebAAKTmQACAD5EaWV0eiBTU0Q6VXNlcnM6AGRpZXR6OgBEcm9wYm94OgBQYXBlcnM6AEFsZXNpbmFfZXRhbF8yMDExLlBERgAOACwAFQBBAGwAZQBzAGkAbgBhAF8AZQB0AGEAbABfADIAMAAxADEALgBQAEQARgAPABQACQBEAGkAZQB0AHoAIABTAFMARAASADBVc2Vycy9kaWV0ei9Ecm9wYm94L1BhcGVycy9BbGVzaW5hX2V0YWxfMjAxMS5QREYAEwABLwAAFQACAAz//wAAgAbSGxwdHlokY2xhc3NuYW1lWCRjbGFzc2VzXU5TTXV0YWJsZURhdGGjHR8gVk5TRGF0YVhOU09iamVjdNIbHCIjXE5TRGljdGlvbmFyeaIiIF8QD05TS2V5ZWRBcmNoaXZlctEmJ1Ryb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AIQAjgCwALUAvQJbAl0CYgJtAnYChAKIAo8CmAKdAqoCrQK/AsICxwAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAALJ}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="alsan2015">Alsan, M., 2015. The Effect of the TseTse Fly on African Development. <i>American Economic Review</i>, 105(1), pp.382–410. Available at: <a href="http://www.aeaweb.org/articles.php?doi=10.1257/aer.20130604">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>The TseTse fly is unique to Africa and transmits a parasite harmful to humans and lethal to livestock. This paper tests the hypothesis that the TseTse reduced the ability of Africans to generate an agricultural surplus historically. Ethnic groups inhabiting TseTse-suitable areas were less likely to use domesticated animals and the plow, less likely to be politically centralized, and had a lower population density. These correlations are not found in the tropics outside of Africa, where the fly does not exist. The evidence suggests current economic performance is affected by the TseTse through the channel of precolonial political centralization. (JEL I12, N57, O13, O17, Q12, Q16, Q18)</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{alsan2015,
+  author = {Alsan, Marcella},
+  date-added = {2015-05-26 17:54:15 +0000},
+  date-modified = {2015-05-26 18:00:24 +0000},
+  doi = {10.1257/aer.20130604},
+  journal = {American Economic Review},
+  keywords = {biogeography},
+  number = {1},
+  pages = {382-410},
+  title = {The Effect of the TseTse Fly on African Development},
+  url = {http://www.aeaweb.org/articles.php?doi=10.1257/aer.20130604},
+  volume = {105},
+  year = {2015},
+  bdsk-url-1 = {http://www.aeaweb.org/articles.php?doi=10.1257/aer.20130604},
+  bdsk-url-2 = {http://dx.doi.org/10.1257/aer.20130604}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="Ashraf:2012kx">Ashraf, Q. &amp; Galor, O., 2013. The "Out of Africa" Hypothesis, Human Genetic Diversity, and Comparative Economic Development. <i>American Economic Review</i>, (1), pp.1–46.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>This research advances and empirically establishes the hypothesis that, in the course of the prehistoric exodus of Homo sapiens out of Africa, variation in migratory distance to various settlements across the globe affected genetic diversity and has had a persistent hump-shaped effect on comparative economic development, reflecting the trade-off between the beneficial and the detrimental effects of diversity on productivity. While the low diversity of Native American populations and the high diversity of African populations have been detrimental for the development of these regions, the intermediate levels of diversity associated with European and Asian populations have been conducive for development.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{Ashraf:2012kx,
+  author = {Ashraf, Quamrul and Galor, Oded},
+  date-added = {2012-04-13 16:18:40 +0000},
+  date-modified = {2015-03-17 13:05:15 +0000},
+  journal = {American Economic Review},
+  keywords = {intro,biogeography},
+  number = {1},
+  pages = {1-46},
+  title = {The "Out of Africa" Hypothesis, Human Genetic Diversity, and Comparative Economic Development},
+  year = {2013}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="ag2013">Ashraf, Q. &amp; Galor, O., 2013. Genetic Diversity and the Origins of Cultural Fragmentation. <i>American Economic Review</i>, 103(3), pp.528–33. Available at: <a href="http://ideas.repec.org/a/aea/aecrev/v103y2013i3p528-33.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>The origin of the uneven distribution of ethnic and cultural fragmentation across countries has been underexplored, despite the importance attributed to the effects of diversity on the stability and prosperity of nations. Building on the role of deeply-rooted biogeographical forces in comparative development, this research empirically demonstrates that genetic diversity, predominantly determined during the prehistoric &quot;out of Africa&quot; migration of humans, is an underlying cause of various existing manifestations of ethnolinguistic heterogeneity. Further research may revolutionize our understanding of how economic development and the composition of human capital across the globe are affected by these deeply-rooted factors.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{ag2013,
+  author = {Ashraf, Quamrul and Galor, Oded},
+  date-added = {2015-05-26 18:09:54 +0000},
+  date-modified = {2015-05-26 18:11:44 +0000},
+  journal = {American Economic Review},
+  keywords = {biogeography},
+  month = may,
+  number = {3},
+  pages = {528-33},
+  title = {{Genetic Diversity and the Origins of Cultural Fragmentation}},
+  url = {http://ideas.repec.org/a/aea/aecrev/v103y2013i3p528-33.html},
+  volume = {103},
+  year = {2013},
+  bdsk-url-1 = {http://ideas.repec.org/a/aea/aecrev/v103y2013i3p528-33.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="ashraf2010dynamics">Ashraf, Q. &amp; Galor, O., 2011. Dynamics and stagnation in the malthusian epoch. <i>American Economic Review</i>, 101(5), pp.2003–41.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>This paper examines the central hypothesis of the influential Malthusian theory, according to which improvements in the technological environment during the preindustrial era had generated only temporary gains in income per capita, eventually leading to a larger, but not significantly richer, population. Exploiting exogenous sources of cross-country variations in land productivity and the level of technological advancement, the analysis demonstrates that, in accordance with the theory, technological superiority and higher land productivity had significant positive effects on population density but insignificant effects on the standard of living, during the time period 1-1500 CE.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{ashraf2010dynamics,
+  author = {Ashraf, Quamrul and Galor, Oded},
+  date-added = {2011-05-24 20:03:16 -0500},
+  date-modified = {2015-03-16 21:49:40 +0000},
+  journal = {American Economic Review},
+  keywords = {biogeography},
+  month = aug,
+  number = {5},
+  pages = {2003-41},
+  title = {Dynamics and stagnation in the malthusian epoch},
+  volume = {101},
+  year = {2011}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="am2013">Ashraf, Q. &amp; Michalopoulos, S., 2013. <i>Climatic Fluctuations and the Diffusion of Agriculture</i>, National Bureau of Economic Research, Inc. Available at: <a href="http://ideas.repec.org/p/nbr/nberwo/18765.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>This research examines the climatic origins of the diffusion of Neolithic agriculture across countries and archaeological sites. The theory suggests that a foraging society s history of climatic shocks shaped the timing of its adoption of farming. Specifically, as long as climatic disturbances did not lead to a collapse of the underlying resource base, the rate at which hunter-gatherers were climatically propelled to experiment with their habitats determined the accumulation of tacit knowledge complementary to farming. Consistent with the proposed hypothesis, the empirical investigation demonstrates that, conditional on biogeographic endowments, climatic volatility has a hump-shaped effect on the timing of the adoption of agriculture.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@techreport{am2013,
+  author = {Ashraf, Quamrul and Michalopoulos, Stelios},
+  date-added = {2015-05-27 16:28:25 +0000},
+  date-modified = {2015-05-27 16:29:06 +0000},
+  institution = {National Bureau of Economic Research, Inc},
+  keywords = {biogeography},
+  month = feb,
+  number = {18765},
+  title = {{Climatic Fluctuations and the Diffusion of Agriculture}},
+  type = {NBER Working Papers},
+  url = {http://ideas.repec.org/p/nbr/nberwo/18765.html},
+  year = {2013},
+  bdsk-url-1 = {http://ideas.repec.org/p/nbr/nberwo/18765.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="bbs2010">Barrios, S., Bertinelli, L. &amp; Strobl, E., 2010. Trends in Rainfall and Economic Growth in Africa: A Neglected Cause of the African Growth Tragedy. <i>The Review of Economics and Statistics</i>, 92(2), pp.350–366. Available at: <a href="http://ideas.repec.org/a/tpr/restat/v92y2010i2p350-366.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p> We examine the role of rainfall trends in poor growth performance of sub-Saharan African nations relative to other developing countries, using a new cross-country panel climatic data set in an empirical economic growth framework. Our results show that rainfall has been a significant determinant of poor economic growth for African nations but not for other countries. Depending on the benchmark measure of potential rainfall, we estimate that the direct impact under the scenario of no decline in rainfall would have resulted in a reduction of between around 15% and 40% of today’s gap in African GDP per capita relative to the rest of the developing world. \copyright 2010 The President and Fellows of Harvard College and the Massachusetts Institute of Technology.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{bbs2010,
+  author = {Barrios, Salvador and Bertinelli, Luisito and Strobl, Eric},
+  date-added = {2015-05-27 16:35:05 +0000},
+  date-modified = {2015-05-27 16:35:18 +0000},
+  journal = {The Review of Economics and Statistics},
+  keywords = {biogeography},
+  month = may,
+  number = {2},
+  pages = {350-366},
+  title = {{Trends in Rainfall and Economic Growth in Africa: A Neglected Cause of the African Growth Tragedy}},
+  url = {http://ideas.repec.org/a/tpr/restat/v92y2010i2p350-366.html},
+  volume = {92},
+  year = {2010},
+  bdsk-url-1 = {http://ideas.repec.org/a/tpr/restat/v92y2010i2p350-366.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="bmt90">Becker, G.S., Murphy, K.M. &amp; Tamura, R., 1990. Human Capital, Fertility, and Economic Growth. <i>Journal of Political Economy</i>, 98(5), pp.S12–37. Available at: <a href="http://ideas.repec.org/a/ucp/jpolec/v98y1990i5ps12-37.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p> The authors’ analysis of growth assumes endogenous fertility and a rising rate of return on human capital as the stock of human capital increases. When human capital is abundant, rates of return on human capital investments are high relative to rates of return on children, whereas, when human capital is scarce, rates of return on human capital are low relative to those on children. As a result, societies with limited human capital choose large families and invest little in each member; those with abundant human capital do the opposite. This leads to two stable steady states. One has large families and little human capital; the other has small families and perhaps growing human and physical capital. Copyright 1990 by University of Chicago Press.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{bmt90,
+  author = {Becker, Gary S and Murphy, Kevin M and Tamura, Robert},
+  date-modified = {2015-03-17 18:20:00 +0000},
+  journal = {Journal of Political Economy},
+  keywords = {hc,pop},
+  month = oct,
+  number = {5},
+  pages = {S12-37},
+  title = {{Human Capital, Fertility, and Economic Growth}},
+  url = {http://ideas.repec.org/a/ucp/jpolec/v98y1990i5ps12-37.html},
+  volume = {98},
+  year = {1990},
+  bdsk-url-1 = {http://ideas.repec.org/a/ucp/jpolec/v98y1990i5ps12-37.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="bl2012">Bleakley, H. &amp; Lin, J., 2012. Portage and Path Dependence. <i>The Quarterly Journal of Economics</i>, 127(2), pp.587–644. Available at: <a href="http://ideas.repec.org/a/oup/qjecon/v127y2012i2p587-644.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p> Many cities in North America formed at obstacles to water navigation, where continued transport required overland hauling or portage. Portage sites attracted commerce and supporting services, and places where the falls provided water power attracted manufacturing during early industrialization. We examine portage sites in the U.S. South, Mid-Atlantic, and Midwest, including those on the fall line, a geomorphological feature in the southeastern United States marking the final rapids on rivers before the ocean. Although their original advantages have long since become obsolete, we document the continuing importance of historical portage sites. We interpret these results as path dependence and contrast explanations based on sunk costs interacting with decreasing versus increasing returns to scale. Copyright 2012, Oxford University Press.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{bl2012,
+  author = {Bleakley, Hoyt and Lin, Jeffrey},
+  date-added = {2015-05-26 19:27:56 +0000},
+  date-modified = {2015-05-26 19:28:14 +0000},
+  journal = {The Quarterly Journal of Economics},
+  keywords = {biogeography},
+  number = {2},
+  pages = {587-644},
+  title = {{Portage and Path Dependence}},
+  url = {http://ideas.repec.org/a/oup/qjecon/v127y2012i2p587-644.html},
+  volume = {127},
+  year = {2012},
+  bdsk-url-1 = {http://ideas.repec.org/a/oup/qjecon/v127y2012i2p587-644.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="bw98">Bloom, D.E. &amp; Williamson, J.G., 1998. Demographic Transitions and Economic Miracles in Emerging Asia. <i>World Bank Economic Review</i>, 12(3), pp.419–55. Available at: <a href="http://ideas.repec.org/a/oup/wbecrv/v12y1998i3p419-55.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>The demographic transition a change from high to low rates of mortality and fertility has been more dramatic in East Asia during this century than in any other region or historical period. By introducing demographic variables into an empirical model of economic growth, this essay shows that this transition has contributed substantially to East Asia’s so-called economic miracle. The ’miracle’ occurred in part because East Asia’s demographic transition resulted in its working-age population growing at a much faster pace than its dependent population during the period 1965-1990, thereby expanding the per capita productive capacity of East Asian economies. This effect was not inevitable; rather, it occured because East Asian countries had social, economic, and political institutions and policies that allowed them to realize the growth potential created by the transition. The empirical analyses indicate that population growth has a purely transitional effect on economic growth; this effect operates only when the dependent and working-age populations are growing at different rates. An important implication of these results is that future demographic change will tend to depress growth rates in East Asia, while it will promote more rapid economic growth in Southeast and South Asia.<p>(This abstract was borrowed from another version of this item.)</p>
+		
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{bw98,
+  author = {Bloom, David E and Williamson, Jeffrey G},
+  date-added = {2015-03-17 17:09:04 +0000},
+  date-modified = {2015-03-17 17:09:26 +0000},
+  journal = {World Bank Economic Review},
+  keywords = {pop,hc},
+  month = sep,
+  number = {3},
+  pages = {419-55},
+  title = {{Demographic Transitions and Economic Miracles in Emerging Asia}},
+  url = {http://ideas.repec.org/a/oup/wbecrv/v12y1998i3p419-55.html},
+  volume = {12},
+  year = {1998},
+  bdsk-url-1 = {http://ideas.repec.org/a/oup/wbecrv/v12y1998i3p419-55.html}
+}
+</pre>
+		</details></li>
+
+
+
+<li><span id="Clark:2007fk">Clark, G., 2007. <i>A Farewell to Alms</i>, Princeton, NJ: Princeton University Press.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@book{Clark:2007fk,
+  address = {Princeton, NJ},
+  author = {Clark, Gregory},
+  date-added = {2012-04-13 15:44:51 +0000},
+  date-modified = {2015-03-17 18:21:24 +0000},
+  keywords = {intro,divergence,pop},
+  publisher = {Princeton University Press},
+  title = {A Farewell to Alms},
+  year = {2007}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="Cook2015The-Natural-Sel">Cook, C.J., 2015. The Natural Selection of Infectious Disease Resistance and Its Effect on Contemporary Health. <i>Review of Economics and Statistics</i>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>This paper empirically tests the association between genetically determined resistance to infectious disease and cross-country health differences. A country-level measure of genetic diversity for the system of genes associated with the recognition and disposal of foreign pathogens is constructed. Genetic diversity within this system has been shown to reduce the virulence and prevalence of infectious diseases and is hypothesized to have been naturally selected from historical exposure to infectious pathogens. Base estimation shows a statistically strong, robust, and positive relationship between this constructed measure and country-level health outcomes in times prior to, but not after, the international epidemiological transition.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{Cook2015The-Natural-Sel,
+  author = {Cook, C. Justin},
+  date-added = {2015-03-16 20:46:50 +0000},
+  date-modified = {2015-03-16 21:48:12 +0000},
+  journal = {Review of Economics and Statistics},
+  keywords = {biogeography},
+  title = {The Natural Selection of Infectious Disease Resistance and Its Effect on Contemporary Health},
+  year = {2015}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="cook14">Cook, C.J., 2014. Potatoes, milk, and the Old World population boom. <i>Journal of Development Economics</i>, 110(C), pp.123–138. Available at: <a href="http://ideas.repec.org/a/eee/deveco/v110y2014icp123-138.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>This paper explores the role of two foods, potatoes and milk, in explaining the increase in economic development experienced throughout the Old World in the 18th and 19th centuries. Nunn and Qian (2011) show the introduction of the potato from the New World has a significant explanatory role for within country population and urbanization growth over this period. I expand on this by considering the role of milk consumption, which is hypothesized to be a complement in diet to potatoes due to a differential composition of essential nutrients. Using a country-level measure for the suitability of milk consumption, the frequency of lactase persistence, I show that the marginal effect of potatoes on post-1700 population and urbanization growth is positively related to milk consumption. As the frequency of milk consumption approaches unity, the marginal effect of potatoes more than doubles in magnitude compared to the baseline estimate of Nunn and Qian.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{cook14,
+  author = {Cook, C. Justin},
+  date-added = {2015-03-16 20:41:32 +0000},
+  date-modified = {2015-05-28 19:20:26 +0000},
+  journal = {Journal of Development Economics},
+  keywords = {biogeography},
+  number = {C},
+  pages = {123-138},
+  title = {{Potatoes, milk, and the Old World population boom}},
+  url = {http://ideas.repec.org/a/eee/deveco/v110y2014icp123-138.html},
+  volume = {110},
+  year = {2014},
+  bdsk-url-1 = {http://ideas.repec.org/a/eee/deveco/v110y2014icp123-138.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="cook2014role">Cook, C.J., 2014. The role of lactase persistence in precolonial development. <i>Journal of Economic Growth</i>, 19(4), pp.369–406.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{cook2014role,
+  author = {Cook, C. Justin},
+  date-added = {2015-03-16 20:44:20 +0000},
+  date-modified = {2015-03-16 21:48:12 +0000},
+  journal = {Journal of Economic Growth},
+  keywords = {biogeography},
+  number = {4},
+  pages = {369--406},
+  publisher = {Springer},
+  title = {The role of lactase persistence in precolonial development},
+  volume = {19},
+  year = {2014}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="cs15">Cronqvist, H. &amp; Siegel, S., 2015. The Origins of Savings Behavior. <i>Journal of Political Economy</i>, 123(1), pp.pp. 123–169. Available at: <a href="http://www.jstor.org/stable/10.1086/679284">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>Analyzing the savings behavior of a large sample of identical and fraternal twins, we find that genetic differences explain about 33 percent of the variation in savings propensities across individuals. Individuals are born with a persistent genetic predisposition to a specific savings behavior. Parenting contributes to the variation in savings rates among younger individuals, but its effect decays over time. The environment when growing up (e.g., parents’ wealth) moderates genetic effects. Finally, savings behavior is genetically correlated with income growth, smoking, and obesity, suggesting that the genetic component of savings behavior reflects genetic variation in time preferences or self-control.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{cs15,
+  author = {Cronqvist, Henrik and Siegel, Stephan},
+  copyright = {Copyright {\copyright} 2015 The University of Chicago Press},
+  date-added = {2015-03-16 20:37:09 +0000},
+  date-modified = {2015-03-16 21:48:12 +0000},
+  issn = {00223808},
+  journal = {Journal of Political Economy},
+  jstor_articletype = {research-article},
+  jstor_formatteddate = {February 2015},
+  keywords = {biogeography},
+  language = {English},
+  number = {1},
+  pages = {pp. 123-169},
+  publisher = {The University of Chicago Press},
+  title = {The Origins of Savings Behavior},
+  url = {http://www.jstor.org/stable/10.1086/679284},
+  volume = {123},
+  year = {2015},
+  bdsk-url-1 = {http://www.jstor.org/stable/10.1086/679284}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="djo2012">Dell, M., Jones, B.F. &amp; Olken, B.A., 2012. Temperature Shocks and Economic Growth: Evidence from the Last Half Century. <i>American Economic Journal: Macroeconomics</i>, 4(3), pp.66–95. Available at: <a href="http://ideas.repec.org/a/aea/aejmac/v4y2012i3p66-95.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>This paper uses historical fluctuations in temperature within countries to identify its effects on aggregate economic outcomes. We find three primary results. First, higher temperatures substantially reduce economic growth in poor countries. Second, higher temperatures may reduce growth rates, not just the level of output. Third, higher temperatures have wide-ranging effects, reducing agricultural output, industrial output, and political stability. These findings inform debates over climate’s role in economic development and suggest the possibility of substantial negative impacts of higher temperatures on poor countries. (JEL E23, O13, Q54, Q56)</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{djo2012,
+  author = {Dell, Melissa and Jones, Benjamin F. and Olken, Benjamin A.},
+  date-added = {2015-05-27 16:37:45 +0000},
+  date-modified = {2015-05-27 16:37:58 +0000},
+  journal = {American Economic Journal: Macroeconomics},
+  keywords = {biogeography},
+  month = jul,
+  number = {3},
+  pages = {66-95},
+  title = {{Temperature Shocks and Economic Growth: Evidence from the Last Half Century}},
+  url = {http://ideas.repec.org/a/aea/aejmac/v4y2012i3p66-95.html},
+  volume = {4},
+  year = {2012},
+  bdsk-url-1 = {http://ideas.repec.org/a/aea/aejmac/v4y2012i3p66-95.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="Diamond:1997qf">Diamond, J., 1997. <i>Guns, Germs, and Steel</i>, New York, NY: W. W. Norton and Co.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@book{Diamond:1997qf,
+  address = {New York, NY},
+  author = {Diamond, Jared},
+  date-added = {2012-04-13 15:59:05 +0000},
+  date-modified = {2015-03-17 13:06:44 +0000},
+  keywords = {intro,biogeography},
+  publisher = {W. W. Norton and Co.},
+  title = {Guns, Germs, and Steel},
+  year = {1997}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="Easterly:2003kx">Easterly, W. &amp; Levine, R., 2003. Tropics, Germs, and Crops: How Endowments Influence Economic Development. <i>Journal of Monetary Economics</i>, 50(1), pp.3–39.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>Does economic development depend on geographic endowments like temperate instead of tropical location, the ecological conditions shaping diseases, or an environment good for grains or certain cash crops? Or do these endowments of tropics, germs, and crops affect economic development only through institutions or policies? We test the endowment, institution, and policy views against each other using cross country evidence. We find evidence that tropics, germs, and crops affect development through institutions. We find no evidence that tropics, germs, and crops affect country incomes directly other than through institutions, nor do we find any effect of policies on development once we control for institutions.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{Easterly:2003kx,
+  annote = {Easterly is cool},
+  author = {Easterly, William and Levine, Ross},
+  date-added = {2012-04-13 16:41:45 +0000},
+  date-modified = {2015-03-17 13:07:04 +0000},
+  journal = {Journal of Monetary Economics},
+  keywords = {intro;inst,biogeography},
+  month = jan,
+  number = {1},
+  pages = {3-39},
+  title = {Tropics, Germs, and Crops: How Endowments Influence Economic Development},
+  volume = {50},
+  year = {2003}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="fenske2014">Fenske, J., 2014. Ecology, Trade, And States In Pre-Colonial Africa. <i>Journal of the European Economic Association</i>, 12(3), pp.612–640. Available at: <a href="http://ideas.repec.org/a/bla/jeurec/v12y2014i3p612-640.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p> State capacity matters for growth. I test Bates’ explanation of pre-colonial African states. He argues that trade across ecological boundaries promoted states. I find that African societies in ecologically diverse environments had more centralized states. This is robust to reverse causation, omitted heterogeneity, and alternative interpretations of the link between diversity and states. The result survives including non-African societies. I test mechanisms connecting trade to states, and find that trade supported class stratification between rulers and ruled. I underscore the importance of ethnic institutions and inform our knowledge of the effects of trade on institutions.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{fenske2014,
+  author = {Fenske, James},
+  date-added = {2015-05-12 00:49:57 +0000},
+  date-modified = {2015-05-12 00:50:25 +0000},
+  journal = {Journal of the European Economic Association},
+  keywords = {biogeography,inst},
+  month = jun,
+  number = {3},
+  pages = {612-640},
+  title = {{Ecology, Trade, And States In Pre-Colonial Africa}},
+  url = {http://ideas.repec.org/a/bla/jeurec/v12y2014i3p612-640.html},
+  volume = {12},
+  year = {2014},
+  bdsk-url-1 = {http://ideas.repec.org/a/bla/jeurec/v12y2014i3p612-640.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="galor12">Galor, O., 2012. The demographic transition: causes and consequences. <i>Cliometrica, Journal of Historical Economics and Econometric History</i>, 6(1), pp.1–28. Available at: <a href="http://ideas.repec.org/a/afc/cliome/v6y2012i1p1-28.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>This paper develops the theoretical foundations and the testable implications of the various mechanisms that have been proposed as possible triggers for the demographic transition. Moreover, it examines the empirical validity of each of the theories and their significance for the understanding of the transition from stagnation to growth. The analysis suggests that the rise in the demand for human capital in the process of development was the main trigger for the decline in fertility and the transition to modern growth.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{galor12,
+  author = {Galor, Oded},
+  date-added = {2015-03-17 17:20:19 +0000},
+  date-modified = {2015-03-17 17:20:38 +0000},
+  journal = {Cliometrica, Journal of Historical Economics and Econometric History},
+  keywords = {hc,pop},
+  month = jan,
+  number = {1},
+  pages = {1-28},
+  title = {{The demographic transition: causes and consequences}},
+  url = {http://ideas.repec.org/a/afc/cliome/v6y2012i1p1-28.html},
+  volume = {6},
+  year = {2012},
+  bdsk-url-1 = {http://ideas.repec.org/a/afc/cliome/v6y2012i1p1-28.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="galor2002natural">Galor, O. &amp; Moav, O., 2002. Natural Selection and the Origin of Economic Growth. <i>Quarterly Journal of Economics</i>, 117(4), pp.1133–1191.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>This research develops an evolutionary growth theory that captures the interplay between the evolution of mankind and economic growth since the emergence of the human species. The theory suggests that the struggle for survival that had characterized most of human existence generated an evolutionary advantage to human traits that were complementary to the growth process, triggering the takeoff from an epoch of stagnation to sustained economic growth.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{galor2002natural,
+  author = {Galor, Oded and Moav, Omer},
+  date-added = {2011-05-24 20:01:57 -0500},
+  date-modified = {2015-03-17 13:16:35 +0000},
+  journal = {Quarterly Journal of Economics},
+  keywords = {divergence,biogeography},
+  number = {4},
+  pages = {1133--1191},
+  publisher = {MIT Press},
+  title = {Natural Selection and the Origin of Economic Growth},
+  volume = {117},
+  year = {2002}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="galorozak2014">Galor, O. &amp; Ozak, O., 2014. <i>The Agricultural Origins of Time Preference</i>, Brown University, Department of Economics. Available at: <a href="http://ideas.repec.org/p/bro/econwp/2014-5.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>This research explores the origins of the distribution of time preference across regions. It advances the hypothesis, and establishes empirically, that geographical variations in the incentives to delay consumption in favor of lucrative investment opportunities have had a persistent effect on the distribution of long-term orientation across societies. In particular, exploiting a natural experiment associated with the Columbian Exchange, the research establishes that agro-climatic characteristics in the preindustrial era that were conducive to higher return to agricultural investment, triggered selection and learning processes that had a persistent positive effect on the prevalence of long-term orientation in the contemporary era.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@techreport{galorozak2014,
+  author = {Galor, Oded and Ozak, Omer},
+  date-added = {2015-05-26 18:14:58 +0000},
+  date-modified = {2015-05-26 18:15:15 +0000},
+  institution = {Brown University, Department of Economics},
+  keywords = {biogeography},
+  number = {2014-5},
+  title = {The Agricultural Origins of Time Preference},
+  type = {Working Papers},
+  url = {http://ideas.repec.org/p/bro/econwp/2014-5.html},
+  year = {2014},
+  bdsk-url-1 = {http://ideas.repec.org/p/bro/econwp/2014-5.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="gw00">Galor, O. &amp; Weil, D.N., 2000. Population, technology, and growth: From Malthusian stagnation to the demographic transition and beyond. <i>The American Economic Review</i>, 90(4), pp.806–828. Available at: <a href="https://ideas.repec.org/a/aea/aecrev/v90y2000i4p806-828.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>This paper develops a unified growth model that captures the historical evolution of population, technology, and output. It encompasses the endogenous transition between three regimes that have characterized economic development. The economy evolves from a Malthusian regime, where technological progress is slow and population growth prevents any sustained rise in income per capita, into a Post-Malthusian regime, where technological progress rises and population growth absorbs only part of output growth. Ultimately, a demographic transition reverses the positive relationship between income and population growth, and the economy enters a Modern Growth regime, with reduced population growth and sustained income growth.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{gw00,
+  author = {Galor, Oded and Weil, David N.},
+  date-added = {2011-05-24 20:01:40 -0500},
+  date-modified = {2015-03-17 18:48:18 +0000},
+  journal = {The American Economic Review},
+  keywords = {divergence; intro; ec7350;hc,pop},
+  number = {4},
+  pages = {806--828},
+  publisher = {JSTOR},
+  title = {Population, technology, and growth: From Malthusian stagnation to the demographic transition and beyond},
+  url = {https://ideas.repec.org/a/aea/aecrev/v90y2000i4p806-828.html},
+  volume = {90},
+  year = {2000},
+  bdsk-url-1 = {https://ideas.repec.org/a/aea/aecrev/v90y2000i4p806-828.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="kremer93">Kremer, M., 1993. Population Growth and Technological Change: One Million B.C. to 1990. <i>The Quarterly Journal of Economics</i>, 108(3), pp.681–716. Available at: <a href="http://ideas.repec.org/a/tpr/qjecon/v108y1993i3p681-716.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p> The nonrivalry of technology, as modeled in the endogenous growth literature, implies that high population spurs technological change. This paper constructs and empirically tests a model of long-run world population growth combining this implication with the Malthusian assumption that technology limits population. The model predicts that over most of history, the growth rate of population will be proportional to its level. Empirical tests support this prediction and show that historically, among societies with no possibility for technological contact, those with larger initial populations have had faster technological change and population growth. Copyright 1993, the President and Fellows of Harvard College and the Massachusetts Institute of Technology.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{kremer93,
+  author = {Kremer, Michael},
+  date-added = {2015-03-17 17:04:46 +0000},
+  date-modified = {2015-03-17 17:09:52 +0000},
+  journal = {The Quarterly Journal of Economics},
+  keywords = {pop,hc},
+  month = aug,
+  number = {3},
+  pages = {681-716},
+  title = {{Population Growth and Technological Change: One Million B.C. to 1990}},
+  url = {http://ideas.repec.org/a/tpr/qjecon/v108y1993i3p681-716.html},
+  volume = {108},
+  year = {1993},
+  bdsk-url-1 = {http://ideas.repec.org/a/tpr/qjecon/v108y1993i3p681-716.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="lee88">Lee, R.D., 1988. Induced population growth and induced technological progress. <i>Mathematical Population Studies</i>, 1(3), pp.265–288. Available at: <a href="http://dx.doi.org/10.1080/08898488809525278">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{lee88,
+  author = {Lee, Ronald Demos},
+  date-added = {2015-03-17 17:14:12 +0000},
+  date-modified = {2015-03-17 18:45:13 +0000},
+  journal = {Mathematical Population Studies},
+  keywords = {pop,hc},
+  note = {PMID: 12281209},
+  number = {3},
+  pages = {265-288},
+  title = {Induced population growth and induced technological progress},
+  url = {http://dx.doi.org/10.1080/08898488809525278},
+  volume = {1},
+  year = {1988},
+  bdsk-url-1 = {http://dx.doi.org/10.1080/08898488809525278}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="ms09">Manuelli, R. &amp; Seshadri, A., 2009. Explaining International Fertility Differences. <i>Quarterly Journal of Economics</i>, 124(2), pp.771–807. Available at: <a href="https://ideas.repec.org/a/tpr/qjecon/v124y2009i2p771-807.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>Why do fertility rates vary so much across countries? Why are European fertility rates so much lower than American fertility rates? To answer these questions we extend the Barro-Becker framework to incorporate the decision to accumulate human capital (which determines earnings) and health capital (which determines life span). We find that cross-country differences in productivity and taxes go a long way toward explaining the observed differences in fertility and mortality.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{ms09,
+  author = {Manuelli, Rodolfo and Seshadri, Ananth},
+  date-added = {2011-05-24 20:19:14 -0500},
+  date-modified = {2015-03-17 18:48:55 +0000},
+  journal = {Quarterly Journal of Economics},
+  keywords = {hc,ec7350,pop},
+  number = {2},
+  pages = {771--807},
+  publisher = {MIT Press},
+  title = {Explaining International Fertility Differences},
+  url = {https://ideas.repec.org/a/tpr/qjecon/v124y2009i2p771-807.html},
+  volume = {124},
+  year = {2009},
+  bdsk-url-1 = {https://ideas.repec.org/a/tpr/qjecon/v124y2009i2p771-807.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="mich2012">Michalopoulos, S., 2012. The Origins of Ethnolinguistic Diversity. <i>American Economic Review</i>, 102(4), pp.1508–39. Available at: <a href="http://ideas.repec.org/a/aea/aecrev/v102y2012i4p1508-39.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p> This study explores the determinants of ethnolinguistic diversity within as well as across countries, shedding light on its geographic origins. The empirical analysis conducted across countries, virtual countries, and pairs of contiguous regions establishes that geographic variability, captured by variation in regional land quality and elevation, is a fundamental determinant of contemporary linguistic diversity. The findings are consistent with the proposed hypothesis that differences in land endowments gave rise to location-specific human capital, leading to the formation of localized ethnicities. (JEL J15, J24, Z13)</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{mich2012,
+  author = {Michalopoulos, Stelios},
+  date-added = {2015-05-26 18:10:58 +0000},
+  date-modified = {2015-05-26 18:11:36 +0000},
+  journal = {American Economic Review},
+  keywords = {biogeography},
+  month = jun,
+  number = {4},
+  pages = {1508-39},
+  title = {{The Origins of Ethnolinguistic Diversity}},
+  url = {http://ideas.repec.org/a/aea/aecrev/v102y2012i4p1508-39.html},
+  volume = {102},
+  year = {2012},
+  bdsk-url-1 = {http://ideas.repec.org/a/aea/aecrev/v102y2012i4p1508-39.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="NBERw21907">Michalopoulos, S., Putterman, L. &amp; Weil, D.N., 2016. <i>The Influence of Ancestral Lifeways on Individual Economic Outcomes in Sub-Saharan Africa</i>, National Bureau of Economic Research. Available at: <a href="http://www.nber.org/papers/w21907">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>We explore the role of an individual’s historical lineage in determining economic status, holding constant his or her current location. This is complementary to the more common approach to studying how history shapes economic outcomes across locations. Motivated by a large literature in social sciences stressing the beneficial influence of agricultural transition on contemporary economic performance at the level of countries, we examine the relative status of descendants of agriculturalists vs. pastoralists. We match individual-level survey data with information on the historical lifeways of ancestors, focusing on Africa, where the transition away from such modes of production began only recently. Within enumeration areas and occupational groups, we find that individuals from ethnicities that derived a larger share of subsistence from agriculture in the pre-colonial era are today more educated and wealthy. A tentative exploration of channels suggests that differences in attitudes and beliefs as well as differential treatment by others, including less political power, may contribute to these divergent outcomes.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@techreport{NBERw21907,
+  author = {Michalopoulos, Stelios and Putterman, Louis and Weil, David N.},
+  date-added = {2016-01-25 14:56:55 +0000},
+  date-modified = {2016-01-25 14:57:54 +0000},
+  doi = {10.3386/w21907},
+  institution = {National Bureau of Economic Research},
+  keywords = {ec7350,biogeography},
+  month = jan,
+  number = {21907},
+  series = {Working Paper Series},
+  title = {The Influence of Ancestral Lifeways on Individual Economic Outcomes in Sub-Saharan Africa},
+  type = {Working Paper},
+  url = {http://www.nber.org/papers/w21907},
+  year = {2016},
+  bdsk-url-1 = {http://www.nber.org/papers/w21907},
+  bdsk-url-2 = {http://dx.doi.org/10.3386/w21907}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="mfm2014">Motamed, M.J., Florax, R.J.G.M. &amp; Masters, W.A., 2014. Agriculture, transportation and the timing of urbanization: Global analysis at the grid cell level. <i>Journal of Economic Growth</i>, 19(3), pp.339–368. Available at: <a href="http://dx.doi.org/10.1007/s10887-014-9104-x">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{mfm2014,
+  author = {Motamed, Mesbah J. and Florax, Raymond J.G.M. and Masters, William A.},
+  date-added = {2015-05-26 19:46:30 +0000},
+  date-modified = {2015-05-26 19:50:12 +0000},
+  issn = {1381-4338},
+  journal = {Journal of Economic Growth},
+  keywords = {biogeography},
+  number = {3},
+  pages = {339-368},
+  publisher = {Springer US},
+  title = {Agriculture, transportation and the timing of urbanization: Global analysis at the grid cell level},
+  url = {http://dx.doi.org/10.1007/s10887-014-9104-x},
+  volume = {19},
+  year = {2014},
+  bdsk-url-1 = {http://dx.doi.org/10.1007/s10887-014-9104-x}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="msv89">Murphy, K.M., Shleifer, A. &amp; Vishny, R.W., 1989. Income Distribution, Market Size, and Industrialization. <i>The Quarterly Journal of Economics</i>, 104(3), pp.537–64. Available at: <a href="http://ideas.repec.org/a/tpr/qjecon/v104y1989i3p537-64.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p> When world trade is costly, a country can profitably industrialize only if its domestic markets are large enough. In such a country, for increasing returns technologies to break even, sales must be high enough to cover fixed setup costs. The authors suggest two conditions conducive to industrialization. First, a leading sector, such as agriculture or exports, must grow and provide the source of autonomous demand for manufactures. Second, income generated by this leading sector must be broadly enough distributed that it materializes as demand for a broad range of domestic manufactures. These conditions have been important in several historical growth episodes. Copyright 1989, the President and Fellows of Harvard College and the Massachusetts Institute of Technology.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{msv89,
+  author = {Murphy, Kevin M and Shleifer, Andrei and Vishny, Robert W},
+  date-added = {2015-03-17 18:39:12 +0000},
+  date-modified = {2015-03-17 18:39:37 +0000},
+  journal = {The Quarterly Journal of Economics},
+  keywords = {theory,pop},
+  month = aug,
+  number = {3},
+  pages = {537-64},
+  title = {{Income Distribution, Market Size, and Industrialization}},
+  url = {http://ideas.repec.org/a/tpr/qjecon/v104y1989i3p537-64.html},
+  volume = {104},
+  year = {1989},
+  bdsk-url-1 = {http://ideas.repec.org/a/tpr/qjecon/v104y1989i3p537-64.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="Nunn2011">Nunn, N. &amp; Qian, N., 2011. The Potato’s Contribution to Population and Urbanization: Evidence from a Historical Experiment. <i>The Quarterly Journal of Economics</i>, 126(2), pp.pp. 593–650. Available at: <a href="http://www.jstor.org/stable/23015685">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>We exploit regional variation in suitability for cultivating potatoes, together with time variation arising from their introduction to the Old World from the Americas, to estimate the impact of potatoes on Old World population and urbanization. Our results show that the introduction of the potato was responsible for a significant portion of the increase in population and urbanization observed during the eighteenth and nineteenth centuries. According to our most conservative estimates, the introduction of the potato accounts for approximately one-quarter of the growth in Old World population and urbanization between 1700 and 1900. Additional evidence from within-country comparisons of city populations and adult heights also confirms the cross-country findings.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{Nunn2011,
+  author = {Nunn, Nathan and Qian, Nancy},
+  copyright = {Copyright {\copyright} 2011 Oxford University Press},
+  date-modified = {2015-03-17 13:53:18 +0000},
+  issn = {00335533},
+  journal = {The Quarterly Journal of Economics},
+  jstor_articletype = {research-article},
+  jstor_formatteddate = {May 2011},
+  keywords = {ec7350,biogeography,divergence},
+  number = {2},
+  pages = {pp. 593-650},
+  publisher = {Oxford University Press},
+  title = {The Potato's Contribution to Population and Urbanization: Evidence from a Historical Experiment},
+  url = {http://www.jstor.org/stable/23015685},
+  volume = {126},
+  year = {2011},
+  bdsk-url-1 = {http://www.jstor.org/stable/23015685}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="oh2005">Olsson, O. &amp; Hibbs, D.J., 2005. Biogeography and long-run economic development. <i>European Economic Review</i>, 49(4), pp.909–938. Available at: <a href="http://ideas.repec.org/a/eee/eecrev/v49y2005i4p909-938.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>The transition from a hunter-gather economy to agricultural production, which made possible the endogenous technological progress that ultimately led to the industrial revolution, is one of the most important events in the thousands of years of humankind’s economic development. In this paper we present theory and evidence showing that exogenous geography and initial condition biogeography exerted decisive influence on the location and timing of transitions to sedentary agriculture, to complex social organization and, eventually, to modern industrial production. Evidence from a large cross-section of countries indicates that the effects of geographic and biogeographic endowments on contemporary levels of economic development are remarkably strong.<p>(This abstract was borrowed from another version of this item.)</p>
+		
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{oh2005,
+  author = {Olsson, Ola and Hibbs, Douglas Jr.},
+  date-added = {2015-05-27 16:30:04 +0000},
+  date-modified = {2015-05-27 16:30:17 +0000},
+  journal = {European Economic Review},
+  keywords = {biogeography},
+  month = may,
+  number = {4},
+  pages = {909-938},
+  title = {{Biogeography and long-run economic development}},
+  url = {http://ideas.repec.org/a/eee/eecrev/v49y2005i4p909-938.html},
+  volume = {49},
+  year = {2005},
+  bdsk-url-1 = {http://ideas.repec.org/a/eee/eecrev/v49y2005i4p909-938.html}
+}
+</pre>
+		</details></li>
+
+
+
+<li><span id="op2015">Olsson, O. &amp; Paik, C., 2015. <i>Long-run Cultural Divergence: Evidence from the Neolithic Revolution</i>, <a href="https://gupea.ub.gu.se/handle/2077/38815">Link</a>: University of Gothenburg.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>This paper investigates the long-run infuence of the Neolithic Revolution on contemporary cultural norms and institutions as reflected in the dimension of collectivism-individualism. We outline an agricultural origins-model of cultural divergence where we claim that the advent of farming in a core region was characterized by collectivist values and eventually triggered the out-migration of individualistic farmers towards more and more peripheral areas. This migration pattern caused the initial cultural divergence, which remained persistent over generations. The key mechanism is demonstrated in an extended Malthusian growth model that explicitly models cultural dynamics and a migration choice for individualistic farmers. Using detailed data on the date of adoption of Neolithic agriculture among Western regions and countries, the empirical findings show that the regions which adopted agriculture early also value obedience more and feel less in control of their lives. They have also had very little experience of democracy during the last century. The findings add to the literature by suggesting the possibility of extremely long lasting norms and beliefs infuencing today’s socioeconomic outcomes.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@techreport{op2015,
+  address = {https://gupea.ub.gu.se/handle/2077/38815},
+  author = {Olsson, Ola and Paik, Christopher},
+  date-added = {2015-08-10 16:10:30 +0000},
+  date-modified = {2016-01-25 14:58:37 +0000},
+  institution = {University of Gothenburg},
+  keywords = {biogeography},
+  title = {Long-run Cultural Divergence: Evidence from the Neolithic Revolution},
+  year = {2015}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="rs01b">Rappaport, J. &amp; Sachs, J.D., 2003. The United States as a Coastal Nation. <i>Journal of Economic Growth</i>, 8(1), pp.5–46. Available at: <a href="http://ideas.repec.org/a/kap/jecgro/v8y2003i1p5-46.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p> US economic activity is overwhelmingly concentrated at its ocean and Great Lakes coasts, reflecting a large contribution from coastal proximity to productivity and quality of life. Extensively controlling for correlated natural attributes and initial conditions decisively rejects that the coastal concentration of economic activity is spurious or just derives from historical forces long since dissipated. Measuring proximity based on coastal attributes that contribute to either productivity or quality of life, but not to both, suggests that the coastal concentration derives primarily from a productivity effect but also, increasingly, from a quality of life effect. Copyright 2003 by Kluwer Academic Publishers</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{rs01b,
+  author = {Rappaport, Jordan and Sachs, Jeffrey D},
+  date-added = {2015-03-16 21:04:07 +0000},
+  date-modified = {2015-03-16 21:48:23 +0000},
+  journal = {Journal of Economic Growth},
+  keywords = {biogeography},
+  month = mar,
+  number = {1},
+  pages = {5-46},
+  title = {The United States as a Coastal Nation},
+  url = {http://ideas.repec.org/a/kap/jecgro/v8y2003i1p5-46.html},
+  volume = {8},
+  year = {2003},
+  bdsk-url-1 = {http://ideas.repec.org/a/kap/jecgro/v8y2003i1p5-46.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="spolaore2009diffusion">Spolaore, E. &amp; Wacziarg, R., 2009. The Diffusion of Development. <i>Quarterly Journal of Economics</i>, 124(2), pp.469–529.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>We find that genetic distance, a measure associated with the time elapsed since two populations’ last common ancestors, has a statistically and economically significant effect on income differences across countries, even controlling for measures of geographical distance, climatic differences, transportation costs, and measures of historical, religious, and linguistic distance. We provide an economic interpretation of these findings in terms of barriers to the diffusion of development from the world technological frontier, implying that income differences should be a function of relative genetic distance from the frontier. The empirical evidence strongly supports this barriers interpretation.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{spolaore2009diffusion,
+  author = {Spolaore, Enrico and Wacziarg, Romain},
+  date-added = {2011-05-24 20:17:49 -0500},
+  date-modified = {2015-03-16 21:52:26 +0000},
+  journal = {Quarterly Journal of Economics},
+  keywords = {divergence,ec7350,flow,biogeography},
+  number = {2},
+  pages = {469--529},
+  publisher = {MIT Press},
+  title = {The Diffusion of Development},
+  volume = {124},
+  year = {2009}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="strulik2008geography">Strulik, H., 2008. Geography, health, and the pace of demo-economic development. <i>Journal of Development Economics</i>, 86(1), pp.61–75.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>This paper investigates the impact of subsistence consumption and extrinsic and intrinsic causes of child mortality on fertility and child expenditure. It offers a theory for why mankind multiplies at higher rates at geographically unfavorable, tropical locations. Placed into a macroeconomic framework this behavior creates an indirect channel through which geography shapes economic performance. It is explained why it are countries of low absolute latitude where we observe exceedingly slow (if not stalled) economic development and demographic transition.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{strulik2008geography,
+  author = {Strulik, Holger},
+  date-added = {2011-05-24 19:46:10 -0500},
+  date-modified = {2015-03-17 13:16:51 +0000},
+  journal = {Journal of Development Economics},
+  keywords = {biogeography},
+  number = {1},
+  pages = {61--75},
+  publisher = {Elsevier},
+  title = {Geography, health, and the pace of demo-economic development},
+  volume = {86},
+  year = {2008}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="dv2012">Vollrath, D., 2012. Land tenure, population, and long-run growth. <i>Journal of Population Economics</i>, 25(3), pp.833–852.</span>  &nbsp; <a href="https://dl.dropboxusercontent.com/u/6823742/JPopE_final.pdf">Paper</a>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>This paper brings together the development literature on land tenure with current research on population and long-run growth. Land-owners make a decision between fixed-rent, fixed-wage, and share-cropping contracts to hire tenants to operate their land. The choice of tenure contract affects the share of output going to tenants, and within a simple unified growth model this affects the relative price of food and therefore fertility. Fixed-wage contracts elicit the lowest fertility rate and fixed-rent contracts the highest, with share-cropping as an intermediate case. The implications of this for long-run growth depend on the assumptions one makes about scale effects in the aggregate economy. With increasing returns to scale, as in several models of innovation, fixed-rent contracts imply higher growth through a market size effect. Without such increasing returns, though, fixed-rent contracts lower output per capita through a depressing effect on accumulation.</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{dv2012,
+  author = {Vollrath, Dietrich},
+  date-added = {2016-03-06 17:50:12 +0000},
+  date-modified = {2016-03-06 23:40:38 +0000},
+  journal = {Journal of Population Economics},
+  keywords = {ag,pop,me},
+  month = jul,
+  number = {3},
+  pages = {833-852},
+  paper = {JPopE_final.pdf},
+  title = {{Land tenure, population, and long-run growth}},
+  volume = {25},
+  year = {2012},
+  bdsk-url-1 = {https://ideas.repec.org/a/spr/jopoec/v25y2012i3p833-852.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="young05">Young, A., 2005. The Gift of the Dying: The Tragedy of Aids and the Welfare of Future African Generations. <i>The Quarterly Journal of Economics</i>, 120(2), pp.423–466. Available at: <a href="http://EconPapers.repec.org/RePEc:tpr:qjecon:v:120:y:2005:i:2:p:423-466">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p> This paper simulates the impact of the AIDS epidemic on future living standards in South Africa. I emphasize two competing effects. On the one hand, the epidemic is likely to have a detrimental impact on the human capital accumulation of orphaned children. On the other hand, widespread community infection lowers fertility, both directly, through a reduction in the willingness to engage in unprotected sexual activity, and indirectly, by increasing the scarcity of labor and the value of a woman’s time. I find that even with the most pessimistic assumptions concerning reductions in educational attainment, the fertility effect dominates. The AIDS epidemic, on net, enhances the future per capita consumption possibilities of the South African economy. \copyright 2005 MIT Press</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{young05,
+  author = {Young, Alwyn},
+  date-added = {2015-03-16 21:09:25 +0000},
+  date-modified = {2015-03-17 17:15:50 +0000},
+  journal = {The Quarterly Journal of Economics},
+  keywords = {hc,pop},
+  number = {2},
+  pages = {423-466},
+  title = {The Gift of the Dying: The Tragedy of Aids and the Welfare of Future African Generations},
+  url = {http://EconPapers.repec.org/RePEc:tpr:qjecon:v:120:y:2005:i:2:p:423-466},
+  volume = {120},
+  year = {2005},
+  bdsk-url-1 = {http://EconPapers.repec.org/RePEc:tpr:qjecon:v:120:y:2005:i:2:p:423-466}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+<li><span id="dcd03">Croix, D. de la &amp; Doepke, M., 2003. Inequality and Growth: Why Differential Fertility Matters. <i>American Economic Review</i>, 93(4), pp.1091–1113. Available at: <a href="http://ideas.repec.org/a/aea/aecrev/v93y2003i4p1091-1113.html">Link</a>.</span>  
+
+<div id="materials">
+<ul style="list-style: none;">
+	
+		<li><details>
+		<summary>Abstract</summary>
+		<p>We develop a new theoretical link between inequality and growth. In our model, fertility and education decisions are interdependent. Poor parents decide to have many children and invest little in education. A mean-preserving spread in the income distribution increases the fertility differential between the rich and the poor, which implies that more weight gets placed on families who provide little education. Consequently, an increase in inequality lowers average education and, therefore, growth. We find that this fertility-differential effect accounts for most of the empirical relationship between inequality and growth. (JEL J13, O40)</p>
+		</details></li>
+	
+		<li><details>
+		<summary>BibTeX</summary>
+		<pre>@article{dcd03,
+  author = {de la Croix, David and Doepke, Matthias},
+  date-added = {2015-03-17 18:37:25 +0000},
+  date-modified = {2015-03-17 18:37:44 +0000},
+  journal = {American Economic Review},
+  keywords = {ineq,hc,pop},
+  month = sep,
+  number = {4},
+  pages = {1091-1113},
+  title = {{Inequality and Growth: Why Differential Fertility Matters}},
+  url = {http://ideas.repec.org/a/aea/aecrev/v93y2003i4p1091-1113.html},
+  volume = {93},
+  year = {2003},
+  bdsk-url-1 = {http://ideas.repec.org/a/aea/aecrev/v93y2003i4p1091-1113.html}
+}
+</pre>
+		</details></li>
+</ul>
+</div>
+</li>
+</p></details></li></ul></div></li></p></details></li></ul></div></li></ul>
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/Institutions/">
+      <span class="page-title">Institutions</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+    <a id="next-post" href="/blog/Great-Divergence/">
+       <span class="page-title">The Great Divergence</span>
+       <span class="nav-label">
+         <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/Deep-Origins/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+<!-- Disqus comment count script -->
+<script id="dsq-count-scr" src="//growthecon.disqus.com/count.js" async></script>
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2016 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>
