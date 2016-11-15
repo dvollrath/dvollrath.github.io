@@ -18,8 +18,8 @@
 	
 <head>
 	<meta charset="utf-8">
-	<title>Evidence on Violence and Ethnic Groups in Africa | Dietrich Vollrath</title>
-	<meta name="description" content=", , At the rate I’m going this summer, I will soon be down to one blog post a year, and it will be about a paper that came out in 2008. I swear to my coauthors t...">
+	<title>Ethnic fractionalization and growth | Dietrich Vollrath</title>
+	<meta name="description" content=", , This is not a post about Donald Trump or the election, except tangentially. I have thoughts on Trump - so, so many thoughts - but most of them have been said...">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-Frame-Options" content="sameorigin">
 	<!-- CSS -->
@@ -310,6 +310,8 @@ ga('send', 'pageview');
 					
 					
 					
+					
+					
 					<!-- Social icons from Font Awesome, if enabled -->
 					<li>
 						<a class="page-link" href="">Find Me</a>
@@ -409,63 +411,61 @@ ga('send', 'pageview');
 
 <article >
   <header style="background-image: url('')">
-    <h1 class="title">Evidence on Violence and Ethnic Groups in Africa</h1>
+    <h1 class="title">Ethnic fractionalization and growth</h1>
     <p id="subtitletrans" class="subtitlecontainer">
 
     
-      <a class="subtitle">25 Jul 2016</a> &nbsp; &nbsp;
+      <a class="subtitle">15 Nov 2016</a> &nbsp; &nbsp;
       <a href="/blog/Ethnic/#disqus_thread"></a>
     
     </p>
   </header>
   <section class="post-content">
-  <p>At the rate I’m going this summer, I will soon be down to one blog post a year, and it will be about a paper that came out in 2008. I swear to my coauthors that this is because I’m working <em>so damn hard</em> on [fill in name of joint project here], and will soon have those [tables/drafts] prepared.</p>
+  <p>This is not a post about Donald Trump or the election, except tangentially. I have thoughts on Trump - so, so many thoughts - but most of them have been said, meaning I will provide little value added.</p>
 
-<p>A few things have recently caused me to come up for air, and one was a little back and forth that took place on Twitter over a paper by Stelios Michalopoulos and Elias Papaioannou (MP) on “<a href="https://www.aeaweb.org/articles?id=10.1257/aer.20131311">The Long-run Effects of the Scramble for Africa</a>”. Bill Easterly linked to a brief <a href="https://t.co/zbQ75Ri41J">write-up</a> of the paper from the AER, where it was just published. This led to several responses from others critical of several aspects of the MP paper. I had a brief back and forth with some people myself.</p>
+<p>Garett Jones did a <a href="http://economicsdetective.com/2016/07/costs-ethnic-diversity-garett-jones/">podcast</a> with The Economics Detective recently on the costs of ethnic diversity. It is particularly worth listening to given that racial identity has re-emerged as a salient element of politics. A quick summary - and the link above includes a nice write-up of relevant sources - would be that diversity within workplaces does not appear to improve outcomes (however those outcomes are measured).</p>
 
-<p>First, a disclaimer. I am friendly with both Stelios and Elias. I see them at conferences, I ask about their kids, they ask about mine. I can spell their names without checking online. Stelios and I overlapped at grad school for four years. I believe I’m going to give you a fair assessment of their paper and the mini-controversy about it. But you have full information.</p>
+<p>At the same time, there is a parallel literature, touched on in the podcast, about ethnic diversity (or fractionalization, as it is termed in that literature) and economic growth. But one has to be careful drawing a bright line between the two literatures. It does not follow that the results for workplace diversity imply the results regarding economic growth. And this is because the growth results, to the extent that you believe they are robust, all operate through political systems.</p>
 
-<p>One point that was made about the paper was that the use of the term “homeland” is problematic, particularly in Africa. Economists, and I know I do this, tend to get exapserated by people picking over the semantics. Who cares what they call them? MP define exactly what they mean by “homeland” in the paper. But there are connotations to words, and no matter how precisely you define something in a paper, those connotations exist. “Homeland” was a term used by the South African apartheid government for the areas where black Africans were allowed to live. Referring to “homelands” in Africa can make it sound like there are places where certain groups are supposed to live, forever and always. It was a poor choice by MP to use it.</p>
+<p>So here let me walk through some of the core empirical relationships that have been found regarding ethnic fractionalization and economic growth, and then talk about why you need to take care with over-interpreting them. This is not a thorough literature review, and I realize there are other papers in the same vein. What I’m after is characterizing the essential results.</p>
 
-<p>More broadly, the issue with “homelands” bleeds into criticism of the idea that it is possible to fix boundaries on an ethnicity at all. I don’t have the knowledge or time to work through the history of thought on this, but suffice it to say that today if you asked scholars working on Africa (I did e-mail with a few) about ethnic homelands, they’d all say - paraphrasing - “that’s not a thing”.</p>
+<h3 id="baseline-empirics">Baseline empirics</h3>
 
-<p>And yet MP find what they find. Poor language choices don’t invalidate the data. Empirically, it helps to separate MP’s work into two pieces. First, split ethnicities have predictive power for incidents of violence. Second, we can interpret this as a <em>causal</em> impact of splitting an ethnicity. Asserting the first does not imply the second. And denying the second does not invalidate the first. But it will be worth thinking more about what exactly they mean when they say a split ethnicity. More on that as we go.</p>
+<p><a href="https://www.hks.harvard.edu/fs/pnorris/Acrobat/stm103%20articles/Easterley_Levine_Ethnic_Divisions.pdf">Easterly and Levine</a> did one of the first studies of fractionalization and its relationship to economic growth, with a focus on Africa. To measure fractionalization they used a simple index that has become the de facto norm for measuring this kind of thing going forward.</p>
 
-<p>On predictive power, their succession of regressions is hard to ignore. MP look at 1,212 ethnic/country observations. There is one observation for the Lobi in the Ivory Coast, and a separate observation for the Lobi in Burkina Faso, for example. The mapping of ethnic groups to countrys comes from a map done by Murdock (1957), and that has been used extensively by these authors and others in studying African development. An ethnic group that is fully contained within a country would have one observation only. Then MP use the <a href="http://www.acleddata.com">ACLED</a> database, which has information on political violence in Africa from 1997 to 2013. Importantly, it contains location information, and MP use that to assign acts of political violence to the ethnic areas defined by Murdock.</p>
+<script type="math/tex; mode=display">Frac = 1 - \sum_i s_i^2</script>
 
-<p>Each ethnic/country observation gets a variable called SPLIT, which is 1 for both partitioned groups. So the Lobi/Ivory Coast observation would have a 1, and so would the Lobi/Burkina Faso. A group wholly contained in a country would get a zero. Then MP run a series of regressions of different measures of political violence against this SPLIT variable, controlling for lots of other things.</p>
+<p>where $s_i$ is the share of group i in the population of a given area. You can interpret the fractionalization measure as the probability that two random people in an area belong to different groups. If there is only one group, then the summation term is 1, so Frac is zero. If every single person is in a unique group, so there are N groups, then the summation term approaches 1/N, and Frac approaches 1. EL constructed indices like this for a set of countries using data that originally came from Soviet ethnographers. As I’ll mention in more detail below, their index thus depends on choices made by those ethnographers about what constitutes and ethnicity.</p>
 
-<p>MP are not looking only at incidents of violence that occur in partitioned groups, they are comparing the amount of violence in partitioned groups to non-partitioned groups. It’s helpful here to remember that “running a regression” essentially means “compare the average outcome for two sets of observations”. The average level of political violence in partitioned groups/countries (SPLIT = 1) is higher than the level of political violence in non-partitioned groups/countries (SPLIT = 0). “Controlling for lots of other things” means that the average level of political violence is still higher in partitioned groups even if you only look at group/countries that all share a common set of characteristics (other than being partitioned). An important control here are the country fixed effects, which means their results show that there is more political violence in partitioned groups in a country compared to other non-partitioned groups in that same country.</p>
+<p>EL then looked at basic growth regressions. That is, they looked at the relationship between the average growth rate of GDP over a long period of time and how that correlated with their measure of fractionalization. In doing this, they controlled for initial GDP per capita and several other characteristics of countries. What they found was that higher fractionalization was associated with lower growth when only basic controls were included. To take the extreme, going from 0 fractionalization to total fractionalization was associated with a growth rate 2 percentage points lower.</p>
 
-<p>Those measures of political violence are things like: the count of violent incidents, the number of deadly incidents, the total casualties from political violence, the amount of civil violence, or the number of more formal battles (but not necesseraily riots). In each case, partitioned groups had higher levels of violence in this time period.</p>
+<p>As a quick aside, note that this doesn’t mean a permanently lower growth rate. EL are working with a standard growth regression, controlling for initital income. What they are finding is that places with high fractionalization had lower balanced growth paths. In their empirical setting, every country has the same long run growth rate, but highly fractionalized ones will be poorer than homogenous ones. This shows up as a lower growth rate for fractionalized places because they are closer to their balanced growth paths to begin with.</p>
 
-<p>What would be nice to see is the predictive power of just the SPLIT variable. MP’s full regressions have adjusted R-squares of about 45%, of they explain about half of the variation in political violence - but that is the explanatory power of <em>all</em> the variables. How important is SPLIT by itself?</p>
+<p>EL go on to explore the idea that the reason for fractionlization’s effect on balanced growth paths is due to the interference in public goods provision. Their hypothesis is that fractionalization implies conflicts between groups, which implies an inability or unwillingness to get broad public support for things like education or infrastructure, and this makes them poorer in the long run. And what EL find is that once you control for public goods provision (crudely, using things like the number of telephones per capita) the effect of fractionalization is no longer significant or as large. For EL, this shows that the impact of fractionalization works through the provision of these public goods.</p>
 
-<p>Regardless of that answer, it’s crucial to remember that saying there is a statistically significant effect of partitioning, or saying that MP can explain 45% of the variation in violence, does not mean <em>all</em> partitioned groups are <em>by definition</em> more violent. The Twitter dicussion was thick with examples of partioned groups that did not tend to have violence occur. Okay, great. MP aren’t saying that partitioning forces you to have violence, they are saying that partitioned places are more likely to exhibit violence. It’s a probability statement.</p>
+<p>Stronger support for that idea comes from a different Easterly paper. He, with Alesina and Baqir, published <a href="http://isites.harvard.edu/fs/docs/icb.topic700742.files/Alesina_Baqir_Easterly_Pub_Goods_Ethnic_Division_QJE_114_1999.pdf">Public Goods and Ethnic Divisions</a> in 1999. This looked directly at US cities, counties, and metro areas, and the share of government expenditures at those levels being spent on various public goods. They found that higher fractionalization was associated with a lower share of spending on roads (about minus 5%), welfare (minus 5%), and education (minus 10-17%). On the other hand, there was a higher share of spending on police (plus 2-4%) and health services (13-25%). The increased police and health share is not always enough to explain the lower shares in all the other areas of spending, implying that places with high fractionalization have a larger share of local government expenditures on “everything else”. That “everything else” includes debt payments and other poorly classified spending. The authors speculate it could be related to patronage, but there is no way to look at that directly. In terms of actual levels of taxes and spending, there found conflicting results. At the city level, fractionalization is associated with both higher taxes and spending per capita, but at the metro area and county levels fractionalization was associated with <em>lower</em> taxes but <em>higher</em> spending per capita. Either way, fractionalization was generally associated with higher spending per capita. And no, that wasn’t simply due to city/metro/county sizes, as this held while controlling for the total population of the city or metro area.</p>
 
-<p>If you want to criticize MP’s work on the predictive power of ethnic partitioning, then I think the main issue would be with Murdock’s underlying map. We don’t exactly know what Murdock used to define these borders, and if you look at his map, they can seem as arbitrarily drawn as any political boundary. Maybe he got these wrong, and what MP take to be “ethnic homelands” are not indicative of actual ethnic groupings now (or in 1957 for that matter). This reaches back to the point from the beginning - maybe Murdock’s boundaries don’t indicate anything real about ethnic groups.</p>
+<p>Back to the country level, where Alesina, Devleeschauwer, Easterly, Kurlat, and Wacziarg <a href="http://scholar.harvard.edu/files/alesina/files/fractionalization.pdf">extended</a> increased the amount of data available on a cross-country basis, including ethnic, linguistic, and religious measures of fractionalization. Similar to Easterly and Levine, they find that fractionalization implies a lower steady state growth path. Also similar, this negative effect dissipates as you control for crude measures of public goods spending and government effectiveness. The authors appeal to a similar argument to before: fractionalization makes consensus hard to build, and so public goods do not get provided at a level more homogenous societies can manage. A few correlates of ethnic fractionalization include lower literacy, lower levels of education attainment, and lower indices of democracy and political rights.</p>
 
-<p>Does that change the interpretation of MP? Sure. Their regressions show that areas defined by George Murdock that are divided by political boundaries are prone to violence. Does that necessarily mean that this is due to ethnic-based conflict? Perhaps Murdock drew his groups based on some observed characteristic of violence in 1957, and so those places were bound to be violent anyway? MP can offer some evidence on this, as when they use alternative data on ethnic-based conflicts (from the <a href="http://www.epr.ucla.edu">EPR</a> database) it shows that partitioned Murdock-groups do indeed have more ethnic-based conflict.</p>
+<p>One interesting note to their paper is that <em>religious</em> fractionalization has almost the exact <em>opposite</em> effects of ethnic and linguistic fractionalization. More religiously heterogenous countries tend to have higher growth paths, more education, and better measure of political rights.</p>
 
-<p>And nothing about MP’s results is contingent on the ethnic population of Murdock’s groups being tied to that specific geographic location over time. The violence within one of Murdock’s partitioned group could be from an entirely different group moving in over time, and no one from the original group even lives there any more. Ethnic groups can be fluidly moving across borders, within countries, and all over the place. But there is something about partitioned areas from Murdock’s map that tends to have more violence than other places.</p>
+<h3 id="problems">Problems?</h3>
 
-<p>Alright, let’s say that MP have established the predictive power of partitioning for future conflict. Does their work imply that the partitioning was <em>causal</em>. That is, was it the partitioning itself that created the violence. You might imagine that partitioning would make a border <em>less</em> violent, as the people on either side are closely related. So it isn’t obvious how the causality would go here.</p>
+<p>Start with a basic measurement issue. The fractionalization index is sensitive to the number of groups you divide everyone up into. That is, if your country has two ethnic groups, then the maximum value of the fractionalization index is 0.5. If your country has 10 ethnic groups, the maximum index is 0.9. That seems to make sense. More groups, more possible fractionalization.</p>
 
-<p>MP argue that their results do show a causal impact of partitioning, based on the arguemnt that the partitioning was done quasi-randomly by European colonists starting with the Berlin Conference in 1884-85. The money quote for them is from Robert Cecil.</p>
+<p>Except that the definition of what counts as a group is not a fixed characteristic. If I give people in the US the options of white, black, Asian, Native American, or Other, then I am allowing for 5 groups, and max fractionalization of 0.8. We could double the number of groups to 10 by allowing each racial group to report as either Hispanic or non-Hispanic, and now the max index is 0.9. Or we could sub-divide white into “German-American”, “Irish-American”, and so on, and get ourselves up to like 40 or 50 groups if we really wanted to, and this would automatically drive up the fractionalization index to one. Or we could say f$&amp;# it, and stop tracking racial identity completely, and get a fractionalzation index of zero by definition.</p>
 
-<blockquote>
-  <p>We have been engaged in drawing lines upon maps where no white man’s feet have ever trod; we have been giving away mountains and rivers and lakes to each other, only hindered by the small impediment that we never knew exactly where the mountains and rivers and lakes were.</p>
-</blockquote>
+<p>The point is that the degree of fractionalization is not immutably fixed by arbitrary racial or ethnic groups designed by the Census Bureau. James <a href="https://web.stanford.edu/group/fearon-research/cgi-bin/wordpress/wp-content/uploads/2013/10/Ethnic-and-Cultural-Diversity-by-Country.pdf">Fearon</a> has an excellent paper addressing the arbitrary nature of building an index of ethnic fractionalization. There is no <em>right</em> fractionalization index for any country. The number of ethnic groups tracked in a census or survey may not map to any meaningful political groups. The Hutus and Tutsis in Rwanda were are included in a single ethnic group in the original Soviet data, for example.</p>
 
-<p>Thus, for MP the partitioning of one of Murdock’s ethnic groups was done blindly by Europeans without any knowledge of the location of those groups to begin with. From the perspective of the groups, this was done randomly. Hence the characteristics of partitioned and non-partitioned ethnicities do not vary systematically - which MP verify on several geographic and historical dimensions - and hence the estimated effect of partitioning is in fact causal.</p>
+<p>Going back to the empirical work, this raises some questions on how to interpret the results. When Alesina, et al, collected their updated measures of fractionalization, they noted that ethnic fractionalization in much of the Americas is based on racial definitions (black versus white), while in Europe and Sub-Saharan Africa ethnic fractionalization is based primarily on languages (think of Switzerland). So the ethnic fractionalization measures are not comparable across countries. What does it mean to compare fractionalization in Belgium (French versus Flemish speakers) with fractionalization in Bolivia (Mestizos versus Aymara versus Quechua)?</p>
 
-<p>If you take this seriously, then finding that this is causal is another strong piece of evidence in the “history matters” or “path dependence” literature that finds persistent effects of historical choices on current development. Which is a polite way of saying that colonization - the historical choice made by colonizers to exploit certain areas of the globe and not others - created lasting damage to colonies. That damage may be in terms of depressed investment in human/physical capital, or may be in institutions and political structures that are built for corruption rather than development. In this MP case, the damage was from arbitrarily dividing some ethnic groups, creating frictions across borders, leading to violence that disrupts development.</p>
+<p>Alesina et al mention that they go out of their way to find the most disaggregated data on ethnic groups possible. That is, they make sure they maximize the number of groups in each country, thus maximizing the measure of fractionalization. This has the virtue of being a consistent strategy, but suffers because it is subject to variation in the level of disaggregation tracked by country, which is an inherently political decision.</p>
 
-<p>If you want to stay skeptical of the MP causality claim, then again I think your target is Murdock. While the Berlin Conference made decisions blindly, Murdock knew those boundaries to a large extent, and may have drawn his lines specifically with them in mind. Perhaps he retrofitted the ethnic mapping to the boundaries, and he presumed that violent areas must be partitioned?</p>
+<p>You could easily turn all of the empirical results I talked about around in the following way. Places with relatively dysfunctional political systems benefitted from setting ethnic groups against each other, preventing effective opposition. They thus focused on ethnic or linguistic differences, and made sure to track these carefully when they did censuses. It need not even be nefarious. Former colonies who were left with dysfunctional governments may also have inherited a tradition of close ethnic group tracking from their colonizers. Either way, places with dysfunctional governments would to have mechanically high fractionalization indices along ethnic lines. And their dysfunction also leads to poor economic outcomes.</p>
 
-<p>I think that’s a stretch, but even if you want to dismiss the causality claims, that doesn’t negate the predictive power of the MP regressions. If you want to tell me that a more contextual study of these conflicts will indicate that they are not ethnicity-based at all, but due to fights over limited resources, or instigation from outside sources, or just randomly bad luck, fine. But you still have to explain why these things tend to occur (but not always) in areas where Murdock’s groups were partitioned. The data indicates that there is only about a 5-10% chance that this is just a coincidence.</p>
+<p>And don’t forget those results on religious fractionalization, which was associated with better political and economic outcomes. The effect of diversity can go either way, depending on how you define it. If you started measuring fractionalization along as many dimensions as possible - ethnicity, religion, language, home state, favorite Beatle, height, extroversion/introversion - you’d eventually come across some of them that were positively related, and some negatively, to things like public goods spending or growth, just by chance.</p>
 
-<p>Yes, the context of the individual conflicts is vastly more important than MP’s paper, if what you are trying to do is solve a specific conflict. You wouldn’t call them to negotiate a cease-fire between militants and the government in, well, any country anywhere. But understanding that partitioning of the Murdock groups is associated with violence is informative - without invalidating any of the contextual information.</p>
+<p>The overarching point here is that even taking the studies on workplace diversity seriously, this does not imply that poor political outcomes and/or economic growth are a necessary outcome of ethnic fractionalization. At the political level, ethnic fractionalization and its salience to public policy is a choice variable.</p>
 
   </section>
   
@@ -489,20 +489,13 @@ ga('send', 'pageview');
   
   <div id="post-nav">
     
-    <a id="prev-post" href="/blog/Britain-Shares/">
-      <span class="page-title">The Early Transformation of Britain's Economy</span>
+    <a id="prev-post" href="/blog/Accounting/">
+      <span class="page-title">GDP, Productivity, and Financial Performance</span>
       <span class="nav-label">
         <i class="fa fa-chevron-left"></i> 
       </span>
     </a>
     
-    
-    <a id="next-post" href="/blog/Manuf-Share/">
-       <span class="page-title">Did Real Manufacturing Output Grow Faster than We Thought?</span>
-       <span class="nav-label">
-         <i class="fa fa-chevron-right"></i>
-       </span>
-     </a>
     
   </div>
   
