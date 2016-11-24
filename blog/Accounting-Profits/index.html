@@ -18,8 +18,8 @@
 	
 <head>
 	<meta charset="utf-8">
-	<title>Ethnic fractionalization and growth | Dietrich Vollrath</title>
-	<meta name="description" content=", , This is not a post about Donald Trump or the election, except tangentially. I have thoughts on Trump - so, so many thoughts - but most of them have been said...">
+	<title>GDP, Productivity, and Financial Performance | Dietrich Vollrath</title>
+	<meta name="description" content=", , In my last post, I got upset because people were using measures of productivity as measures of firm or industry financial performance. And as part of that, I...">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-Frame-Options" content="sameorigin">
 	<!-- CSS -->
@@ -38,7 +38,7 @@
 	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
 	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
 	<!-- Canonical -->
-	<link rel="canonical" href="https://growthecon.com/blog/Ethnic/">
+	<link rel="canonical" href="https://growthecon.com/blog/Accounting-Profits/">
 
 	<!-- RSS -->
 	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
@@ -411,61 +411,79 @@ ga('send', 'pageview');
 
 <article >
   <header style="background-image: url('')">
-    <h1 class="title">Ethnic fractionalization and growth</h1>
+    <h1 class="title">GDP, Productivity, and Financial Performance</h1>
     <p id="subtitletrans" class="subtitlecontainer">
 
     
-      <a class="subtitle">15 Nov 2016</a> &nbsp; &nbsp;
-      <a href="/blog/Ethnic/#disqus_thread"></a>
+      <a class="subtitle">05 Nov 2016</a> &nbsp; &nbsp;
+      <a href="/blog/Accounting-Profits/#disqus_thread"></a>
     
     </p>
   </header>
   <section class="post-content">
-  <p>This is not a post about Donald Trump or the election, except tangentially. I have thoughts on Trump - so, so many thoughts - but most of them have been said, meaning I will provide little value added.</p>
+  <p>In my last <a href="https://growthecon.com/blog/Manufacturing/">post</a>, I got upset because people were using measures of productivity as measures of firm or industry financial performance. And as part of that, I made the point that GDP (which is part of measuring productivity) has nothing to do with profits, or financial success in any way. A few people asked me about this, because it wasn’t obvious to them.</p>
 
-<p>Garett Jones did a <a href="http://economicsdetective.com/2016/07/costs-ethnic-diversity-garett-jones/">podcast</a> with The Economics Detective recently on the costs of ethnic diversity. It is particularly worth listening to given that racial identity has re-emerged as a salient element of politics. A quick summary - and the link above includes a nice write-up of relevant sources - would be that diversity within workplaces does not appear to improve outcomes (however those outcomes are measured).</p>
+<p>I think part of the issue is that lots of people interested in economics are business literate, meaning they understand what is on financial statements, and want to translate those concepts to the economy as a whole.</p>
 
-<p>At the same time, there is a parallel literature, touched on in the podcast, about ethnic diversity (or fractionalization, as it is termed in that literature) and economic growth. But one has to be careful drawing a bright line between the two literatures. It does not follow that the results for workplace diversity imply the results regarding economic growth. And this is because the growth results, to the extent that you believe they are robust, all operate through political systems.</p>
+<p>The problem is that the economy as a whole is not just one big aggregate business. But, you can get some insight into what GDP is actually measuring by building it up from business accounts. So let’s give that a try.</p>
 
-<p>So here let me walk through some of the core empirical relationships that have been found regarding ethnic fractionalization and economic growth, and then talk about why you need to take care with over-interpreting them. This is not a thorough literature review, and I realize there are other papers in the same vein. What I’m after is characterizing the essential results.</p>
+<p>This is a stylized example of an income statement you could find from any firm:</p>
 
-<h3 id="baseline-empirics">Baseline empirics</h3>
+<script type="math/tex; mode=display">Rev - COGS - Exp - Wage - Int - Div - Rent - Dep - Tax - Bull = Earn</script>
 
-<p><a href="https://www.hks.harvard.edu/fs/pnorris/Acrobat/stm103%20articles/Easterley_Levine_Ethnic_Divisions.pdf">Easterly and Levine</a> did one of the first studies of fractionalization and its relationship to economic growth, with a focus on Africa. To measure fractionalization they used a simple index that has become the de facto norm for measuring this kind of thing going forward.</p>
+<p>The individual items are as follows:</p>
 
-<script type="math/tex; mode=display">Frac = 1 - \sum_i s_i^2</script>
+<ol>
+  <li><strong>Rev</strong>: Revenues</li>
+  <li><strong>COGS</strong>: Cost of goods sold. Think of raw materials.</li>
+  <li><strong>Exp</strong>: Expenses, specifically those which are paid to other firms, like advertising costs, legal costs, and the like.</li>
+  <li><strong>Wage</strong>: Salaries and wages.</li>
+  <li><strong>Int</strong>: Interest payments on any loans or bonds.</li>
+  <li><strong>Div</strong>: Dividends.</li>
+  <li><strong>Rent</strong>: Rent on property and/or items of intellectual property like patents or copyrights.</li>
+  <li><strong>Dep</strong>: Depreciation of fixed assets.</li>
+  <li><strong>Tax</strong>: Corporate income taxes. It’s important here to note these are <em>not</em> sales taxes or excise taxes like tariffs.</li>
+  <li><strong>Bull</strong>: All sorts of other bulls%&amp;^ that firms use to limit the earnings they need to pay taxes on.</li>
+  <li><strong>Earn</strong>: Reported net earnings.</li>
+</ol>
 
-<p>where $s_i$ is the share of group i in the population of a given area. You can interpret the fractionalization measure as the probability that two random people in an area belong to different groups. If there is only one group, then the summation term is 1, so Frac is zero. If every single person is in a unique group, so there are N groups, then the summation term approaches 1/N, and Frac approaches 1. EL constructed indices like this for a set of countries using data that originally came from Soviet ethnographers. As I’ll mention in more detail below, their index thus depends on choices made by those ethnographers about what constitutes and ethnicity.</p>
+<p>In evaluating a firm, you probably look first at <em>Earn</em>, which indicates wow much money did they made. <em>Earn</em> is the number you would use in a P/E ratio if you were evaluating the a public firm’s stock. You might also look at different concepts of earnings, like EBIDTA, which would be like <em>Earn + Int + Dep + Tax + Bull</em>. Regardless, the purpose of this income statement is to evaluate the financial success of the company. You are interested in the bottom line number, earnings.</p>
 
-<p>EL then looked at basic growth regressions. That is, they looked at the relationship between the average growth rate of GDP over a long period of time and how that correlated with their measure of fractionalization. In doing this, they controlled for initial GDP per capita and several other characteristics of countries. What they found was that higher fractionalization was associated with lower growth when only basic controls were included. To take the extreme, going from 0 fractionalization to total fractionalization was associated with a growth rate 2 percentage points lower.</p>
+<p>Let’s take this and use it to build up GDP. All that’s required is basic addition and subtraction. First, rearrange the income statement in the following way</p>
 
-<p>As a quick aside, note that this doesn’t mean a permanently lower growth rate. EL are working with a standard growth regression, controlling for initital income. What they are finding is that places with high fractionalization had lower balanced growth paths. In their empirical setting, every country has the same long run growth rate, but highly fractionalized ones will be poorer than homogenous ones. This shows up as a lower growth rate for fractionalized places because they are closer to their balanced growth paths to begin with.</p>
+<script type="math/tex; mode=display">(Rev - COGS - Exp) - (Wage + Int + Div + Rent + Dep) = Earn + Bull + Tax</script>
 
-<p>EL go on to explore the idea that the reason for fractionlization’s effect on balanced growth paths is due to the interference in public goods provision. Their hypothesis is that fractionalization implies conflicts between groups, which implies an inability or unwillingness to get broad public support for things like education or infrastructure, and this makes them poorer in the long run. And what EL find is that once you control for public goods provision (crudely, using things like the number of telephones per capita) the effect of fractionalization is no longer significant or as large. For EL, this shows that the impact of fractionalization works through the provision of these public goods.</p>
+<p>There are two groupings on the left-hand side, and we’ll get to those in a moment. Before that, note that I’ve put <em>Earn + Bull + Tax</em> together on the right-hand side. I’m going to rename this combined term as <em>Profits</em>.</p>
 
-<p>Stronger support for that idea comes from a different Easterly paper. He, with Alesina and Baqir, published <a href="http://isites.harvard.edu/fs/docs/icb.topic700742.files/Alesina_Baqir_Easterly_Pub_Goods_Ethnic_Division_QJE_114_1999.pdf">Public Goods and Ethnic Divisions</a> in 1999. This looked directly at US cities, counties, and metro areas, and the share of government expenditures at those levels being spent on various public goods. They found that higher fractionalization was associated with a lower share of spending on roads (about minus 5%), welfare (minus 5%), and education (minus 10-17%). On the other hand, there was a higher share of spending on police (plus 2-4%) and health services (13-25%). The increased police and health share is not always enough to explain the lower shares in all the other areas of spending, implying that places with high fractionalization have a larger share of local government expenditures on “everything else”. That “everything else” includes debt payments and other poorly classified spending. The authors speculate it could be related to patronage, but there is no way to look at that directly. In terms of actual levels of taxes and spending, there found conflicting results. At the city level, fractionalization is associated with both higher taxes and spending per capita, but at the metro area and county levels fractionalization was associated with <em>lower</em> taxes but <em>higher</em> spending per capita. Either way, fractionalization was generally associated with higher spending per capita. And no, that wasn’t simply due to city/metro/county sizes, as this held while controlling for the total population of the city or metro area.</p>
+<script type="math/tex; mode=display">(Rev - COGS - Exp) - (Wage + Int + Div + Rent + Dep) = Profits</script>
 
-<p>Back to the country level, where Alesina, Devleeschauwer, Easterly, Kurlat, and Wacziarg <a href="http://scholar.harvard.edu/files/alesina/files/fractionalization.pdf">extended</a> increased the amount of data available on a cross-country basis, including ethnic, linguistic, and religious measures of fractionalization. Similar to Easterly and Levine, they find that fractionalization implies a lower steady state growth path. Also similar, this negative effect dissipates as you control for crude measures of public goods spending and government effectiveness. The authors appeal to a similar argument to before: fractionalization makes consensus hard to build, and so public goods do not get provided at a level more homogenous societies can manage. A few correlates of ethnic fractionalization include lower literacy, lower levels of education attainment, and lower indices of democracy and political rights.</p>
+<p>There are a couple of questions here. Why is <em>Bull</em> part of <em>Profits</em>? Because <em>Bull</em> is purely accounting gimmick stuff to mitigate taxes. So while they list it like any other expense, we will not. Next, why is <em>Tax</em> part of <em>Profits</em>? Because what happens to those profits after they are made is a different question than how big those profits actually are. <em>Profits</em> is really <em>Profits before corporate income taxes</em>.</p>
 
-<p>One interesting note to their paper is that <em>religious</em> fractionalization has almost the exact <em>opposite</em> effects of ethnic and linguistic fractionalization. More religiously heterogenous countries tend to have higher growth paths, more education, and better measure of political rights.</p>
+<p>Next, move that grouping of wages and interest and other items over to the right-hand side.</p>
 
-<h3 id="problems">Problems?</h3>
+<script type="math/tex; mode=display">Rev - COGS - Exp = Wage + Int + Div + Rent + Dep + Profits</script>
 
-<p>Start with a basic measurement issue. The fractionalization index is sensitive to the number of groups you divide everyone up into. That is, if your country has two ethnic groups, then the maximum value of the fractionalization index is 0.5. If your country has 10 ethnic groups, the maximum index is 0.9. That seems to make sense. More groups, more possible fractionalization.</p>
+<p>The term on the left-hand side is called <em>value-added</em>. The firm sells goods and services for <em>Rev</em>, and that is the total value of those goods and services. But those goods and services required the value of <em>COGS</em> and <em>Exp</em> to produce, so the <em>value-added</em> of the firm is the difference of their revenues and these expenses. Now we’ve got:</p>
 
-<p>Except that the definition of what counts as a group is not a fixed characteristic. If I give people in the US the options of white, black, Asian, Native American, or Other, then I am allowing for 5 groups, and max fractionalization of 0.8. We could double the number of groups to 10 by allowing each racial group to report as either Hispanic or non-Hispanic, and now the max index is 0.9. Or we could sub-divide white into “German-American”, “Irish-American”, and so on, and get ourselves up to like 40 or 50 groups if we really wanted to, and this would automatically drive up the fractionalization index to one. Or we could say f$&amp;# it, and stop tracking racial identity completely, and get a fractionalzation index of zero by definition.</p>
+<script type="math/tex; mode=display">ValueAdded = Wage + Int + Div + Rent + Dep + Profits</script>
 
-<p>The point is that the degree of fractionalization is not immutably fixed by arbitrary racial or ethnic groups designed by the Census Bureau. James <a href="https://web.stanford.edu/group/fearon-research/cgi-bin/wordpress/wp-content/uploads/2013/10/Ethnic-and-Cultural-Diversity-by-Country.pdf">Fearon</a> has an excellent paper addressing the arbitrary nature of building an index of ethnic fractionalization. There is no <em>right</em> fractionalization index for any country. The number of ethnic groups tracked in a census or survey may not map to any meaningful political groups. The Hutus and Tutsis in Rwanda were are included in a single ethnic group in the original Soviet data, for example.</p>
+<p>Great. At a firm level, we have that their value-added is, by definition, equal to their wages, interest payments, dividends, rents, depreciation, and profits. Whether that <em>Profits</em> term is positive or negative is unknowable without knowing the other terms.</p>
 
-<p>Going back to the empirical work, this raises some questions on how to interpret the results. When Alesina, et al, collected their updated measures of fractionalization, they noted that ethnic fractionalization in much of the Americas is based on racial definitions (black versus white), while in Europe and Sub-Saharan Africa ethnic fractionalization is based primarily on languages (think of Switzerland). So the ethnic fractionalization measures are not comparable across countries. What does it mean to compare fractionalization in Belgium (French versus Flemish speakers) with fractionalization in Bolivia (Mestizos versus Aymara versus Quechua)?</p>
+<p>Now, this equation holds for all the firms in the economy. It holds even for those firms who don’t produce formal financial statements, like your local food truck. It holds for federal, state, and local governments, who differ in how they assign money to different categories. Sum up both sides of the equation across all firms or entities that produce value added.</p>
 
-<p>Alesina et al mention that they go out of their way to find the most disaggregated data on ethnic groups possible. That is, they make sure they maximize the number of groups in each country, thus maximizing the measure of fractionalization. This has the virtue of being a consistent strategy, but suffers because it is subject to variation in the level of disaggregation tracked by country, which is an inherently political decision.</p>
+<script type="math/tex; mode=display">GDP = \sum Wage + \sum Int + \sum Div + \sum Rent + \sum Dep + \sum Profits</script>
 
-<p>You could easily turn all of the empirical results I talked about around in the following way. Places with relatively dysfunctional political systems benefitted from setting ethnic groups against each other, preventing effective opposition. They thus focused on ethnic or linguistic differences, and made sure to track these carefully when they did censuses. It need not even be nefarious. Former colonies who were left with dysfunctional governments may also have inherited a tradition of close ethnic group tracking from their colonizers. Either way, places with dysfunctional governments would to have mechanically high fractionalization indices along ethnic lines. And their dysfunction also leads to poor economic outcomes.</p>
+<p>The left-hand side is GDP, because GDP is the sum of value-added across all firms, by definition. Go backwards, and note how GDP is built up. It is the sum of value-added across firms. Value-added is <em>Rev - COGS - Exp</em>, which does not tell you anything about profits at the firm level.</p>
 
-<p>And don’t forget those results on religious fractionalization, which was associated with better political and economic outcomes. The effect of diversity can go either way, depending on how you define it. If you started measuring fractionalization along as many dimensions as possible - ethnicity, religion, language, home state, favorite Beatle, height, extroversion/introversion - you’d eventually come across some of them that were positively related, and some negatively, to things like public goods spending or growth, just by chance.</p>
+<p>GDP can be decomposed among all those things on the right-hand side. And in fact the BEA reports exactly the right hand side in their Gross Domestic Income (GDI) estimate, which is equal to GDP except for a small statistical discrepancy (because adding up all these things across firms is hard).</p>
 
-<p>The overarching point here is that even taking the studies on workplace diversity seriously, this does not imply that poor political outcomes and/or economic growth are a necessary outcome of ethnic fractionalization. At the political level, ethnic fractionalization and its salience to public policy is a choice variable.</p>
+<p>GDP (or GDI) tells you nothing about the financial health or success of firms. <em>Profits</em> could be big, or small, or negative, or positive. As a company, Amazon lost about 240 million dollars in 2014. But that doesn’t mean the services it provided didn’t count in GDP. They provided about 26 billion in value-added the same year. Sears Holding Company lost 1.13 billion dollars in 2015, which was better than the 1.68 billion they lost in 2014. At the same time, Sears Holding contributed about 5.8 billion to GDP in 2015, and 7.1 billion to GDP in 2014. It is not GDP’s problem that Sears seems to have more combined costs, like wages, rent, and interest, than can be covered by their value-added. It doesn’t change the fact that Sears provided goods and services to the economy.</p>
+
+<p>Is this a problem with GDP? The answer to that depends entirely on what you are trying to measure. If you are interested in knowing the value of all the goods and services produced in an economy, then GDP is what you want. To borrow a British phrase, it does what it says on the tin.</p>
+
+<p>But if you are interested in knowing if firms (or industries) in the economy are “doing well” or “successful” or “healthy”, then you should look at firm financial statements, and things like net earnings, or EBIDTA, or net income from continuing operations, or operating income, or gross profit, or whatever is your favorite financial indicator. Using those, you might decide that Amazon or Sears will go out of business in the future because they lose money. Or decide to sell or buy stock in those companies. Or decide to sue their CEO, or vote for a new board. But GDP isn’t here to tell you those things. GDP doesn’t care.</p>
+
+<p>Which is why productivity measures like multi-factor productivity (MFP) or labor productivity are <em>not</em> measures of firm health, success, or financial performance. These measures take GDP (in aggregate, or at the industry level) and divide it by numbers of inputs used. As GDP is not a measure of firm financial success, productivity cannot be a measure of firm financial success either.</p>
 
   </section>
   
@@ -489,13 +507,20 @@ ga('send', 'pageview');
   
   <div id="post-nav">
     
-    <a id="prev-post" href="/blog/Accounting-Profits/">
-      <span class="page-title">GDP, Productivity, and Financial Performance</span>
+    <a id="prev-post" href="/blog/Manufacturing/">
+      <span class="page-title">Productivity measures productivity ... that's it</span>
       <span class="nav-label">
         <i class="fa fa-chevron-left"></i> 
       </span>
     </a>
     
+    
+    <a id="next-post" href="/blog/Ethnic/">
+       <span class="page-title">Ethnic fractionalization and growth</span>
+       <span class="nav-label">
+         <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
     
   </div>
   
@@ -512,7 +537,7 @@ ga('send', 'pageview');
 */
 /*
 var disqus_config = function () {
-	this.page.url = /blog/Ethnic/; // Replace PAGE_URL with your page's canonical URL variable
+	this.page.url = /blog/Accounting-Profits/; // Replace PAGE_URL with your page's canonical URL variable
 /*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 */
