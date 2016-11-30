@@ -18,8 +18,8 @@
 	
 <head>
 	<meta charset="utf-8">
-	<title>Ethnic fractionalization and growth | Dietrich Vollrath</title>
-	<meta name="description" content=", , This is not a post about Donald Trump or the election, except tangentially. I have thoughts on Trump - so, so many thoughts - but most of them have been said...">
+	<title>Employment Going South. Literally. | Dietrich Vollrath</title>
+	<meta name="description" content=", , From 1990 to 2015, the US economy as a whole increased employment by about 30 million (30,056,664 according to the BLS). Employment in 1990 was 118,900,000, ...">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-Frame-Options" content="sameorigin">
 	<!-- CSS -->
@@ -38,7 +38,7 @@
 	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
 	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
 	<!-- Canonical -->
-	<link rel="canonical" href="https://growthecon.com/blog/Ethnic/">
+	<link rel="canonical" href="https://growthecon.com/blog/Jobs/">
 
 	<!-- RSS -->
 	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
@@ -411,61 +411,56 @@ ga('send', 'pageview');
 
 <article >
   <header style="background-image: url('')">
-    <h1 class="title">Ethnic fractionalization and growth</h1>
+    <h1 class="title">Employment Going South. Literally.</h1>
     <p id="subtitletrans" class="subtitlecontainer">
 
     
-      <a class="subtitle">15 Nov 2016</a> &nbsp; &nbsp;
-      <a href="/blog/Ethnic/#disqus_thread"></a>
+      <a class="subtitle">30 Nov 2016</a> &nbsp; &nbsp;
+      <a href="/blog/Jobs/#disqus_thread"></a>
     
     </p>
   </header>
   <section class="post-content">
-  <p>This is not a post about Donald Trump or the election, except tangentially. I have thoughts on Trump - so, so many thoughts - but most of them have been said, meaning I will provide little value added.</p>
+  <p>From 1990 to 2015, the US economy as a whole increased employment by about 30 million (30,056,664 according to the BLS). Employment in 1990 was 118,900,000, so that meant that there was a roughly 25% increase in employment over that 25 year period, with a little more than 1 million jobs added per year, on average.</p>
 
-<p>Garett Jones did a <a href="http://economicsdetective.com/2016/07/costs-ethnic-diversity-garett-jones/">podcast</a> with The Economics Detective recently on the costs of ethnic diversity. It is particularly worth listening to given that racial identity has re-emerged as a salient element of politics. A quick summary - and the link above includes a nice write-up of relevant sources - would be that diversity within workplaces does not appear to improve outcomes (however those outcomes are measured).</p>
+<p>I’m not going to surprise anyone by saying that these 30 million jobs were not spread equally across the entire US. What I didn’t have a good sense of, personally, was how disparate the change in employment was across the US. This post is just some documentation about the absolute size of the change in job distribution across the US. I don’t know that I have a broader point, but I don’t really internalize the information until I play with it, so this is me trying to internalize the information on shifts in jobs within the US over time.</p>
 
-<p>At the same time, there is a parallel literature, touched on in the podcast, about ethnic diversity (or fractionalization, as it is termed in that literature) and economic growth. But one has to be careful drawing a bright line between the two literatures. It does not follow that the results for workplace diversity imply the results regarding economic growth. And this is because the growth results, to the extent that you believe they are robust, all operate through political systems.</p>
+<p>The BLS provides county-level employment totals for 1990-2015, hence the time frame I’m looking at. And I can calculate the change in total employment in that 25 year period for each county. I could use the size of the labor force instead (employed plus unemployed) but the patterns I’m going to show you here don’t change appreciably.</p>
 
-<p>So here let me walk through some of the core empirical relationships that have been found regarding ethnic fractionalization and economic growth, and then talk about why you need to take care with over-interpreting them. This is not a thorough literature review, and I realize there are other papers in the same vein. What I’m after is characterizing the essential results.</p>
+<p><img src="https://dl.dropboxusercontent.com/u/6823742/county_loss.png" alt="Binary job gain loss" /></p>
 
-<h3 id="baseline-empirics">Baseline empirics</h3>
+<p>First, of the 3,133 counties for which I have data, 909 of them <em>lost</em> jobs in absolute terms from 1990 to 2015. The map highlights those 909 counties in pink. The location of these counties are not terribly surprising, although I don’t think I realized how much upstate New York’s employment numbers had dropped over time. You can see the smudge of pink in coal country of West Virginia and Kentucky, along with a big set of job-losing counties in the deep, deep south of Mississippi, northern Louisiana, and southern Arkansas. Downstate Illinois and a swath across the Great Plains also saw absolute declines in the number of employees over 25 years. In total, those counties saw employment fall by 1,471,436 jobs in this period, from a base of about 19.5 million jobs to just over 18 million jobs.</p>
 
-<p><a href="https://www.hks.harvard.edu/fs/pnorris/Acrobat/stm103%20articles/Easterley_Levine_Ethnic_Divisions.pdf">Easterly and Levine</a> did one of the first studies of fractionalization and its relationship to economic growth, with a focus on Africa. To measure fractionalization they used a simple index that has become the de facto norm for measuring this kind of thing going forward.</p>
+<p>Beyond the 909 counties that lost jobs in absolute terms, a number of counties lost jobs in relative terms. What I mean by relative loss is as follows. Total employment in the US grew by 25% from 1990 to 2015. If the distribution of jobs across counties stayed fixed at the 1990 distribution, then all counties should have seen job growth of 25% as well. A county that had job growth below 25% then saw a relative decline in employment compared to the rest of the country, and one with job growth above 25% saw a relative increase in emploment.</p>
 
-<script type="math/tex; mode=display">Frac = 1 - \sum_i s_i^2</script>
+<p>There were 2,188 counties that saw a <em>relative</em> decline in employment over this period, or roughly two-thirds of the counties in the US, and includes the 909 counties with absolute losses. Those counties started with roughly 73 million jobs, and finished with 78.4 million in 2015, an increase of about 5.4 million jobs, or about 7.4%. If those counties had instead grown at 25%, like the US as a whole, they would have had about 91 million jobs, an increase of 18 million jobs.</p>
 
-<p>where $s_i$ is the share of group i in the population of a given area. You can interpret the fractionalization measure as the probability that two random people in an area belong to different groups. If there is only one group, then the summation term is 1, so Frac is zero. If every single person is in a unique group, so there are N groups, then the summation term approaches 1/N, and Frac approaches 1. EL constructed indices like this for a set of countries using data that originally came from Soviet ethnographers. As I’ll mention in more detail below, their index thus depends on choices made by those ethnographers about what constitutes and ethnicity.</p>
+<p>These 2,188 counties fell about 13 million jobs “short” of what we’d expect given the 1990 distribution of jobs. Which means that jobs moved out of those 2,188 counties, and moved into the other 944 counties that gained in <em>relative</em> terms.</p>
 
-<p>EL then looked at basic growth regressions. That is, they looked at the relationship between the average growth rate of GDP over a long period of time and how that correlated with their measure of fractionalization. In doing this, they controlled for initial GDP per capita and several other characteristics of countries. What they found was that higher fractionalization was associated with lower growth when only basic controls were included. To take the extreme, going from 0 fractionalization to total fractionalization was associated with a growth rate 2 percentage points lower.</p>
+<p>Those 944 counties started with 45.5 million jobs in 1990, and ended in 2015 with 70.5 million jobs, for a gain of about 25 million jobs, which is a percent gain of 55%. The 944 counties that gained in relative terms over this period gained 13 million <em>more</em> jobs than we would expect.</p>
 
-<p>As a quick aside, note that this doesn’t mean a permanently lower growth rate. EL are working with a standard growth regression, controlling for initital income. What they are finding is that places with high fractionalization had lower balanced growth paths. In their empirical setting, every country has the same long run growth rate, but highly fractionalized ones will be poorer than homogenous ones. This shows up as a lower growth rate for fractionalized places because they are closer to their balanced growth paths to begin with.</p>
+<p><img src="https://dl.dropboxusercontent.com/u/6823742/county_scale.png" alt="Relative job bins" /></p>
 
-<p>EL go on to explore the idea that the reason for fractionlization’s effect on balanced growth paths is due to the interference in public goods provision. Their hypothesis is that fractionalization implies conflicts between groups, which implies an inability or unwillingness to get broad public support for things like education or infrastructure, and this makes them poorer in the long run. And what EL find is that once you control for public goods provision (crudely, using things like the number of telephones per capita) the effect of fractionalization is no longer significant or as large. For EL, this shows that the impact of fractionalization works through the provision of these public goods.</p>
+<p>The map here plots the relative job change, in number of jobs, for each county in the US over this period. I didn’t include the legend because it got too busy, and shrinking it down made it unreadable. The darker green the county, the more jobs, in relative terms, that it gained over this period. The darker the pink/red the county, the more jobs, in relative terms, that it lost over this period.</p>
 
-<p>Stronger support for that idea comes from a different Easterly paper. He, with Alesina and Baqir, published <a href="http://isites.harvard.edu/fs/docs/icb.topic700742.files/Alesina_Baqir_Easterly_Pub_Goods_Ethnic_Division_QJE_114_1999.pdf">Public Goods and Ethnic Divisions</a> in 1999. This looked directly at US cities, counties, and metro areas, and the share of government expenditures at those levels being spent on various public goods. They found that higher fractionalization was associated with a lower share of spending on roads (about minus 5%), welfare (minus 5%), and education (minus 10-17%). On the other hand, there was a higher share of spending on police (plus 2-4%) and health services (13-25%). The increased police and health share is not always enough to explain the lower shares in all the other areas of spending, implying that places with high fractionalization have a larger share of local government expenditures on “everything else”. That “everything else” includes debt payments and other poorly classified spending. The authors speculate it could be related to patronage, but there is no way to look at that directly. In terms of actual levels of taxes and spending, there found conflicting results. At the city level, fractionalization is associated with both higher taxes and spending per capita, but at the metro area and county levels fractionalization was associated with <em>lower</em> taxes but <em>higher</em> spending per capita. Either way, fractionalization was generally associated with higher spending per capita. And no, that wasn’t simply due to city/metro/county sizes, as this held while controlling for the total population of the city or metro area.</p>
+<p>Harris county (Houston), where I live, is a dark green smudge down on the Gulf Coast of Texas. It gained 663,757 jobs over 1990-2015. That is 291,540 more jobs than you would have guessed based on the 1990 distribution of employment, the relative job change. Other counties with big relative gains include Maricopa County, AZ (Phoenix) with 566,974 extra jobs, Clark County, NV (Vegas) with 477,942 extra jobs, and Riverside County, CA (greater LA) with 341,434 extra jobs. You’ll also see dark green counties in North Carolina (Charlotte and Raleigh), Texas (Dallas, San Antonia, Austin), Colorado (Denver), and Florida (basically everything but the panhandle).</p>
 
-<p>Back to the country level, where Alesina, Devleeschauwer, Easterly, Kurlat, and Wacziarg <a href="http://scholar.harvard.edu/files/alesina/files/fractionalization.pdf">extended</a> increased the amount of data available on a cross-country basis, including ethnic, linguistic, and religious measures of fractionalization. Similar to Easterly and Levine, they find that fractionalization implies a lower steady state growth path. Also similar, this negative effect dissipates as you control for crude measures of public goods spending and government effectiveness. The authors appeal to a similar argument to before: fractionalization makes consensus hard to build, and so public goods do not get provided at a level more homogenous societies can manage. A few correlates of ethnic fractionalization include lower literacy, lower levels of education attainment, and lower indices of democracy and political rights.</p>
+<p>The biggest relative losers in job terms are generally older cities. LA County came in 628,796 jobs under what you would have thought - it gained only 441,710 jobs but we would have guessed it should have gained over 1 million based on the distribution in 1990. Cook County, IL (Chicago) lost 558,190 jobs in relative terms. Wayne County, MI (Detroit) lost 378,043 jobs in relative terms. Cuyahoga County, OH (Cleveland) lost 225,300 in relative terms. Other big relative losses happened in Philadelphia, Milwaukee, Pittsburgh, St. Louis, Baltimore, Hartford, and big swaths of upstate New York (Buffalo and Rochester, mainly).</p>
 
-<p>One interesting note to their paper is that <em>religious</em> fractionalization has almost the exact <em>opposite</em> effects of ethnic and linguistic fractionalization. More religiously heterogenous countries tend to have higher growth paths, more education, and better measure of political rights.</p>
+<p>These big losses are dominated by big cities because they start with big populations. We can look instead at scaled relative change of jobs. That is, take the relative change in jobs (e.g. -225,300 relative jobs lost in Cuyahoga County) and divide by the initial level of jobs in that county in 1990 (e.g. 642,367 in Cuyahoga County) for a scaled loss (e.g. -0.35 for Cuyahoga).</p>
 
-<h3 id="problems">Problems?</h3>
+<p><img src="https://dl.dropboxusercontent.com/u/6823742/county_perc.png" alt="Scaled changes" /></p>
 
-<p>Start with a basic measurement issue. The fractionalization index is sensitive to the number of groups you divide everyone up into. That is, if your country has two ethnic groups, then the maximum value of the fractionalization index is 0.5. If your country has 10 ethnic groups, the maximum index is 0.9. That seems to make sense. More groups, more possible fractionalization.</p>
+<p>The map shows these scaled changes, and the message is similar to before. It was relative loss in the Upper Midwest, Northeast, and some core parts of the South and relative gains in very concentrated urban areas that generally lie in the Sunbelt, plus Denver. So it is not only</p>
 
-<p>Except that the definition of what counts as a group is not a fixed characteristic. If I give people in the US the options of white, black, Asian, Native American, or Other, then I am allowing for 5 groups, and max fractionalization of 0.8. We could double the number of groups to 10 by allowing each racial group to report as either Hispanic or non-Hispanic, and now the max index is 0.9. Or we could sub-divide white into “German-American”, “Irish-American”, and so on, and get ourselves up to like 40 or 50 groups if we really wanted to, and this would automatically drive up the fractionalization index to one. Or we could say f$&amp;# it, and stop tracking racial identity completely, and get a fractionalzation index of zero by definition.</p>
+<p>Again, I’m not claiming that this is some kind of revelation here. The movement of population, and hence jobs, from the Northeast/Midwest to the Sunbelt is well known. What I found interesting was putting some tangible numbers of the shift. The little counter-factual I’m doing here is not very rigorous; there is no particular reason to believe that the 1990 distribution is the “right” distribution of jobs to compare against. But the 1990 distribution does have the feature of being prior to NAFTA and prior to China’s accession to the WTO, both of which are at times cited as sources of manufacturing job losses in the upper Midwest and Northeast.</p>
 
-<p>The point is that the degree of fractionalization is not immutably fixed by arbitrary racial or ethnic groups designed by the Census Bureau. James <a href="https://web.stanford.edu/group/fearon-research/cgi-bin/wordpress/wp-content/uploads/2013/10/Ethnic-and-Cultural-Diversity-by-Country.pdf">Fearon</a> has an excellent paper addressing the arbitrary nature of building an index of ethnic fractionalization. There is no <em>right</em> fractionalization index for any country. The number of ethnic groups tracked in a census or survey may not map to any meaningful political groups. The Hutus and Tutsis in Rwanda were are included in a single ethnic group in the original Soviet data, for example.</p>
+<p>The scale of the relative job changes, though, indicates that more of the losses have to do with free trade <em>within</em> the US than free trade <em>outside</em> of the US. The areas with relative decline lost 13 million jobs compared to the 1990 distribution of jobs. In total the US shed 6 million manufacturing jobs from 1990 to 2015 (18 million to 12 million, roughly). So this relative decline cannot possibly be a function only of manufacturing and international trade in manufactured goods. There is just too much relative movement out of the declining counties to attribute to this. This is a sloppy way of thinking about how this would work counter-factually (I’m ignoring spillovers entirely), but if you magically added 6 million extra jobs to those counties in relative decline, <em>they would still be in relative decline</em> compared to the Sunbelt in terms of jobs. They’d have 84.4 million jobs (as opposed to 78.4 million), but you’d expect them to have 95.6 million based on the 1990 distribution, so they would still be 11.2 million jobs off the pace.</p>
 
-<p>Going back to the empirical work, this raises some questions on how to interpret the results. When Alesina, et al, collected their updated measures of fractionalization, they noted that ethnic fractionalization in much of the Americas is based on racial definitions (black versus white), while in Europe and Sub-Saharan Africa ethnic fractionalization is based primarily on languages (think of Switzerland). So the ethnic fractionalization measures are not comparable across countries. What does it mean to compare fractionalization in Belgium (French versus Flemish speakers) with fractionalization in Bolivia (Mestizos versus Aymara versus Quechua)?</p>
+<p>The breadth of relative loss, though, seems striking, and is the one thing I did not appreciate prior to looking at this data. 909 counties <em>lost</em> jobs in absolute terms, which is 29% of all counties. Another 1,279 counties, 41% of all counties, gained jobs in absolute terms buy lost in relative terms. 944 counties, 30%, gained in relative terms. Just as many counties gained in relative terms as lost in absolute terms. The winning locations - Houston, Dallas, Atlanta, Miami, Phoenix, Denver, Vegas - won big, but the losing was spread across a wide area.</p>
 
-<p>Alesina et al mention that they go out of their way to find the most disaggregated data on ethnic groups possible. That is, they make sure they maximize the number of groups in each country, thus maximizing the measure of fractionalization. This has the virtue of being a consistent strategy, but suffers because it is subject to variation in the level of disaggregation tracked by country, which is an inherently political decision.</p>
+<p>More jobs in 2015 are still located in places in relative decline (78.4 million) than are in places in relative ascent (70.5 million). Of those 78.4 million, 18 million (or about 12% of jobs) are in counties that experienced absolute job losses over the last 25 years. <em>Most</em> jobs are still in places that look to be losing out to Sunbelt cities over time. To the extent that your local economy plays a role in forming your opinions, this seems relevant, although I am going to stop now before I try to do any amateur political science or sociology.</p>
 
-<p>You could easily turn all of the empirical results I talked about around in the following way. Places with relatively dysfunctional political systems benefitted from setting ethnic groups against each other, preventing effective opposition. They thus focused on ethnic or linguistic differences, and made sure to track these carefully when they did censuses. It need not even be nefarious. Former colonies who were left with dysfunctional governments may also have inherited a tradition of close ethnic group tracking from their colonizers. Either way, places with dysfunctional governments would to have mechanically high fractionalization indices along ethnic lines. And their dysfunction also leads to poor economic outcomes.</p>
-
-<p>And don’t forget those results on religious fractionalization, which was associated with better political and economic outcomes. The effect of diversity can go either way, depending on how you define it. If you started measuring fractionalization along as many dimensions as possible - ethnicity, religion, language, home state, favorite Beatle, height, extroversion/introversion - you’d eventually come across some of them that were positively related, and some negatively, to things like public goods spending or growth, just by chance.</p>
-
-<p>The overarching point here is that even taking the studies on workplace diversity seriously, this does not imply that poor political outcomes and/or economic growth are a necessary outcome of ethnic fractionalization. At the political level, ethnic fractionalization and its salience to public policy is a choice variable.</p>
 
   </section>
   
@@ -489,20 +484,13 @@ ga('send', 'pageview');
   
   <div id="post-nav">
     
-    <a id="prev-post" href="/blog/Accounting-Profits/">
-      <span class="page-title">GDP, Productivity, and Financial Performance</span>
+    <a id="prev-post" href="/blog/Ethnic/">
+      <span class="page-title">Ethnic fractionalization and growth</span>
       <span class="nav-label">
         <i class="fa fa-chevron-left"></i> 
       </span>
     </a>
     
-    
-    <a id="next-post" href="/blog/Jobs/">
-       <span class="page-title">Employment Going South. Literally.</span>
-       <span class="nav-label">
-         <i class="fa fa-chevron-right"></i>
-       </span>
-     </a>
     
   </div>
   
@@ -519,7 +507,7 @@ ga('send', 'pageview');
 */
 /*
 var disqus_config = function () {
-	this.page.url = /blog/Ethnic/; // Replace PAGE_URL with your page's canonical URL variable
+	this.page.url = /blog/Jobs/; // Replace PAGE_URL with your page's canonical URL variable
 /*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 */
