@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>Yes, ideas are harder to find. Don't panic yet. | Dietrich Vollrath</title>
+	<meta name="description" content=", , Nick Bloom, Chad Jones, John van Reenen, and Michael Webb have a new paper on how productive we are at producing “ideas”, which one can argue are the ultimat...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/Idea-TFP/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/references/">
+							 References 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">Yes, ideas are harder to find. Don't panic yet.</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">24 Jan 2017</a> &nbsp; &nbsp;
+      <a href="/blog/Idea-TFP/#disqus_thread"></a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <p>Nick Bloom, Chad Jones, John van Reenen, and Michael Webb have a new <a href="http://web.stanford.edu/~chadj/IdeaPF.pdf">paper</a> on how productive we are at producing “ideas”, which one can argue are the ultimate source of all economic growth.</p>
+
+<p>The splash graphic from the paper, which I believe made a brief tour of the Twitter-verse a month or so ago, is shown below. It shows that the TFP growth rate (in blue) peaked around the 1940’s, and has declined since then. The axis measurement here is a big funky, as you could see more of the details of this line if they had made the left axis go up to say 5%, rather than 25%. Regardless, the TFP growth rate is smaller than it was in the past, following Robert Gordon’s numbers.</p>
+
+<p>In green is the relative number of researchers compared to the number in 1930. This isn’t the <em>number</em> of researchers, its a measure of <em>effective</em> researchers, found by dividing total R and D spending by the nominal wage of high-skilled workers. Relative to 1930, we have almost 25 times as many (effective) researchers at work today. This leads to the author’s title question - “Are ideas getting harder to find?”. And the author’s answer is “Yes”.</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/6823742/jones_1.png" alt="Idea TFP and TFP Growth" /></p>
+
+<h3 id="measuring-idea-tfp">Measuring Idea TFP</h3>
+<p>BJvRW measure how “hard” it is to find ideas by looking at what they call “idea TFP”. This is easy to back out from some data. Let’s write the growth rate of ideas (I) as</p>
+
+<script type="math/tex; mode=display">\frac{\dot{I}_t}{I_t} = \alpha_t S_t</script>
+
+<p>where the left side is the growth rate of ideas at time t, and on the right-hand side we’ve got the determinants of that growth. $S_t$ is research effort, and here think of the measure of effective researchers. How much work do we put into coming up with new ideas? The second term is $\alpha_t$, which is the “idea TFP”. It tells you how much idea growth you get out of those researchers.</p>
+
+<p>If you tell me the growth rate of ideas (the left) and the number of effective researchers (S), then I (well, the authors) can back out the measure of $\alpha_t$ year by year. And this is what BJvRW do, in a variety of contexts.</p>
+
+<p>What they do first is to equate the growth rate of ideas with the growth rate of TFP (actual aggregate TFP in producing GDP). That doesn’t mean that each idea is equal to one “unit” of TFP, it just means that if the number of ideas grows by 10%, then TFP grows by 10%. This is a big leap - but let’s not get hung up on this. It isn’t important in this first context. With the data from the first graph on the TFP growth rate ($\dot{I}/I$), and the number of effective researchers ($S_t$), we can back out $\alpha_t$. This “idea TFP” is, awkwardly, the “TFP TFP”, or our productivity at producing TFP given a set of researchers.</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/6823742/jones_2.png" alt="Idea TFP" /></p>
+
+<p>This second graph plots the $\alpha_t$ they back out, relative to 1930. You can see that it falls to about 1/64th of the level in 1930. Because we are 1/64th as effective at turning researchers into TFP, but we only have 32 times as many researchers, our growth rate of TFP is about 1/2 as high as it was in the 1930’s/1940’s. Hang on to the “why” question for a moment. For now, we’re just looking at the pure accounting.</p>
+
+<p>This first exercise using (actual) TFP as the measure of ideas is a bit crude, and what BJvRW go on to do is examine individual industries or types of products to establish that the “idea TFP” is in fact falling within each of these as well. This is relevant because the first result using TFP does not tell us what is happening at the “micro” level. We could have constant (or even rising) “idea TFP” within individual industries or lines of research, and yet in aggregate falling “idea TFP”. It may be that ideas are not perfectly translated to TFP, or it may be that the we are spreading our research efforts over an ever-expanding list of industries or lines of research. In the latter case, idea growth in individual industries/lines may be falling because of the decline in numbers of researchers, not because of declining idea TFP. But in aggregate, this would look like declining idea TFP.</p>
+
+<p>Thus looking at individual industries/lines will help us sort out what is happening. The first example is transistors, and the count of transistors per square inch on a chip. Famously, this appears to obey Moore’s Law, which is that the number of transistors per square inch doubles every 18 months. If we count the number of transistors per square inch as “ideas”, then this translates to a growth rate of 35% per year. At the same time, the effective number of researchers working at chip companies (Intel, AMD, etc..) has grown by a factor of about 80 since 1970. Plotting this together yields their next figure.</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/6823742/jones_4.png" alt="Moores Law" /></p>
+
+<p>Relative to the first graph, there is no decline in the growth rate of transistors. But there also isn’t an increase, despite the increased number of researchers. What this means is that “transistor idea TFP” is falling over time, at about 10% per year. As they point out in the paper, Moore’s Law still holds, but it takes 78 times more researchers to figure out how to double transistor density than it did in 1970.</p>
+
+<p>From here, the paper works through several other examples. I’ll leave it to you to look at the specifics. But overall, the message becomes clear. For crop yields, idea TFP is falling at between 3% and 9% per year, except for cotton, where it rose slightly over time. For “new molecular entities” (e.g. drugs) idea TFP has fallen to about 1/4 of its value in 1970, or about 3% per year. BJvRW also look at firm size, measured in different ways, which should be related to their productivity (and ideas). In each case, their size is not growing as fast as their RD spending, implying their idea TFP is falling at about 8-15% per year.</p>
+
+<h3 id="implications-for-economic-growth">Implications for Economic Growth</h3>
+<p>The looming question here is whether this implies economic growth is due to slow down to zero. And the answer is “No”. It is possible for ideas to have a constant growth rate (and GDP per capita to have a constant growth rate as well) even if idea TFP is falling over time. For “semi-endogenous growth theory”, a term often associated with Chad Jones, this falling idea TFP is consistent with constant, positive growth in GDP per capita.</p>
+
+<p>This is what is in the Jones/Vollrath <a href="http://amzn.to/2k0pcbz">textbook</a> (buy 1, buy 10, buy 1000!) when we teach how ideas accumulate. Modify that first equation I showed you to look like the following</p>
+
+<script type="math/tex; mode=display">\frac{\dot{I}_t}{I_t} = \frac{\alpha}{I_t^{\beta}} S_t.</script>
+
+<p>where idea TFP is now the ratio of a constant, $\alpha$, and the number of ideas, $I_t$, raised to the power $\beta$. The value of $\beta$ is quite important. If $\beta=0$, then the level of ideas has no effect on idea TFP, and idea TFP should be constant. This is what was in the original Romer model, by the way. What Jones did was to say that this implies a very knife-edge condition, and there was no reason to assume that $\beta=0$. When $\beta&gt;0$, as we accumulate more ideas, the growth rate of ideas falls - idea TFP goes down.</p>
+
+<p>But just because idea TFP falls as we get more ideas doesn’t mean the <em>growth rate</em> of ideas (the left hand side) is falling. Why? Because $S_t$ is rising over time due to population growth. If the share of people working as researchers is constant, then their absolute number is rising over time. In that case, there is a growth rate of ideas such that the growth rate of ideas stays constant over time, $\dot{I}/I = n/\beta$, where $n$ is the growth rate of population (and hence of researchers). Idea growth need not slow down just because idea TFP falls over time.</p>
+
+<p>Hence the “don’t panic yet” comment in the title. Falling idea TFP may well be the natural course of things, without resulting in lower actual TFP growth. The observed fall in actual TFP growth would have to come from some other forces involved in generating research effort. Start with an explanation that might imply a permanent fall in the TFP growth rate:</p>
+
+<ol>
+  <li><strong>The growth rate of the effective population has fallen</strong>. If the population that provides researchers (and it is best here to think of the total population of advanced countries, not just the US) starts to grow more slowly, then S grows more slowly, and the long-run growth rate of ideas is going to be lower. Maybe the slowdown in TFP growth is due to slower population growth in developed countries. A counterargument would be that this is offset by the increasing shares of Chinese and Indian populations that are in the pool of possible researchers. A counter-counterargument would be that age distributions matter too, and we’ve got too many stodgy old people, and not enough inventive young whipper-snappers.</li>
+</ol>
+
+<p>Other explanations might imply that the drop in the TFP growth rate will be temporary:</p>
+
+<ol>
+  <li><strong>A downward shift in the share of that population that is doing research</strong>. This would generate a lower measured short-run growth rate of ideas because S would have a lower short-run growth rate for a while as we moved to a lower share of people doing research. This doesn’t appear to be true in the data, where an increasing share of workers are reported as doing RD work over time - and that should be pushing <em>up</em> the short-run growth rate of ideas.</li>
+  <li><strong>An exogenous drop in the level of $\alpha$</strong>. In this case, the growth rate of ideas would eventually rise back up to what it was before, after we had lower measured TFP growth for a while on our way to a new equilibrium. If we’re going to argue about the value of $\alpha$, though, then we should start over with our theory about how ideas get generated, as saying “it was a random exogenous shock” ends up being kind of useless.</li>
+</ol>
+
+<p>And of course, maybe semi-endogenous growth theory is wrong. Maybe this just isn’t the way to look at things. Alternative theories might say idea growth could be affected by policies (subsidies for basic research, tax policy regarding treatment of RD spending, etc..) and what we’ve seen is a continuous deterioration of the policies supporting idea generation. This one is a little hard to square, though, just because it seems odd that there would be such growth in the number of researchers if the returns to that research at the firm or individual level were going down so much. I can see how taxes on RD would lower the resources devoted to it, but why would that affect how effective RD efforts are? You’d have to argue that policies were incenting companies to work on useless ideas.</p>
+
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/Society-Dividend/">
+      <span class="page-title">The returns to societal capital</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/Idea-TFP/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+<!-- Disqus comment count script -->
+<script id="dsq-count-scr" src="//growthecon.disqus.com/count.js" async></script>
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2017 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>
