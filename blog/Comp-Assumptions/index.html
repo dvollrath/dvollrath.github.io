@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>Does Growth Depend on Competition? | Dietrich Vollrath</title>
+	<meta name="description" content=", , We usually argue that competition - free entry, zero profits, price-taking behavior - is the most efficient outcome for an economy. But that holds given a se...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/Comp-Assumptions/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/references/">
+							 References 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/topics/">
+							 Topics 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">Does Growth Depend on Competition?</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">27 Jan 2009</a> &nbsp; &nbsp;
+      <a href="/blog/Comp-Assumptions/#disqus_thread"></a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <p>We usually argue that competition - free entry, zero profits, price-taking behavior - is the most efficient outcome for an economy. But that holds <em>given a set of technology</em>. Generating innovations, and hence economic growth, relies on a breakdown of some of those characteristics of competition. Thinking about this really gets to the heart of what drives growth: non-rival ideas combined with some excludability.</p>
+
+<h3 id="blog-posts">Blog Posts</h3>
+<div class="posts">
+<ul>
+  
+    
+        <li>
+         <a id="post-link-trans" class="post-link" href="/blog/understanding-diffusion-models-of-growth/">
+            Understanding Diffusion Models of Growth
+          </a>
+        </li>
+    
+  
+    
+        <li>
+         <a id="post-link-trans" class="post-link" href="/blog/embedded-ideas-and-economic-growth/">
+            Embedded Ideas and Economic Growth
+          </a>
+        </li>
+    
+  
+    
+        <li>
+         <a id="post-link-trans" class="post-link" href="/blog/what-assumptions-matter-for-growth-theory/">
+            What Assumptions Matter for Growth Theory?
+          </a>
+        </li>
+    
+  
+    
+        <li>
+         <a id="post-link-trans" class="post-link" href="/blog/market-power-versus-price-taking-in-economic-growth/">
+            Market Power versus Price-taking in Economic Growth
+          </a>
+        </li>
+    
+  
+    
+        <li>
+         <a id="post-link-trans" class="post-link" href="/blog/more-on-mathiness/">
+            More on Mathiness
+          </a>
+        </li>
+    
+  
+    
+        <li>
+         <a id="post-link-trans" class="post-link" href="/blog/mathiness-versus-science-in-growth-economics/">
+            Mathiness versus Science in Growth Economics
+          </a>
+        </li>
+    
+  
+    
+        <li>
+         <a id="post-link-trans" class="post-link" href="/blog/patents-bargaining-and-innovation/">
+            Patents, Bargaining, and Innovation
+          </a>
+        </li>
+    
+  
+</ul>
+</div>
+
+<h3 id="external-links">External Links</h3>
+
+<ul class="bibliography"><li><span id="Romer004">Romer, P.M., Where has all the excludability gone? Available at: <a href="https://paulromer.net/where-has-all-the-excludability-gone/">Link</a>.</span>  
+
+<div id="materials">
+	
+</div>
+</li>
+<li><span id="Romer003">Romer, P.M., Speeding-up: Theory. Available at: <a href="https://paulromer.net/speeding-up-theory/">Link</a>.</span>  
+
+<div id="materials">
+	
+</div>
+</li>
+<li><span id="Romer002">Romer, P.M., Speeding-up and Missed Opportunities: Evidence. Available at: <a href="https://paulromer.net/speeding-up-and-missed-opportunities-evidence/">Link</a>.</span>  
+
+<div id="materials">
+	
+</div>
+</li>
+<li><span id="Romer001">Romer, P.M., Human Capital and Knowledge. Available at: <a href="https://paulromer.net/human-capital-and-knowledge/">Link</a>.</span>  
+
+<div id="materials">
+	
+</div>
+</li>
+<li><span id="Romer000">Romer, P.M., Nonrival Goods after 25 Years. Available at: <a href="https://paulromer.net/nonrival-goods-after-25-years/">Link</a>.</span>  
+
+<div id="materials">
+	
+</div>
+</li>
+<li><span id="romer1">Romer, P.M., Economic Growth. Available at: <a href="https://paulromer.net/economic-growth/">Link</a>.</span>  
+
+<div id="materials">
+	
+</div>
+</li></ul>
+
+<h3 id="academic-references">Academic References</h3>
+
+<ul class="bibliography"><li><span id="Philippe-Aghion:2005kx">Aghion, P. et al., 2005. Competition and Innovation: a Inverted-U Relationship. <i>Quarterly Journal of Economics</i>, 120(2), pp.701–728.</span>  
+
+<div id="materials">
+	
+		<ul style="list-style: none;">
+		<li><details>
+		<summary>Abstract</summary>
+		<p>This paper investigates the relationship between product market competition and innovation. We find strong evidence of an inverted-U relationship using panel data. We develop a model where competition discourages laggard firms from innovating but encourages neck-and-neck firms to innovate. Together with the effect of competition on the equilibrium industry structure, these generate an inverted-U. Two additional predictions of the model-that the average technological distance between leaders and followers increases with competition, and that the inverted-U is steeper when industries are more neck-and-neck-are both supported by the data.</p>
+		</details></li>
+		</ul>
+	
+</div>
+</li>
+<li><span id="Jones:2002fk">Jones, C.I., 2002. Sources of U.S. Economic Growth in a World of Ideas. <i>American Economic Review</i>, 92(1), pp.220–239.</span>  
+
+<div id="materials">
+	
+		<ul style="list-style: none;">
+		<li><details>
+		<summary>Abstract</summary>
+		<p>Rising educational attainment and research intensity in recent decades suggest that the U.S. economy is far from its steady state. This paper develops a model reconciling these facts with the stability of U.S. growth rates. In the model, long-run growth arises from the worldwide discovery of ideas, which depends on population growth. Nevertheless, constant growth can temporarily proceed at a faster rate, provided research intensity and educational attainment rise steadily over time. Growth accounting reveals that these factors explain 80 percent of recent U.S. growth, with less than 20 percent coming from world population growth.</p>
+		</details></li>
+		</ul>
+	
+</div>
+</li>
+<li><span id="Jones:1995fk">Jones, C.I., 1995. R&amp;D-Based Models of Economics Growth. <i>Journal of Political Economy</i>, 103, pp.759–784.</span>  
+
+<div id="materials">
+	
+		<ul style="list-style: none;">
+		<li><details>
+		<summary>Abstract</summary>
+		<p>This paper argues that the ’scale effects’ prediction of many recent R&amp;D-based models of growth is inconsistent with the time-series evidence from industrialized economies. A modified version of the Romer model that is consistent with this evidence is proposed, but the extended model alters a key implication usually found in endogenous growth theory. Although growth in the extended model is generated endogenously through R&amp;D, the long-run growth rate depends only on parameters that are usually taken to be exogenous, including the rate of population growth.</p>
+		</details></li>
+		</ul>
+	
+</div>
+</li>
+<li><span id="romer1990">Romer, P.M., 1990. Endogenous Technological Change. <i>Journal of Political Economy</i>, 98(5), pp.pp. S71–S102. Available at: <a href="http://www.jstor.org/stable/2937632">Link</a>.</span>  
+
+<div id="materials">
+	
+		<ul style="list-style: none;">
+		<li><details>
+		<summary>Abstract</summary>
+		<p>Growth in this model is driven by technological change that arises from intentional investment decisions made by profit-maximizing agents. The distinguishing feature of the technology as an input is that it is neither a conventional good nor a public good; it is a nonrival, partially excludable good. Because of the nonconvexity introduced by a nonrival good, price-taking competition cannot be supported. Instead, the equilibrium is one with monopolistic competition. The main conclusions are that the stock of human capital determines the rate of growth, that too little human capital is devoted to research in equilibrium, that integration into world markets will increase growth rates, and that having a large population is not sufficient to generate growth.</p>
+		</details></li>
+		</ul>
+	
+</div>
+</li>
+<li><span id="romer1986">Romer, P.M., 1986. Increasing Returns and Long-Run Growth. <i>Journal of Political Economy</i>, 94(5), pp.pp. 1002–1037. Available at: <a href="http://www.jstor.org/stable/1833190">Link</a>.</span>  
+
+<div id="materials">
+	
+		<ul style="list-style: none;">
+		<li><details>
+		<summary>Abstract</summary>
+		<p>This paper presents a fully specified model of long-run growth in which knowledge is assumed to be an input in production that has increasing marginal productivity. It is essentially a competitive equilibrium model with endogenous technological change. In contrast to models based on diminishing returns, growth rates can be increasing over time, the effects of small disturbances can be amplified by the actions of private agents, and large countries may always grow faster than small countries. Long-run evidence is offered in support of the empirical relevance of these possibilities.</p>
+		</details></li>
+		</ul>
+	
+</div>
+</li></ul>
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/Dev-Growth/">
+      <span class="page-title">Does Economic Growth Mean Economic Development?</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+    <a id="next-post" href="/blog/Converge-Reform/">
+       <span class="page-title">Can You Reform Your Way to Higher Growth?</span>
+       <span class="nav-label">
+         <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/Comp-Assumptions/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+<!-- Disqus comment count script -->
+<script id="dsq-count-scr" src="//growthecon.disqus.com/count.js" async></script>
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2017 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>
