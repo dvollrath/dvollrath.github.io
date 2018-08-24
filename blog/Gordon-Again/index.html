@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Detecting changes in trend growth</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+<!-- CSS -->
+<link rel="stylesheet" href="/css/owl.carousel.css" />
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/css/airspace.css" />
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/ionicons.min.css" />
+<link rel="stylesheet" href="/css/animate.css" />
+<link rel="stylesheet" href="/css/responsive.css" />
+<link rel="stylesheet" href="/css/syntax.css" />
+
+<!-- Js -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/min/waypoints.min.js"></script>
+<script src="/js/jquery.counterup.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- RSS -->
+<link rel="alternate" type="application/atom+xml" title="" href="https://growthecon.com/feed.xml" />
+
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+    }
+    });
+</script>
+<script type="text/javascript" async
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<!-- Enforce HTTPS -->
+<script type="text/javascript">
+var host = "growthecon.com";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+</script>
+
+<!-- Google Analytics -->
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+<script type="text/javascript">
+var host = "growthecon.com";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+</script>
+ <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+
+
+<!--
+/*
+ * Airspace
+ * Ported to Jekyll by Andrew Lee
+ * https://github.com/luminousrubyist/airspace-jekyll
+ * Designed and Developed by ThemeFisher
+ * https://themefisher.com/
+ *
+ */
+-->
+
+
+  </head>
+  <body>
+
+
+    <!-- Header Start -->
+<header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- header Nav Start -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            
+          </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                <li><a href="/assets/cv_current.pdf">CV</a></li>
+                <li><a href="/book">Book</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/classes">Classes</a></li>
+                <li><a href="/research">Research</a></li>
+                <li><a href="/topics">Topics</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div>
+    </div>
+  </div>
+</header><!-- header close -->
+
+
+
+    <div class="post">
+  <!-- Wrapper Start -->
+  <section id="intro" style="border: 1px dotted #ddd;">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="block">
+            <h1>Detecting changes in trend growth</h1>
+            <div class="post-info-wrapper">
+              <p class="italic"><span class="bold">August 24, 2018</span></p>
+            </div>
+            <hr />
+            <p><p>A quick aside before I start the main part of the post. My blogging has been sparse in the last few months, or even year. This was in large part a reaction to working on a book about the growth slowdown, and time that would have gone into posts got poured into that book. Topics that I would have addressed in posts here got folded into the text of that book. As a few days ago, I’ve got a contract to publish that with the U. of Chicago Press, and it should come out in 2019. There is still some revising to do, but at this point I should get back to some more regular blogging, as I’m out of the weeds on getting the book drafted. Famous last words, of course.</p>
+
+<p>Back to actual posting. One of the very early posts on this blog, back in 2014, asked “<a href="https://growthecon.com/blog/is-robert-gordon-right-about-u-s-growth/">Is Robert Gordon right about U.S. growth?</a>”. Gordon had written a few pieces explaining that, as of 2007, the trend growth rate of GDP per capita in the U.S. was 0.9%. That is just under half of the trend growth rate that held through most of the 20th century and up to 2007, roughly 2% per year.</p>
+
+<p>What I did in that post was point out that it would take several years to accumulate enough evidence to reject the hypothesis (in a statistical sense) that the growth rate was still 2%. The issue is that there are fluctuations in GDP per capita around trend (e.g. recessions, booms), and thus it was possible that GDP per capita could still have a 2% trend growth rate, yet GDP per capita could grow quite slowly for a few years due to the effects of the financial crisis or other fluctuations.</p>
+
+<p>One of the things I came up with in that post was that it would be 2018 before we could make some concrete statements about whether the trend growth rate had fallen below 2%. I really should wait until next year when the data from 2018 are available, but nevertheless it seemed interesting to revisit this question now that we’ve got more evidence on GDP per capita from the last few years.</p>
+
+<p>But in evaluating whether trend growth has dropped below 2% it turns out to be important to distinguish between changes in the growth rate and changes in the level of GDP per capita. The distinction of the level and growth rate is similar to the distinction between the lane you are in on a highway, and your forward speed. Your forward speed could be identical in either lane in the long run, but if you change lanes (i.e. there is a level shift) your <em>forward</em> speed (i.e. the growth rate) will drop for a few moments as you transfer some of that into moving sideways. And we don’t want to use the temporary drop in forward speed from changing lanes to make an inference about your long-run forward speed.</p>
+
+<p>In this setting, we could think of two versions of Gordon’s hypothesis. The first is that the growth rate changed in 2007, but there was no level shift. That is like saying that you stayed in the same lane, but the car slowed down. The second is that there was a level shift in 2007 - you changed lanes - <em>and</em> that the car slowed down once you got into the new lane. It will be much easier to detect the change in speed in the first situation than in the second.</p>
+
+<p>By the way, I’m calling this “Gordon’s hypothesis”, but the general idea that the trend growth rate has dropped is not a unique prediction of his, and is probably the default hypothesis for most people who pay attention to the economy. He just put a specific number on the drop, so it makes his prediction more tangible.</p>
+
+<h3 id="a-simple-drop-in-the-growth-rate">A simple drop in the growth rate</h3>
+<p>Look at the first version of Gordon’s argument, that the growth rate dropped in 2007, but there was no level shift. Taking that as the alternative, I did some very crude calculations in the original post asking when it might be plausible to reject the hypothesis that trend growth was still 2%. The intuition of those calculations was that if trend growth was in fact 0.9% - if we had slowed down - then eventually GDP per capita would fall so far below the 2% trend that we’d have to reject that growth was still 2%. At some point in time it wouldn’t be plausible anymore that all we were seeing were some fluctuation that took us below trend.</p>
+
+<p><img src="/assets/fig_gordon_trend.png" alt="Trends" /></p>
+
+<p>The figure tries to give you some visual for this situation. The solid black line represents the old trend line, estimated using data from 1950 to 2007 (the actual growth rate of this is about 2.1%). The gray lines above and below that 2% trend line are the error bands, meaning that if GDP per capita were in that range, we couldn’t reject that 2% trend growth was accurate. What you also see is the dashed black line representing 0.9% growth starting in 2007, Gordon’s hypothesis. And again, there are gray error bands around this showing where we might expect GDP per capita to be if 0.9% growth was true.</p>
+
+<p>Finally, you can see the thick black line tracking actual GDP per capita. The financial crisis in 2009 drops the economy below all the error bands, which just represents how dramatic the crisis was relative to the normal fluctuations we might expect in GDP per capita. Since 2009, GDP per capita continued to track upward, but not very rapidly. What seems to be clear from this figure is that GDP per capita is well outside of the 2% error bands, and has been for several years. From this we should reject 2% trend growth.</p>
+
+<p>Does that mean Gordon is right? In favor of the 0.9% hypothesis is that GDP per capita falls within the error bands of that trend. Which means we <em>cannot reject</em> 0.9% growth. But that is different than saying 0.9% is <em>right</em>. We also cannot reject 1% growth, or 0.7% growth. Nevertheless, whether we want to buy Gordon’s precise 0.9% alternative, it would appear that the old trend line no longer applies. We’re just too far out of range.</p>
+
+<h3 id="separating-trend-growth-and-trend-level">Separating trend growth and trend level</h3>
+<p>But before we dispense with 2% trend growth, we need to think about the distinction of the growth rate and the level. It is quite possible that the financial crisis shifted the <em>level</em> of GDP per capita down, but that the growth rate of GDP per capita remained around 2% on trend.</p>
+
+<p><img src="/assets/fig_gordon_shift.png" alt="Level shift" /></p>
+
+<p>To see what I mean, take a look at this next figure. Here, what I’ve done is show what a simple level shift - a lane change - looks like for the economy that keeps the 2% trend growth rate. I eyeballed the level shift so that the financial crisis set the new level. But given that new lower level, the growth rate stays the same, and so the dashed lines show the trend and error bands we could expect for GDP per capita after the shift.</p>
+
+<p>Here, it is less obvious that we can reject a trend 2% growth rate. The actual path of GDP per capita is still within the error bands of 2% growth <em>given the new level</em>. We are just about to scrape outside of those error bands, so within the next year or so, barring an economic miracle, you’d probably reject 2% growth even if you believed there was a level shift after the financial crisis. But we’re not quite there yet.</p>
+
+<p>And again, even if next year we decide that we can reject a trend 2% growth rate, that is different from accepting that growth is 0.9%. All we’ll know is that it <em>isn’t</em> 2%. It might be 1.7%, or 1.5%, or something else. But even if we can’t say that Gordon’s prediction is <em>right</em> precisely, we could certainly say that he is right that the trend growth rate is <em>lower</em> than it was prior to 2007.</p>
+
+<h3 id="long-run-implications">Long run implications</h3>
+<p>The distinction I’m making here between the two situations may seem overblown. Regardless of the scenario, we definitely seem to be below the old trend line. True, but the implications of the two scenarios for the future are very different. If we really are going to experience 0.9 or 1% growth for the indefinite future, that is far <em>worse</em> than experiencing a level shift in GDP per capita followed by continued 2% growth (or something like 1.5% growth). Compounding always wins.</p>
+
+<p>Go back to 2007, and start there. Now extrapolate out different scenarios to 2040. On the old trend line, GDP per capita in 2040 would be almost exactly 2 times (98%) higher than in 2007. If starting in 2007 the trend growth rate dropped to 0.9%, then GDP per capita in 2040 would be only 35% higher than in 2007.</p>
+
+<p>If there was a level shift after 2007 that lowered the trend line by 9% (what I drew in the figure), but the growth rate remained at 2%, then in 2040 GDP per capita would be 81% higher than in 2007. That’s much better than in the situation with the lower growth rate. And even if there is a level shift <em>and</em> the growth rate drops to 1.5%, we’d still have GDP per capita in 2040 48% higher than in 2007. Still better off than if the growth rate dropped to 0.9% per year.</p>
+
+<p>The point is that you don’t want to confuse the scenarios with growth changes and level shifts. These have very distinct implications for the future. And the available evidence on GDP per capita doesn’t tell us which of these scenarios is right, and which is wrong. All we know is that we can reject the old 2% trend line, but we’ll need more evidence before we can figure out whether we saw a drop to a lower growth rate only, or a level shift and possible drop int he growth rate.</p>
+</p>
+            <p class="center-text" style="padding: 30px;">
+            <a href="/blog">Back to blog</a>
+            </p>
+          </div>
+        </div><!-- .col-md-7 close -->
+      </div>
+    </div>
+  </section>
+</div>
+
+<section id="service">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>Share and Discuss</h2>
+          <!-- Begin MailChimp Signup Form -->
+          <center>          
+              <ul class="nav navbar-nav">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+
+              <!-- Disqus -->
+              
+              <div class="container">
+                <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = ; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+              </div>
+              
+          </center>
+          <!--End mc_embed_signup-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer Start -->
+
+<!-- Disqus comment count script -->
+<script id="dsq-count-scr" src="//growthecon.disqus.com/count.js" async></script>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/book">Book</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/classes">Classes</a></li>
+                <li><a href="/research">Research</a></li>
+                <li><a href="/references">References</a></li>
+                <li><a href="/topics">Topics</a></li>
+          </ul>
+        </div>
+        <p>Site theme developed by <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </body>
+</html>
