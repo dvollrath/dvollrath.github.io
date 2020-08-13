@@ -170,15 +170,15 @@ ga('send', 'pageview');
 
 <p>Value-added per hour, $y$, is the summation across all $J$ sectors of the economy</p>
 
-<script type="math/tex; mode=display">y = \sum_{j=1}^J s_j y_j</script>
+\[y = \sum_{j=1}^J s_j y_j\]
 
 <p>where $s_j$ is the share of total hours worked in sector $j$, and $y_j$ is the value-added per hour in sector $j$. With that definition, the <em>change</em> in value-added per hour from time 0 to time $t$ can be written as</p>
 
-<script type="math/tex; mode=display">\Delta y_t = \sum_{j=1}^J s_{jt} y_{jt} - \sum_{j=1}^J s_{j0} y_{j0}.</script>
+\[\Delta y_t = \sum_{j=1}^J s_{jt} y_{jt} - \sum_{j=1}^J s_{j0} y_{j0}.\]
 
 <p>This isn’t very informative by itself, but by rearranging the terms in those two summations, adding and subtracting some other common terms, and a little algebra, we can get</p>
 
-<script type="math/tex; mode=display">\Delta y_t = \sum_{j=1}^J \Delta y_{jt} s_{j0} + \sum_{j=1}^J \Delta s_{jt} y_{j0} + \sum_{j=1}^J \Delta y_{jt} \Delta s_{jt}.</script>
+\[\Delta y_t = \sum_{j=1}^J \Delta y_{jt} s_{j0} + \sum_{j=1}^J \Delta s_{jt} y_{j0} + \sum_{j=1}^J \Delta y_{jt} \Delta s_{jt}.\]
 
 <p>A couple of notes on this equation. First, this is the absolute change in value-added per hour. This isn’t the growth rate. You could divide by sides by $y_0$ to get a growth rate, but as written the equation looks simpler. Second, I’ve made precisely zero assumptions about behavior to get this. This is pure accounting.</p>
 

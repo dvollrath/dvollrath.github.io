@@ -165,33 +165,33 @@ ga('send', 'pageview');
 
 <p>To start, we have to establish how TFP and technology are related. The residual measure of TFP that Gordon uses is</p>
 
-<script type="math/tex; mode=display">R = \frac{Y}{K^{1-s_L}L^{s_L}}</script>
+\[R = \frac{Y}{K^{1-s_L}L^{s_L}}\]
 
 <p>which is a completely standard way of doing this. The $s_L$ is labor’s share of revenues (GDP). As is typical, Gordon assumes there are constant returns to scale so that capital’s share is mechanically $1-s_L$.</p>
 
 <p>Output is actually defined by</p>
 
-<script type="math/tex; mode=display">Y = A K^{\alpha} L^{\beta},</script>
+\[Y = A K^{\alpha} L^{\beta},\]
 
 <p>where I’ve left open the possibility that the elasticities on capital and labor add up to something other than one. If $\alpha+\beta&gt;1$, then you have increasing returns to scale. If $\alpha+\beta=1$, you have constant returns. The term $A$ is the actual measure of technology. The residual measure Gordon uses is thus capturing the following</p>
 
-<script type="math/tex; mode=display">R = A \frac{K^{\alpha - s_K}}{L^{\beta - s_L}}.</script>
+\[R = A \frac{K^{\alpha - s_K}}{L^{\beta - s_L}}.\]
 
 <p>It is pretty clear that $R$ need not necessarily be equal to $A$. In terms of growth rates, which is what Gordon is focused on, we can write this as</p>
 
-<script type="math/tex; mode=display">\frac{\dot{R}}{R} = \frac{\dot{A}}{A} + (\alpha - 1 + s_L)\frac{\dot{K}}{K} + (\beta-s_L) \frac{\dot{L}}{L},</script>
+\[\frac{\dot{R}}{R} = \frac{\dot{A}}{A} + (\alpha - 1 + s_L)\frac{\dot{K}}{K} + (\beta-s_L) \frac{\dot{L}}{L},\]
 
 <p>and the growth rate of the residual is not necessarily equal to the growth rate of technology. It all depends on whether the revenue shares, $1-s_L$ and $s_L$, are in fact equal to the elasticities, $\alpha$ and $\beta$.</p>
 
 <p>To get some structure to understand why they might differ, we can make the minimal assumption that firms are cost-minimizers. In that case it will be true that</p>
 
-<script type="math/tex; mode=display">\alpha + \beta = \mu(1-s_{\pi}).</script>
+\[\alpha + \beta = \mu(1-s_{\pi}).\]
 
 <p>This equation says that the returns to scale, $\alpha + \beta$, are equal to the markup of prices over marginal cost, $\mu \geq 1$, times the share of revenues that are paid to factors of production. That share is one minus the share of revenues paid out as profits, $s_{\pi}$. Note that $s_{\pi} &gt; 0$ means that the shares of output paid to capital and labor need not add up to one - but in Gordon’s calculation they have to add up to one. Gordon’s assumption is very typical, but it is one way of the things that will generate a possible divergence between the measure of productivity and the measure of technology. If you’re interested at all in how to derive all this, the ideas come from (missing reference).</p>
 
 <p>Which brings us back to the residual measure. If you plug in the scale, markup, profit relationship into the growth rate of the residual, and rearrange, you can come up with the following</p>
 
-<script type="math/tex; mode=display">\frac{\dot{R}}{R} = \frac{\dot{A}}{A} + (\mu(1-s_{\pi}) -1)\frac{\dot{K}}{K} + s_L(\mu-1)\left[\frac{\dot{L}}{L} - \frac{\dot{K}}{K}\right].</script>
+\[\frac{\dot{R}}{R} = \frac{\dot{A}}{A} + (\mu(1-s_{\pi}) -1)\frac{\dot{K}}{K} + s_L(\mu-1)\left[\frac{\dot{L}}{L} - \frac{\dot{K}}{K}\right].\]
 
 <p>This isn’t the only way to write this, as you can manipulate the equation into different forms. But I think this is a useful way to look at things. This says that there is a difference between the growth rate of TFP, $\dot{R}/R$, and the growth rate of technology, $\dot{A}/A$.</p>
 
@@ -211,7 +211,7 @@ ga('send', 'pageview');
 
 <p>Finally, from Gordon’s figure 16-5 we know that measured TFP growth in the 1940’s was about 3.3% per year. So put this all together and we have</p>
 
-<script type="math/tex; mode=display">0.033 = \frac{\dot{A}}{A} + (1.5(1-0)-1)0.017 + 0.7(1.5-1)(0.018-0.017) = \frac{\dot{A}}{A} + 0.00885.</script>
+\[0.033 = \frac{\dot{A}}{A} + (1.5(1-0)-1)0.017 + 0.7(1.5-1)(0.018-0.017) = \frac{\dot{A}}{A} + 0.00885.\]
 
 <p>In other words, the residual growth rate <em>overstates</em> technological growth by about 0.85 percentage points per year. Technological growth was 0.033 - 0.00885 = 0.02415, or 2.42% per year, not 3.3% per year. That is a pretty sizable adjustment. But it is still very high compared to all other decades.</p>
 

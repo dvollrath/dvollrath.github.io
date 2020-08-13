@@ -178,30 +178,27 @@ ga('send', 'pageview');
 
 <p>We can construct this interaction in a little system of equations.</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{aligned}
-	y_B &= 0.1\times y_G + 0 \\
-	y_G &= 0.5\times y_B + 1,000
-\end{aligned} %]]></script>
+\[\begin{aligned}
+	y_B &amp;= 0.1\times y_G + 0 \\
+	y_G &amp;= 0.5\times y_B + 1,000
+\end{aligned}\]
 
 <p>where $y_B$ are barrels produced, which are equal to one-tenth of the total gallons of gas produced, as that is the demand from the refinery. The zero in the first line represents the fact that there is zero final demand for oil (no one uses oil directly, it is only an intermediate good here). The second line shows that the total gallons of gas produced are equal to one-half the number of barrels produced (that is the demand from oil producers) plus the 1,000 gallons demanded by final consumers. This is just a two-equation, two-unknown situation. It can be solved to find $y_B = 105.26$ is the gross output of the oil drilling company, and $y_G = 1,052.63$ is the gross output of the refinery. That 1,000 gallons of final demand for gas leads to an extra 52-ish gallons produced, along with 105-ish barrels of oil as intermediate good.</p>
 
 <p>This same logic can be extended to the case of $J$ arbitrary units of production. Ultimately we’d have a $J$ equation system, with $J$ unknown gross outputs of $p_j y_j$, taking the final demands $p_j c_j$ of each unit as given. This is tedious, but it is a straightforward linear algebra problem, and can be set up in matrix form. The only difference with the little example of oil and gas is that here we’re going to use values (i.e. with relative prices included) rather than raw quantities.</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{aligned}
-	p_1 y_1 &= p_1 y_{11} + p_1 y_{21} + ... + p_1 y_{J1} + p_1 c_1 \\
-	p_2 y_2 &= p_2 y_{12} + p_2 y_{22} + ... + p_2 y_{J2} + p_2 c_2 \\
-	 &...& \\
-	p_J y_J &= p_J y_{1J} + p_J y_{2J} + ... + p_J y_{JJ} + p_J c_J \\ 
-\end{aligned} %]]></script>
+\[\begin{aligned}
+	p_1 y_1 &amp;= p_1 y_{11} + p_1 y_{21} + ... + p_1 y_{J1} + p_1 c_1 \\
+	p_2 y_2 &amp;= p_2 y_{12} + p_2 y_{22} + ... + p_2 y_{J2} + p_2 c_2 \\
+	 &amp;...&amp; \\
+	p_J y_J &amp;= p_J y_{1J} + p_J y_{2J} + ... + p_J y_{JJ} + p_J c_J \\ 
+\end{aligned}\]
 
 <p>where recall that $p_i y_{ji}$ is the intermediate demand by unit $j$ for output from unit $i$. Depending on the level of analysis you are working with - establishment, firm, sector - you might be able to assert that $y_{ii} = 0$. But we don’t have to assume this. It is okay if we think of units of production purchasing their own output to use as an intermediate good. Think of a refinery buying its own gas to run its own trucks and equipment. Now we can simplify this by building it into matrix form.</p>
 
 <p>Define the matrices as follows</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\mathbf{q} = 
+\[\mathbf{q} = 
 	\begin{bmatrix}
 	p_1 y_1 \\
 	p_2 y_2 \\
@@ -217,11 +214,11 @@ ga('send', 'pageview');
 	\end{bmatrix}
 \mathbf{A} = 
 	\begin{bmatrix}
-	\frac{p_1 y_{11}}{p_1 y_1} & ... & \frac{p_1 y_{J1}}{p_J y_J} \\
-	\frac{p_2 y_{12}}{p_1 y_1} & ... & \frac{p_2 y_{J2}}{p_J y_J} \\
-	... & \ddots & ... \\
-	\frac{p_J y_{1J}}{p_1 y_1} & ... & \frac{p_J y_{JJ}}{p_J y_J} \\
-	\end{bmatrix} %]]></script>
+	\frac{p_1 y_{11}}{p_1 y_1} &amp; ... &amp; \frac{p_1 y_{J1}}{p_J y_J} \\
+	\frac{p_2 y_{12}}{p_1 y_1} &amp; ... &amp; \frac{p_2 y_{J2}}{p_J y_J} \\
+	... &amp; \ddots &amp; ... \\
+	\frac{p_J y_{1J}}{p_1 y_1} &amp; ... &amp; \frac{p_J y_{JJ}}{p_J y_J} \\
+	\end{bmatrix}\]
 
 <p>The vector $q$ captures the gross output of each unit, the vector $c$ the final demand for each units output. The matrix $A$ is called a “technical coefficients” matrix. The raw data for these matrices come from something called a “use table”, which are part of input/output accounts produced by statistical agencies. I’ll probably go through one of those in a future post.</p>
 
@@ -229,29 +226,28 @@ ga('send', 'pageview');
 
 <p>With these matrices, we can simplify our system of equations down to</p>
 
-<script type="math/tex; mode=display">\mathbf{q} = \mathbf{A}\mathbf{q} + \mathbf{c},</script>
+\[\mathbf{q} = \mathbf{A}\mathbf{q} + \mathbf{c},\]
 
 <p>and solve this using normal matrix operations,</p>
 
-<script type="math/tex; mode=display">(\mathbf{I} - \mathbf{A})\mathbf{q}  = \mathbf{c}</script>
+\[(\mathbf{I} - \mathbf{A})\mathbf{q}  = \mathbf{c}\]
 
 <p>where $\mathbf{I}$ is an identity matrix, and so</p>
 
-<script type="math/tex; mode=display">\mathbf{q} = (\mathbf{I} - \mathbf{A})^{-1}\mathbf{c}.</script>
+\[\mathbf{q} = (\mathbf{I} - \mathbf{A})^{-1}\mathbf{c}.\]
 
 <p>This is the matrix equivalent of our earlier example with the barrels and gas. The $(\mathbf{I} - \mathbf{A})^{-1}$ matrix is a Leontief inverse”. It isn’t obvious here, but this Leontief inverse summarizes all of the direct and indirect effects of final demand for $c$ on gross output $q$.</p>
 
 <p>To see what is going on, go back to the simple example involving barrels and gasoline. Write the matrix form of this as</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{bmatrix}
+\[\begin{bmatrix}
 	y_B \\
 	y_G
 	\end{bmatrix}
 =
 	\begin{bmatrix}
-	0 & 0.1 \\
-	0.5 & 0 \\
+	0 &amp; 0.1 \\
+	0.5 &amp; 0 \\
 	\end{bmatrix}
 	\begin{bmatrix}
 	y_B \\
@@ -261,35 +257,33 @@ ga('send', 'pageview');
 	\begin{bmatrix}
 	c_B \\
 	c_G
-	\end{bmatrix} %]]></script>
+	\end{bmatrix}\]
 
 <p>where I’ve allowed both oil, $c_B$, and gas, $c_G$, to have some final demand. Our general setting says that we should form the Leontief inverse first, which in this case is</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-(\mathbf{I} - \mathbf{A})^{-1} =
+\[(\mathbf{I} - \mathbf{A})^{-1} =
 	\begin{bmatrix}
-	1.052 & 0.105 \\
-	0.526 & 1.052 \\
-	\end{bmatrix}. %]]></script>
+	1.052 &amp; 0.105 \\
+	0.526 &amp; 1.052 \\
+	\end{bmatrix}.\]
 
 <p>The entries in this table tell us the total effect of final demand, whatever that may be. For example, the upper right entry (0.105) tells us that every additional gallon of gas demanded induces 0.105 barrels of oil to be produced. We know that technically, only 0.1 barrels are necessary, but an extra 0.005 are produced because oil production requires some gasoline itself. The bottom left entry says that every additional barrel of oil demanded (if anyone wanted oil as a final good) would lead to 0.526 gallons of gas being produced, 0.5 because it takes that much gas to produce a barrel, and an additional 0.026 because that gas requires some oil itself.</p>
 
 <p>Given that Leontief inverse, we know that</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{bmatrix}
+\[\begin{bmatrix}
 	y_B \\
 	y_G
 	\end{bmatrix}
 =
 \begin{bmatrix}
-	1.052 & 0.105 \\
-	0.526 & 1.052 \\
+	1.052 &amp; 0.105 \\
+	0.526 &amp; 1.052 \\
 	\end{bmatrix}
 \begin{bmatrix}
 	c_B \\
 	c_G
-	\end{bmatrix}. %]]></script>
+	\end{bmatrix}.\]
 
 <h3 id="accounting-for-shocks">Accounting for shocks</h3>
 <p>Note that just knowing the matrix $\mathbf{A}$, and thus the Leontief inverse, doesn’t tell us how big GDP or gross output will be. It only allows us to solve for the relationship of gross output and GDP. Determining actual GDP or gross output would still depend on things like the supply of factors of production (e.g. labor, capital), the productivity of individual units of production, and the preferences of people involved. Nevertheless, this structure is still useful because it gives us the basis for understanding how to account for the interactions of different units of production.</p>

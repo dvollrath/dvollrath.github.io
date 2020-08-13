@@ -192,13 +192,13 @@ ga('send', 'pageview');
 
 <p>To make sense of this, I need a little math. The convergence relationship that PSS estimate looks like this</p>
 
-<script type="math/tex; mode=display">\frac{\ln y_{t} - \ln y_0}{t} = \alpha + \beta \ln y_0.</script>
+\[\frac{\ln y_{t} - \ln y_0}{t} = \alpha + \beta \ln y_0.\]
 
 <p>On the left is the growth rate of GDP per capita, $y$, from some initial year 0 to year $t$. This is related to the initial level of GDP per capita, $y_0$, on the right-hand side. The strength of that relationship is measured by the coefficient $\beta$. $\beta$-convergence means that $\beta&lt;0$, or that the growth rate gets smaller as the initial level of income gets higher. How large (in absolute value) $\beta$ is determines how strong that effect is. The extra parameter $\alpha$ is a baseline growth rate.</p>
 
 <p>A little re-arrangment of this gives us</p>
 
-<script type="math/tex; mode=display">\ln y_t = \alpha t + (1 + \beta t) \ln y_0</script>
+\[\ln y_t = \alpha t + (1 + \beta t) \ln y_0\]
 
 <p>which is the level of GDP per capita at time $t$, given initial GDP per capita at time 0. That multiplicative term $\beta t$ is the effect of $\beta$-convergence over time.</p>
 
@@ -206,19 +206,19 @@ ga('send', 'pageview');
 
 <p>At this hypothetical time $t$, we want that $y_t^{Poor}/y_t^{Rich} = .9$, which if you take logs and plug in from the above equation, gives us</p>
 
-<script type="math/tex; mode=display">\ln .9 = \alpha t + (1 + \beta t) \ln y_0^{Poor} - \alpha t - (1 + \beta t) \ln y_0^{Rich}</script>
+\[\ln .9 = \alpha t + (1 + \beta t) \ln y_0^{Poor} - \alpha t - (1 + \beta t) \ln y_0^{Rich}\]
 
 <p>and we can simplify this to</p>
 
-<script type="math/tex; mode=display">\ln .9 = (1 + \beta t) (\ln y_0^{Poor} - \ln y_0^{Rich}).</script>
+\[\ln .9 = (1 + \beta t) (\ln y_0^{Poor} - \ln y_0^{Rich}).\]
 
 <p>We also said that $y_0^{Poor}/y_0^{Rich} = .1$, so taking logs of that, we can plug in and get</p>
 
-<script type="math/tex; mode=display">\ln .9 = (1 + \beta t) \ln .1</script>
+\[\ln .9 = (1 + \beta t) \ln .1\]
 
 <p>and now re-arrange to solve for time $t$</p>
 
-<script type="math/tex; mode=display">t = \frac{\frac{\ln .9}{\ln .1} - 1}{\beta}.</script>
+\[t = \frac{\frac{\ln .9}{\ln .1} - 1}{\beta}.\]
 
 <p>This is how long it will take the poor country to go from 10% of rich country GDP per capita to 90% per capita. And you could plug in other numbers in the obvious spots here to think about the time to go from 20% to 99%, or whatever you wanted.</p>
 

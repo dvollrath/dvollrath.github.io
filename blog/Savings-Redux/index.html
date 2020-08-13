@@ -159,7 +159,7 @@ ga('send', 'pageview');
 
 <p>That said, this is just a wrap-up of a <a href="https://growthecon.com/blog/Savings/">post</a> about “What happens to GDP if I save 100 dollars”? And the point there was that this is an ill-formed question. Or at least it is ill-formed because we economists have screwed up by using the word “savings” for lots of different things.</p>
 
-<p>From the perspective of an individual, they earn income in dollars. That income in dollars is divided across several different uses, several of which could be called “savings”. So let’s be a little more exact. Write <script type="math/tex">Inc_t = C_{t,now} + C_{t,later} + I_t + Bank_t</script>.</p>
+<p>From the perspective of an individual, they earn income in dollars. That income in dollars is divided across several different uses, several of which could be called “savings”. So let’s be a little more exact. Write \(Inc_t = C_{t,now} + C_{t,later} + I_t + Bank_t\).</p>
 
 <p>This says that income can be spent in four ways:</p>
 
@@ -182,13 +182,13 @@ ga('send', 'pageview');
 
 <h3 id="beware-what-follows">Beware what follows</h3>
 <p>This last bit is all wild-ass speculation. If each person has an budget constraint of the form I gave above, we could add up across all individuals like this
-<script type="math/tex">\sum_i Inc_t = \sum_i C_{t,now} + \sum_i C_{t,later} + \sum_i I_t + \sum_i Bank_t.</script></p>
+\(\sum_i Inc_t = \sum_i C_{t,now} + \sum_i C_{t,later} + \sum_i I_t + \sum_i Bank_t.\)</p>
 
 <p>Now, let’s say that total spending on goods and services (the two C terms plus the I term) are equal to some multiple, $c$, of income. $c$ could be greater than one (so people are net borrowing) or less than (people are net saving). Then I have
-<script type="math/tex">(1-c) \sum_i Inc_t = \sum_i Bank_t.</script></p>
+\((1-c) \sum_i Inc_t = \sum_i Bank_t.\)</p>
 
 <p>The sum of income flowing to individuals has to add up to nominal GDP by the national income product accounts, so call $\sum_i Inc_t = PY$. Then plugging this in and rearranging I have
-<script type="math/tex">PY = \frac{\sum_i Bank_t}{1-c}</script>.</p>
+\(PY = \frac{\sum_i Bank_t}{1-c}\).</p>
 
 <p>If $(1-c)&gt;0$, then this means people do not spend all their income, so it makes sense that $\sum_i Bank_t &gt;0$. In other words, savings are accumulating in aggregate. If $(1-c)&lt;0$, then it makes sense that $\sum_i Bank_t&lt;0$, or savings are de-cumulating in aggregate. Either way, the ratio on the right is positive, and equal to nominal GDP.</p>
 

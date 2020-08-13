@@ -169,19 +169,19 @@ ga('send', 'pageview');
 
 <p>I think DeLong is too quick to make that conclusion, and that there is in fact a way to understand his three facts that does not imply economic growth has been understated. My brain moves a little slower than DeLong’s, so here’s how I worked through his reasoning. First, let the following be the demand curve for real manufacturing goods, in log terms</p>
 
-<script type="math/tex; mode=display">\ln Q^M = \epsilon_I \ln Y - \epsilon_P \ln P^M + \ln D^M</script>
+\[\ln Q^M = \epsilon_I \ln Y - \epsilon_P \ln P^M + \ln D^M\]
 
 <p>where $Q^M$ is the quantity of real manufactured goods, $Y$ is real income, and $P^M$ is the relative price of manufactured goods. $\epsilon_I$ is the income elasticity of demand for manufactured goods, and $\epsilon_P$ the price elasticity of demand. $D$ is just a “demand shifter” to account for anything changing demand for manufactured goods that isn’t related to either real income or the relative price.</p>
 
 <p>Add $\ln P^M$ to both sides, and subtract $\ln Y$ from both sides. That leaves me with</p>
 
-<script type="math/tex; mode=display">\ln Q^M + \ln P^M - \ln Y = (\epsilon_I-1) \ln Y + (1 - \epsilon_P) \ln P^M + \ln D^M.</script>
+\[\ln Q^M + \ln P^M - \ln Y = (\epsilon_I-1) \ln Y + (1 - \epsilon_P) \ln P^M + \ln D^M.\]
 
 <p>The left-hand side is, if you combine the log terms, $\ln Q^M P^M/Y$, or the log of manufacturing’s share in nominal income. Also, it’s important to note that the left-hand side can be written as $\ln Q^M/Y + \ln P^M$. This is the log of manufacturing’s share of <em>real</em> income, plus the relative price level of manufactured goods. So it has both the nominal and real share of manufacturing in it.</p>
 
 <p>To work with this in DeLong’s terms, it will be easiest to talk about growth rates of all of these items. And with everything written in log terms, getting growth rates is straightforward. Let $\hat{q}^M$ indicate the growth rate of real manufacturing goods, and define a similar “hat” term for each element of the equation. We’ve got</p>
 
-<script type="math/tex; mode=display">(\hat{q}^M - \hat{y}) + \hat{p}^M  = (\epsilon_I-1) \hat{y} + (1 - \epsilon_P) \hat{p}^M + \hat{d}^M.</script>
+\[(\hat{q}^M - \hat{y}) + \hat{p}^M  = (\epsilon_I-1) \hat{y} + (1 - \epsilon_P) \hat{p}^M + \hat{d}^M.\]
 
 <p>Notice that I’ve done a little rearranging there. Inside the parentheses on the left is the growth rate of manufacturing’s <em>real</em> share of <em>real</em> income. That gets added to the growth rate of the relative price of manufacturing to deliver the growth rate of manufacturing’s share of nominal income.</p>
 
@@ -200,7 +200,7 @@ ga('send', 'pageview');
 
 <p>DeLong then asks how this is all supposed to work if we instead assume that the income elasticity is 1, the price elasticity is something more reasonable like 1/2, and we dismiss the idea of a purely exogenous shift in manufacturing demand. And this leads him to a problem with reconciling the data. With those assumptions, it means that the growth rate equation is</p>
 
-<script type="math/tex; mode=display">(\hat{q}^M - \hat{y}) + \hat{p}^M  = 0.5 \hat{p}^M.</script>
+\[(\hat{q}^M - \hat{y}) + \hat{p}^M  = 0.5 \hat{p}^M.\]
 
 <p>In this equation, it is impossible for DeLong’s facts to all be true simultaneously. That is, we can’t have the growth rate of the real share (in the parentheses) be zero, the growth rate of the nominal share (the entire left-hand side) be equal to -0.014, while at the same time $\hat{p}^M = -0.014$ on the right-hand side.</p>
 
@@ -214,11 +214,11 @@ ga('send', 'pageview');
 
 <p>Let’s use DeLong’s price elasticity of 1/2. I don’t have any strong reason to quibble with that number. And let’s retain the assumption that there is no exogenous demand shift. But rather than assuming the income elasticity is one, let’s leave it as a free variable. So now the growth rate equation is</p>
 
-<script type="math/tex; mode=display">(\hat{q}^M - \hat{y}) + \hat{p}^M  = (\epsilon_I-1) \hat{y} + 0.5 \hat{p}^M.</script>
+\[(\hat{q}^M - \hat{y}) + \hat{p}^M  = (\epsilon_I-1) \hat{y} + 0.5 \hat{p}^M.\]
 
 <p>Take the original facts as correct, and let me add one additional fact. The growth rate of real income reported by the BEA over the same time period as DeLong is working with is 3% per year. This is the growth rate of aggregate real income, not per capita. Putting all this in our equation gives me</p>
 
-<script type="math/tex; mode=display">0 + -0.014 = (\epsilon_I-1) 0.03 + 0.5 \times -0.014</script>
+\[0 + -0.014 = (\epsilon_I-1) 0.03 + 0.5 \times -0.014\]
 
 <p>and everything makes sense if $\epsilon_I = 0.77$. That is, if the income elasticity of demand for manufactured goods is a little less than one. An elasticity less than one means that if your income goes up by 10%, your expenditure on manufactured goods rises by less than 10%. It goes up, but not by a similar percent. This income elasticity less than one acts a lot like the “demand shift” that DeLong dismisses in his first scenario. If you like, I’ve just given a very specific form to that demand shift.</p>
 

@@ -169,11 +169,11 @@ ga('send', 'pageview');
 
 <p>You can see the logic involved in the firm’s decision pretty easily. If a firm’s markup is the price relative to marginal cost, then for the marginal good it produces, it should be that</p>
 
-<script type="math/tex; mode=display">Rev = Markup \times MC \times Inputs</script>
+\[Rev = Markup \times MC \times Inputs\]
 
 <p>where $Rev$ is the revenue from that marginal good, $Markup$ is the … markup, $MC$ is the cost of an additional bundle of inputs, and $Inputs$ are the bundles of inputs it takes to produce that marginal good. Simply rearrange this to</p>
 
-<script type="math/tex; mode=display">Markup = \frac{Rev}{MC \times Inputs}</script>
+\[Markup = \frac{Rev}{MC \times Inputs}\]
 
 <p>and you’ve got it. DE have data on firm-level revenues, and they have data on firm-level costs for inputs. There is an extra step, which is that this kind of condition should hold for each separate input (i.e. labor and capital) as opposed to “Inputs” the way I’ve described it. All this does is insert a parameter into this expression that weights revenues by how important that specific input is to production. If we were working with labor, for instance, we might say that the revenue <em>attributable to labor</em> is only 60% of total revenues, and so divide 0.6 times revenues by the cost of labor to arrive at the markup. For the purposes of this post, though, I think you can easily stick with the idea that markups are obtained from ratios of revenues to costs.</p>
 
@@ -205,29 +205,29 @@ ga('send', 'pageview');
 
 <p>There are two ways we could describe aggregate output. The first is using a production function, like</p>
 
-<script type="math/tex; mode=display">Y = T X</script>
+\[Y = T X\]
 
 <p>where $T$ is <em>technology</em> and $X$ is an index of <em>inputs</em>. Technology, T, is the for-realisies measure of how good we are at transforming inputs into useful output. It is what we really would like to measure. Based on this production function, we could back out technology as</p>
 
-<script type="math/tex; mode=display">T = \frac{Y}{X}.</script>
+\[T = \frac{Y}{X}.\]
 
 <p>Leave that aside for the moment, we’ll come back to it.</p>
 
 <p>We can also describe aggregate output using incomes, meaning we can write</p>
 
-<script type="math/tex; mode=display">Y = \Pi + wX</script>
+\[Y = \Pi + wX\]
 
 <p>where $\Pi$ are economic profits, and $w$ is the “wage” of inputs. For those wages, think of something like a weighted average of actual wages (to labor) and payments to capital and/or natural resource.</p>
 
 <p>What are profits? Well, let’s assume that there is a markup, $\mu$, which recall measures the ratio of price to marginal cost. If $\mu = 1.5$, then firms are charging 50% over cost. So profits are equal to 50% of costs. Another way of saying this is that profits are $\mu - 1$ times costs,</p>
 
-<script type="math/tex; mode=display">Y = (\mu - 1)wX + wX = \mu w X</script>
+\[Y = (\mu - 1)wX + wX = \mu w X\]
 
 <p>or total output can be expressed as the markup times the wage times the inputs used. We’re still the world of pure accounting, by the way. No behavioral assumptions have been made.</p>
 
 <p>Now, go back and compare the original production function version of output, $Y = T X$, to this markup version, $Y = \mu w X$. From these, it shows us that we could write</p>
 
-<script type="math/tex; mode=display">T = \mu w.</script>
+\[T = \mu w.\]
 
 <p>Or technology is equivalent to the markup times the wage. I like to think of this expression this way: technology (or an increase in technology) can be used for one of two things (a) raising the markup or (b) raising the wage paid to inputs. One quibble with DE is that they say something along the line of “if markups go up, this raises technology”, which should more accurately be phrased “if markups go up, this implies that tecnology was higher”, which eliminates the implicit causal statement.</p>
 
@@ -235,13 +235,13 @@ ga('send', 'pageview');
 
 <p>That’s great, but when we go to the data is it quite plausible that we make mistakes. That is, we go to the data and calculate residual <em>productivity</em>, P. And unless we are exactly right about how the world works, our measure of P may not be equal to T. Here’s what I mean. Take the production function version of things, which I’ve talked about a lot before.</p>
 
-<script type="math/tex; mode=display">\hat{P} = \hat{Y} - \hat{X}^{wrong} = \hat{Y} - \hat{X} + (\hat{X} - \hat{X}^{wrong}) = \hat{T} + (\hat{X} - \hat{X}^{wrong})</script>
+\[\hat{P} = \hat{Y} - \hat{X}^{wrong} = \hat{Y} - \hat{X} + (\hat{X} - \hat{X}^{wrong}) = \hat{T} + (\hat{X} - \hat{X}^{wrong})\]
 
 <p>The growth rate of productivity is the growth rate of output minus the growth rate of <em>a possibly mismeasured index of input use</em>. This mismeasurement may be because we really don’t know how to count units of capital or human capital correctly, or because we are weighting those counts incorrectly. The point I’ve made in a few posts in the past is that by ignoring markups, you could may be making a weighting mistake, and this would lead to $\hat{X}^{wrong} &gt; \hat{X}$, so productivity growth understates technological growth.</p>
 
 <p>If you instead were going to try and measure productivity growth using the real wage, then you could get something like</p>
 
-<script type="math/tex; mode=display">\hat{P} = \hat{\mu}^{wrong} + \hat{w} = (\hat{\mu}^{wrong} - \hat{\mu}) + \hat{\mu} +  \hat{w} = \hat{T} + (\hat{\mu}^{wrong} - \hat{\mu})</script>
+\[\hat{P} = \hat{\mu}^{wrong} + \hat{w} = (\hat{\mu}^{wrong} - \hat{\mu}) + \hat{\mu} +  \hat{w} = \hat{T} + (\hat{\mu}^{wrong} - \hat{\mu})\]
 
 <p>where you might be making an error about how fast markups are growing. If you do, and in particular if you assume $\hat{\mu}^{wrong} &lt; \hat{\mu}$, which you might do if you assumed markups were unchanging over time, then your productivity growth term understates technological growth.</p>
 

@@ -163,11 +163,11 @@ ga('send', 'pageview');
 
 <p>To see the logic, and how we get there, let me lay out a little math. Agricultural production is given by</p>
 
-<script type="math/tex; mode=display">Y = A X^{\beta} L^{1-\beta}</script>
+\[Y = A X^{\beta} L^{1-\beta}\]
 
 <p>where A is productivity, X is the amount of land, and L is the number of people. The value of $\beta$ is the elasticity I was talking about. If you divide both sides of this equation by L, you get an expression for output per worker (i.e. living standards) of</p>
 
-<script type="math/tex; mode=display">Y/L = A (X/L)^{\beta}</script>
+\[Y/L = A (X/L)^{\beta}\]
 
 <p>which says that living standards depend inversely on population size, L. That’s the Malthusian assumption. What this expression also says is that the elasticity of <em>living standards</em> with respect to L is equal to $\beta$.</p>
 
@@ -179,7 +179,7 @@ ga('send', 'pageview');
 
 <p>To figure out the size of $\beta$, we do the following. Think of a bunch of economies with a similar living standard, so Y/L is a constant, and call that $\overline{y}$. Then rearrange the equation for living standards above to be</p>
 
-<script type="math/tex; mode=display">L/X = \frac{A^{1/\beta}}{\overline{y}^{1/\beta}}</script>
+\[L/X = \frac{A^{1/\beta}}{\overline{y}^{1/\beta}}\]
 
 <p>This says that population density will be high where productivity, A, is high, holding constant living standards. But notice that the strength of this relationship depends on the size of $1/\beta$. In areas with “tight” Malthusian constraints, and high $\beta$ values, the sensitivity of population density to productivity should be <em>low</em>. Because land matters a lot to production, the population gets spread evenly over all the land available, even if that land has fundamentally different productivity levels. If everyone tried to crowd into the highest productivity place, they’d drive down living standards by a lot. We should see similar population density across places with different inherent agricultural productivity levels.</p>
 
@@ -203,11 +203,11 @@ ga('send', 'pageview');
 
 <p>Let’s be specific that we’re talking about agricultural output per agricultural person, so</p>
 
-<script type="math/tex; mode=display">Y_A/L_A = A (X/L_A)^{\beta}</script>
+\[Y_A/L_A = A (X/L_A)^{\beta}\]
 
 <p>And now, let N be the total population, which includes both agricultural workers, $L_A$, and non-ag workers (e.g. urban dwellers, etc..). I’m going to multiply and divide the left-hand side by N, and do some re-arranging of this equation. You can check my work, but I’m pretty sure this holds up</p>
 
-<script type="math/tex; mode=display">\frac{Y_A}{N}\left(\frac{N}{L_A}\right)^{1-\beta}\left(\frac{N}{X}\right)^{\beta} = A.</script>
+\[\frac{Y_A}{N}\left(\frac{N}{L_A}\right)^{1-\beta}\left(\frac{N}{X}\right)^{\beta} = A.\]
 
 <p>On the right is just productivity. The left side tells me what I can do with that productivity. If productivity goes <em>up</em>, for whatever reason (i.e. the Glorious Revolution! The Columbian exchange! The Pope bans consanguinous marriages! Horse collars are invented! Someone planted turnips!) I can translate that into any or all of three things: increased food per person, $Y_A/N$, increased population per agricultural worker, $N/L_A$, or increased population density, $N/X$.</p>
 
