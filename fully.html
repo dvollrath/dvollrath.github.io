@@ -1,71 +1,39 @@
 ---
 layout: page
 title: Fully Grown
-permalink: /fully/
+description: Why a stagnant economy is a sign of success
+background: '/img/chi-vollrath-fig02001.pdf'
 ---
-<!-- Slider Start -->
-<section id="global-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h1>Fully Grown</h1>
-          <h3>Why a stagnant economy is a sign of success</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="intro">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <div class="section-title">
-          </div>
-          <h3>
-          Summary
-          </h3>
-          <div class="row">
+<h3>Summary</h3>
+<div class="row">
             <div class="col-md-8">
+              <p>An <i>Economist</i> Best Book of the Year, 2020</p>
+
               <p>Rather than a sign of economic failure, our current slowdown is a sign of our widespread economic success. Our powerful economy has already supplied so much of the necessary stuff of modern life, brought us so much comfort, security, and luxury, that we have turned to new forms of production and consumption that increase our well-being but do not contribute to growth in GDP per capita.</p>
 
-              <p>All the data and code to replicate the figures and tables in the book is below.</p>
-
-              <p>Available now from the University of Chicago Press. Click the cover to the right for a link to Amazon.</p>
+              <p>Available now from the University of Chicago Press. Find it at <a href="https://amzn.to/2mG9pC7">Amazon</a></p>
             </div>
             <div class="col-md-4">
-              <p><a href="https://amzn.to/2mG9pC7"><img src="/img/fg_cover.jpg" style="width: 100%; height: 100%"></a></p>
+              <p><img src="/img/fg_cover.jpg" style="width: 100%; height: 100%"></p>
             </div>
           </div>
-          <h3>
-          Data and Code
-          </h3>
-          <p> You can replicate everything in the book using the code and data in the <a href="https://github.com/dvollrath/FullyGrown">Github</a> repository for this project. There is nothing super technical about that - you can easily download everything in a convenient zip file to use on your own computer. The advantage of Github is that the link will always point to the latest version of my code if I fix anything.
 
-          All the figures and tables in the book were created using publicly available data, in many cases downloaded directly from <a href="https://fred.stlouisfed.org">FRED</a>. Other data was pulled by me from various places on the web, and the sources are documented as part of the code you can download.
-          
-          </p>
-          <h3>
-          Figures
-          </h3>
-          <p>The links to each individual figure from the book below will give you the figure in PNG format, as well as a CSV file of the raw data contained in the figure, and a snippet of Stata code used to produce the figure. If you want to see the data source and any processing I did to the data, you'll need to take a look at the code/data files linked to above. </p>
-          <p>  
-            <ul>
-              {% for post in site.categories.stagnation reversed %}
-                {% if post.url %}
-                    <li>
-                     <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                        {{ post.title }}
-                      </a>
-                    </li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          </p>
-       </div>
-      </div><!-- .col-md-7 close -->
-    </div>
-  </div>
-</section>
+<h3>Reviews and mentions</h3>
+<p><a href="https://www.newyorker.com/magazine/2020/02/10/can-we-have-prosperity-without-growth">New Yorker</a></p>
+<p><a href="https://www.washingtonpost.com/opinions/lets-celebrate-slow-economic-growth/2020/01/27/13eea206-412d-11ea-b5fc-eefa848cde99_story.html">Washington Post</a></p>
+<p><a href="https://www.economist.com/finance-and-economics/2020/01/23/is-low-economic-growth-a-sign-of-success">The Economist</a></p>
+<p><a href="https://marginalrevolution.com/marginalrevolution/2020/11/best-non-fiction-books-of-2020.html">Marginal Revolution</a></p>
+<p><a href="https://seekingalpha.com/article/4317838-radical-new-picture-of-why-economic-growth-is-modest-yet-economy-prospers">Seeking Alpha</a></p>
+<p><a href="https://www.wsj.com/articles/fully-grown-review-pumping-the-brakes-11578863484">Wall Street Journal</a></p>
+<p><a href="https://www.strategy-business.com/article/The-upside-of-slow-growth">Strategy and Business</a></p>
+<p><a href="http://www.enlightenmenteconomics.com/blog/index.php/2020/02/growth-stagnation-and-degrowth/">Enlightened Economist (Diane Coyle)</a></p>
+<p><a href="https://www.ft.com/content/5fa8e412-77d4-11ea-af44-daa3def9ae03">Financial Times</a></p>
+<p><a href="https://www.macleans.ca/economy/the-end-of-economic-growth/">Maclean's</a></p>
+<p><a href="https://insidestory.org.au/has-america-discovered-the-secret-of-successful-slowing/">Inside Story</a></p>
+
+
+<h3>Data and Code</h3>
+<p> You can replicate everything in the book using the code and data in the <a href="https://github.com/dvollrath/FullyGrown">Github</a> repository for this project. There is nothing super technical about that - you can easily download everything in a convenient zip file to use on your own computer. The advantage of Github is that the link will always point to the latest version of my code if I fix anything.
+
+<p>All the figures and tables in the book were created using publicly available data, in many cases downloaded directly from <a href="https://fred.stlouisfed.org">FRED</a>. Other data was pulled by me from various places on the web, and the sources are documented as part of the code you can download.</p>

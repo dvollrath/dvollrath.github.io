@@ -1,1 +1,0 @@
- twoway line q_scale_equip year || line q_scale_struct_nonres year || line q_scale_struct_res year || line q_scale_ip year, xtitle("Year") ytitle("Physical capital (total stock in 2009=100)") xlabel(1950(10)2010 2016) ylabel(,format(%4.0f)) scheme(vollrath) 

@@ -1,1 +1,0 @@
- twoway rarea total imports year || rarea imports low year, legend(label(1 "Domestic production") label(2 "Imported production")) xlabel(1950(10)2010 2016) xtitle("Year") ytitle("Production per capita(1950=100)") 

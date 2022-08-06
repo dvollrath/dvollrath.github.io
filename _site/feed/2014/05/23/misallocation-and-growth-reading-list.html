@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    (Mis)Allocation and Growth Reading List - Dietrich Vollrath
+    
+  </title>
+
+  <meta name="description" content="Back with another set of readings for my grad class this fall. As before, a PDF and BibTeX file of the papers I teach in this area are located under the Pape...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/feed/2014/05/23/misallocation-and-growth-reading-list.html">
+  <link rel="alternate" type="application/rss+xml" title="Dietrich Vollrath" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Dietrich Vollrath</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/assets/cv_current.pdf">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/fully">Fully Grown</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/textbook">Textbook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/research">Research</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>(Mis)Allocation and Growth Reading List</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">{"login"=>"dvollrath", "email"=>"dietz.vollrath@gmail.com", "display_name"=>"dvollrath", "first_name"=>"", "last_name"=>""}</a>
+              on May 23, 2014 &middot; <span class="reading-time" title="Estimated read time">
+  
+   6 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p><i>Back with another set of readings for my grad class this fall. As before, a PDF and BibTeX file of the papers I teach in this area are located under the Papers page.</i></p>
+<p>One of the more active areas in growth right now is studying the allocation of factors of production. Think of productivity growth being decomposed into two sources: ``within'' productivity growth as each individual firm becomes more efficient, and ``between'' productivity growth as we shift factors of production from low-productivity firms into high-productivity ones.</p>
+<p>A first question is: how much observed growth comes from ``within'' versus ``between'' sources? This requires looking at productivity at the firm-level data. That is not easy, because it is not something one can count like workers or machines. We have to back it out from estimations of firm's production functions. So a lot of growth economists now find themselves hanging around the offices of their industrial organization colleagues, trying to look cool, and hoping to bum some data or get some help with <a href="http://ideas.repec.org/a/eee/ecolet/v104y2009i3p112-114.html">Wooldridge's (2009)</a> technique for estimating firm-level production functions. Once you've got these estimates, doing the ``within'' and ``between'' calculations is relatively straightforward.</p>
+<p>A different question is: how much potential for ``between'' productivity growth is there? In other words, how much higher would productivity be if I could rearrange factors of production until the marginal revenue product was equal across all firms? To answer these kinds of questions, you have to actually provide some kind of model of firm behavior so you can figure out how output will respond at each different firm when you start messing around.</p>
+<p>For a really simple example, let a firms production be ${Y = A L}$, where ${A}$ is productivity and ${L}$ is labor. The firm has some market power, and the inverse demand curve is ${P = Y^{-\epsilon}}$, which says that if the firm produces more ${Y}$, the price it can charge for that output must fall. ${\epsilon}$ is a measure of how much market power the firm has. If ${\epsilon = 0}$, the ${P = 1}$, and the firm is a price-taker. As ${\epsilon}$ goes to one, their market power gets stronger. The firm hires workers at the wage ${w}$.</p>
+<p>[caption id="" align="aligncenter" width="275"]<img src="/assets/wedge.jpeg" alt="" width="275" height="183" /> Growth economists favorite salad: the wedge[/caption]</p>
+<p>Profits for the firm are ${\pi = (1+\tau)P Y - wL}$. This extra term ${\tau}$ is often called a <i>wedge</i>. It's like a subsidy (if ${\tau&gt;0}$) or tax (if ${\tau&lt;0}$) facing the firm, although in most applications the wedge is not specifically associated with any tax or subsidy. It just is a stand-in for any kind of additional markup (or markdown) a firm can charge for its product. If I maximize profits for this firm, and solve for their choice of labor to use, I get</p>
+<p align="center">$$ L^{\ast} = \left(\frac{(1+\tau)(1-\epsilon)A^{1-\epsilon}}{w} \right)^{1/\epsilon}. $$</p>
+<p>As you'd expect, if productivity ${A}$ goes up, the firm will be larger. However, note that if the wedge is positive, then this expands the firm relative to how big it would be if ${\tau = 0}$. The wedge is acting like a shift up in the demand curve, and so the firm produces more, which requires it to hire more workers. If the wedge is negative, then this is like a shift down in the demand curve, and the firm will be smaller. The wedge means that firms can be large even if they are not productive, or small even if they are productive.</p>
+<p>What papers then do is to remove the wedge from each firm, and recalculate the level of ${L^{\ast}}$ for each firm. Once you know that, roll up the output produced across all firms to find out aggregate production without the wedges. Compare this to the observed output level (i.e. with wedges). This tells you how much higher output could be if these wedges didn't exist. This is the potential ``between'' productivity growth in a country. And this potential between productivity growth is intriguing, because it doesn't necessarily mean I have to adopt a new technology or acquire new capital or workers, I just need to reshuffle the capital and workers I have to more efficient firms.</p>
+<p>Looking at these calculations across countries, you can talk about whether India is poor relative to the U.S. because it has bigger ``wedges'' than the U.S., for example. The implication of most of the papers on the reading list is that yes, the wedges in poor countries are bigger/worse. That is, in India and other poor countries, there are lots of frictions keep the marginal revenue product of labor (or capital) from being equal in different firms, and so lots of scope for ``between'' productivity growth. Those frictions cost India a lot of foregone output. In the U.S., the frictions are smaller (but certainly still exist).</p>
+<p>A newer wave of research in this area involves more serious investigations of what these wedges actually represent. One possibility is that high-productivity firms would like to expand, but are limited in their ability to do so by an inability to find financing. In this case, financial sector sophistication is a key to improving allocations. Another likely suspect is the regulatory regime: entry costs, exit costs, and size-dependent rules for firms, for example. A nice concept for future research (hint, hint grad students) is to measure the impact of particular reforms on the measure of potential ``between'' growth. If the reform effectively opens up entry, or allows easier exit, or eliminates state-owned firms, etc.. etc... then the scope for ``between'' growth should fall over time as the economy gets more efficient and the wedges get smaller.</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/feed/2014/05/20/is-robert-gordon-right-about-u-s-growth.html" data-toggle="tooltip" data-placement="top" title="Is Robert Gordon Right about U.S. Growth?">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/feed/2014/05/27/piketty-and-income-shares.html" data-toggle="tooltip" data-placement="top" title="Piketty and Income Shares">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:dietz.vollrath@gmail.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/DietzVollrath">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/dvollrath">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; Dietrich Vollrath 2022</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+    }
+    });
+</script>
+<script type="text/javascript" async
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72839737-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-72839737-1');
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+---
+layout: page
+title: Research
+background: '/img/fig_cap_all_comparison-eps-converted-to.pdf'
+---
+
+<div class="block">
+<h1>Working papers</h1>
+<hr>
+{% for post in site.categories.wp %}
+
+<article class="post-preview">
+  <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+    <h4>{{ post.title }}</h4>
+  </a>
+  <p style="font-size:20px">{{ post.date | date: "%Y" }}. &nbsp; {{ post.author }}. &nbsp;
+                        <i>{{ post.journal }}.</i> &nbsp; {{ post.volume }}. {% if post.data %}
+                        &nbsp; <a href="{{ post.data }}" style="font-size:20px">Data/Code</a>{% endif %} {% if post.appendix %} &nbsp; <a href="{{ post.appendix }}" style="font-size:20px">Appendix</a>{% endif %} {% if post.pdf %}&nbsp; <a href="{{ post.pdf }}" style="font-size:20px">Paper</a>{% endif %}</p>
+</article>
+
+<hr>
+
+{% endfor %}
+</div>
+
+<div>
+<h1>Published</h1>
+<hr>
+{% for post in site.categories.me %}
+
+<article class="post-preview">
+  <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+    <h4>{{ post.title }}</h4>
+  </a>
+  <p style="font-size:20px">{{ post.date | date: "%Y" }}. &nbsp; {{ post.author }}. &nbsp;
+                        <i>{{ post.journal }}.</i> &nbsp; {{ post.volume }}. &nbsp;{% if post.data %}
+                        <a href="{{ post.data }}" style="font-size:20px">Data/Code</a>{% endif %} &nbsp;{% if post.appendix %}<a href="{{ post.appendix }}" style="font-size:20px">Appendix</a>{% endif %} &nbsp; {% if post.pdf %}<a href="{{ post.pdf }}" style="font-size:20px">Paper</a>{% endif %}</p>
+</article>
+
+<hr>
+
+{% endfor %}
+
+</div>
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+
+<div class="clearfix">
+
+  {% if paginator.previous_page %}
+  <a class="btn btn-primary float-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;
+    Newer<span class="d-none d-md-inline"> Posts</span></a>
+  {% endif %}
+
+  {% if paginator.next_page %}
+  <a class="btn btn-primary float-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older<span class="d-none d-md-inline"> Posts</span> &rarr;</a>
+  {% endif %}
+
+</div>
+
+{% endif %}

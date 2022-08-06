@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Did Real Manufacturing Output Grow Faster than We Thought? - Dietrich Vollrath
+    
+  </title>
+
+  <meta name="description" content="Writing this post was kind of depressing, because all it did was highlight for me how many things I’ve got in my reading list to think about and digest. I wa...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/feed/2016/08/03/Manuf-Share.html">
+  <link rel="alternate" type="application/rss+xml" title="Dietrich Vollrath" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Dietrich Vollrath</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/assets/cv_current.pdf">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/fully">Fully Grown</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/textbook">Textbook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/research">Research</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Did Real Manufacturing Output Grow Faster than We Thought?</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">Dietrich Vollrath</a>
+              on August 03, 2016 &middot; <span class="reading-time" title="Estimated read time">
+  
+   15 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p>Writing this post was kind of depressing, because all it did was highlight for me how <em>many</em> things I’ve got in my reading list to think about and digest. I was reading Brad DeLong’s recent <a href="http://equitablegrowth.org/equitablog/expenditure-shares-price-measurement-and-true-relative-labor-productivity-growth-in-post-wwii-manufacturing-what-the-aggregate-deta-suggest/">post</a> on manufacturing’s share in output, and realized that I’ve got about four more posts from Brad stacked up in the queue, along with all the other stuff I’ve been meaning to read more carefully. So, respectfully, Brad, please stop saying interesting things related to growth. I need time to catch up. How about a nice run of posts about the history of monetary policy or something like that?</p>
+
+<p>DeLong’s motivating fact(s) are about manufacturing’s share of output, both in nominal and real terms. He grabbed the following from the BEA</p>
+
+<p><img src="/assets/delong1.png" alt="DeLong Manuf Graph" /></p>
+
+<p>and developed the path of the real share by making a crude calculation. As he freely admits in the post, this isn’t exactly how one would want to calculate the real share of manufacturing in output. But, for the purposes of his post, I don’t think it makes a huge difference.</p>
+
+<p>Anyway, he establishes three main facts that he wants to understand. First, note that the nominal share of manufacturing in nominal output has been declining steadily since the late 1940’s. He gets a value of -1.4% per year as the growth rate of the nominal share. Second, the relative price of manufactured goods (compared to aggregate output) has been declining by -1.4% per year as well. This gives us the final fact, that the real share of manufacturing in real output has not grown (or shrunk) over time, as you can see in the figure.</p>
+
+<p>DeLong then proceeds to ask himself how to reconcile all of these three facts. What must be true about demand and/or technological change to explain this? And he will come to a conclusion that we are probably not measuing the price decline, and hence the real share of manufacturing, correctly. That will in turn imply that real economic growth has probably been understated over this entire period of time.</p>
+
+<p>I think DeLong is too quick to make that conclusion, and that there is in fact a way to understand his three facts that does not imply economic growth has been understated. My brain moves a little slower than DeLong’s, so here’s how I worked through his reasoning. First, let the following be the demand curve for real manufacturing goods, in log terms</p>
+
+\[\ln Q^M = \epsilon_I \ln Y - \epsilon_P \ln P^M + \ln D^M\]
+
+<p>where $Q^M$ is the quantity of real manufactured goods, $Y$ is real income, and $P^M$ is the relative price of manufactured goods. $\epsilon_I$ is the income elasticity of demand for manufactured goods, and $\epsilon_P$ the price elasticity of demand. $D$ is just a “demand shifter” to account for anything changing demand for manufactured goods that isn’t related to either real income or the relative price.</p>
+
+<p>Add $\ln P^M$ to both sides, and subtract $\ln Y$ from both sides. That leaves me with</p>
+
+\[\ln Q^M + \ln P^M - \ln Y = (\epsilon_I-1) \ln Y + (1 - \epsilon_P) \ln P^M + \ln D^M.\]
+
+<p>The left-hand side is, if you combine the log terms, $\ln Q^M P^M/Y$, or the log of manufacturing’s share in nominal income. Also, it’s important to note that the left-hand side can be written as $\ln Q^M/Y + \ln P^M$. This is the log of manufacturing’s share of <em>real</em> income, plus the relative price level of manufactured goods. So it has both the nominal and real share of manufacturing in it.</p>
+
+<p>To work with this in DeLong’s terms, it will be easiest to talk about growth rates of all of these items. And with everything written in log terms, getting growth rates is straightforward. Let $\hat{q}^M$ indicate the growth rate of real manufacturing goods, and define a similar “hat” term for each element of the equation. We’ve got</p>
+
+\[(\hat{q}^M - \hat{y}) + \hat{p}^M  = (\epsilon_I-1) \hat{y} + (1 - \epsilon_P) \hat{p}^M + \hat{d}^M.\]
+
+<p>Notice that I’ve done a little rearranging there. Inside the parentheses on the left is the growth rate of manufacturing’s <em>real</em> share of <em>real</em> income. That gets added to the growth rate of the relative price of manufacturing to deliver the growth rate of manufacturing’s share of nominal income.</p>
+
+<p>Let’s go back to DeLong’s pieces of information. First, the growth rate of the nominal share of manufacturing is -1.4% per year. This means that $(\hat{q}^M - \hat{y}) + \hat{p}^M = -0.014$. Second, he says that the growth rate of the relative price of manufactured goods is also -1.4% per year, meaning that $\hat{p}^M = -0.014$. Last, the data said that the growth rate of the manufacturing’s real share of real output was zero, meaning that $(\hat{q}^M - \hat{y}) = 0$.</p>
+
+<p>Then he goes to work trying to understand how all of those facts can be true at the same time, given the above equation. Here are two possibilities that DeLong dismisses as not making sense - and I think he’s right to dismiss these possibilities.</p>
+
+<ol>
+  <li>
+    <p>If the income elasticity is 1 and the price elasticity is 1, then $(\hat{q}^M - \hat{y}) + \hat{p}^M = \hat{d}^M$. Which means that $0 + -0.014 = \hat{d}^M$. In other words, there must have been a sustained shift in the demand curve for manufactured goods over the last 70 years. We just decided we didn’t like manufactured stuff as much any more. DeLong says this doesn’t make sense. That’s probably right, but hold onto that thought about a shift in the demand for manufactured goods - it will show up again later in the post.</p>
+  </li>
+  <li>
+    <p>If the income elasticity is 1 and the price elasticity is 0, then $(\hat{q}^M - \hat{y}) + \hat{p}^M  = \hat{p}^M + \hat{d}^M$. Then, plugging in the facts, we have that $\hat{d}^M = 0$. DeLong says this helps, because it doesn’t require us to assume any kind of exogenous shift in demand for manufactured goods. But, it does require us to assume that the price elasticity is zero, which DeLong says doesn’t make sense because manufactured stuff is useful, so you’d expect that demand would go up if the price fell. That’s probably right, too - the price elasticity probably isn’t zero.</p>
+  </li>
+</ol>
+
+<p>DeLong then asks how this is all supposed to work if we instead assume that the income elasticity is 1, the price elasticity is something more reasonable like 1/2, and we dismiss the idea of a purely exogenous shift in manufacturing demand. And this leads him to a problem with reconciling the data. With those assumptions, it means that the growth rate equation is</p>
+
+\[(\hat{q}^M - \hat{y}) + \hat{p}^M  = 0.5 \hat{p}^M.\]
+
+<p>In this equation, it is impossible for DeLong’s facts to all be true simultaneously. That is, we can’t have the growth rate of the real share (in the parentheses) be zero, the growth rate of the nominal share (the entire left-hand side) be equal to -0.014, while at the same time $\hat{p}^M = -0.014$ on the right-hand side.</p>
+
+<p>How to fix this? DeLong suggests that both his second and third facts are probably wrong. If the relative price of manufacturing actually fell by 2.8% per year, so $\hat{p}^M = -0.028$, and the <em>real</em> share of manufacturing actually <em>grew</em> by 1.4% a year, so $(\hat{q}^M - \hat{y}) = 0.014$, then everything works out. Specifically, $0.014 + -0.028 = 0.5\times-0.028$.</p>
+
+<p>So if we assume a reasonable price elasticity of 1/2, and if we take the growth rate of the nominal share of manufacturing (which is relatively easy to measure) as given, then we cannot do anything but conclude that the growth rate of the real share of manufacturing was in fact 1.4% per year, not zero. Over the roughly 70 years DeLong is talking about, that means the real share of manufacturing should be about 2.5 times higher than we observe in his graph. It would be about 28% of real output today, not 12%.</p>
+
+<p>With the relative price of manufacturing falling twice as fast as we thought, and real manufacturing output growing relative to real output, this implies that we really are better off than we thought. I won’t get into the mechanics of this calculation here, as the post is already getting long, but it would imply that real output growth was actually about 0.3 percentage points higher per year over this period. Real output grew at about 3 percent per year, so that’s a pretty big difference.</p>
+
+<p>But here is where I think DeLong’s gone one step too far. He focuses on the price elasticity, but assumes the <em>income</em> elasticity is equal to one in all cases. His alternative scenario where growth in the real manufacturing share and faster true growth in real output is contingent on this assumption. Let me propose an alternative way of reconciling the numbers that doesn’t imply anything is mismeasured.</p>
+
+<p>Let’s use DeLong’s price elasticity of 1/2. I don’t have any strong reason to quibble with that number. And let’s retain the assumption that there is no exogenous demand shift. But rather than assuming the income elasticity is one, let’s leave it as a free variable. So now the growth rate equation is</p>
+
+\[(\hat{q}^M - \hat{y}) + \hat{p}^M  = (\epsilon_I-1) \hat{y} + 0.5 \hat{p}^M.\]
+
+<p>Take the original facts as correct, and let me add one additional fact. The growth rate of real income reported by the BEA over the same time period as DeLong is working with is 3% per year. This is the growth rate of aggregate real income, not per capita. Putting all this in our equation gives me</p>
+
+\[0 + -0.014 = (\epsilon_I-1) 0.03 + 0.5 \times -0.014\]
+
+<p>and everything makes sense if $\epsilon_I = 0.77$. That is, if the income elasticity of demand for manufactured goods is a little less than one. An elasticity less than one means that if your income goes up by 10%, your expenditure on manufactured goods rises by less than 10%. It goes up, but not by a similar percent. This income elasticity less than one acts a lot like the “demand shift” that DeLong dismisses in his first scenario. If you like, I’ve just given a very specific form to that demand shift.</p>
+
+<p>Is that reasonable? I sure think it is. It’s entirely consistent with the literature on structural change for rich countries like the US. Income elasticities for manufacturing less than one reflect people’s preferences having some kind of “limit” on the amount of manufactured goods they want to consume. I’ve used the refrigerator example before. If we get even more productive at producing refrigerators, then they will become less costly and/or become higher quality. But that doesn’t mean I’ll buy another one. I’ve got two at my house already, and it would take a <em>massive</em> drop in price or increase in quality to get me to buy another one, even just to replace the existing ones. Similarly, my income is due to go up in October thanks to the raise pool at UH this year. I’m not using it to buy a fridge, or probably many manufactured goods at all. I’ll use it to help pay for a trip we’re taking in December.</p>
+
+<p>So the original facts that DeLong lays out are entirely consistent, including the fact that the real share of manufacturing in output has stayed constant over time. We don’t need to assume that prices fell faster than we thought, or that real manufacturing output grew faster than we thought. And thus output growth isn’t understated.</p>
+
+<p>DeLong could still be right, of course. This is all dependent on competing assumptions about the size of elasticities. If the income elasticity is actually one, then DeLong’s story is more plausible than mine. I think I’m on the right track, but I don’t have the time at the moment to collect various references to back up my income elasticity argument.</p>
+
+<p>One last interesting note. The income elasticity doesn’t have to be constant over time. In fact, I’d guess it was closer to one, if not <em>higher</em> than one, back in the early part of the period DeLong considers, the 1940’s and 1950’s. If the income elasticity is bigger than one, then this means DeLong’s adjustments for that period would be even bigger than what he calculated in his post. I have to think harder about this, but I’m wondering if this is some way to reconcile/explain Robert Gordon’s facts about rapid measured productivity growth in those decades relative to the current period of time. Stay tuned.</p>
+
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/feed/2016/07/25/Ethnic.html" data-toggle="tooltip" data-placement="top" title="Evidence on Violence and Ethnic Groups in Africa">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/feed/2016/08/15/Cake.html" data-toggle="tooltip" data-placement="top" title="More on Measured Productivity and the Labor Share">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:dietz.vollrath@gmail.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/DietzVollrath">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/dvollrath">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; Dietrich Vollrath 2022</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+    }
+    });
+</script>
+<script type="text/javascript" async
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72839737-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-72839737-1');
+</script>
+
+
+
+</body>
+
+</html>
