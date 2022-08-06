@@ -1,148 +1,10 @@
-<!DOCTYPE html>
-<html class="no-js">
-  <head>
+---
+layout: page
+title: Dietrich Vollrath
+permalink: /
+---
 
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Dietrich Vollrath</title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-<!-- CSS -->
-<link rel="stylesheet" href="/css/owl.carousel.css" />
-<link rel="stylesheet" href="/css/bootstrap.min.css" />
-<link rel="stylesheet" href="/css/font-awesome.min.css" />
-<link rel="stylesheet" href="/css/airspace.css" />
-<link rel="stylesheet" href="/css/style.css" />
-<link rel="stylesheet" href="/css/ionicons.min.css" />
-<link rel="stylesheet" href="/css/animate.css" />
-<link rel="stylesheet" href="/css/responsive.css" />
-<link rel="stylesheet" href="/css/syntax.css" />
-
-<!-- Js -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/owl.carousel.min.js"></script>
-<script src="/js/plugins.js"></script>
-<script src="/js/min/waypoints.min.js"></script>
-<script src="/js/jquery.counterup.js"></script>
-
-
-<script src="/js/main.js"></script>
-
-<!-- RSS -->
-<link rel="alternate" type="application/atom+xml" title="" href="https://growthecon.com/feed.xml" />
-
-<!-- MathJax -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-    tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    processEscapes: true
-    }
-    });
-</script>
-<script type="text/javascript" async
-src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<!-- Enforce HTTPS -->
-<script type="text/javascript">
-var host = "growthecon.com";
-if ((host == window.location.host) && (window.location.protocol != "https:"))
-    window.location.protocol = "https";
-</script>
-
-<!-- Google Analytics -->
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-72839737-1', 'auto');
-ga('send', 'pageview');
-</script>
-
-
-<script type="text/javascript">
-var host = "growthecon.com";
-if ((host == window.location.host) && (window.location.protocol != "https:"))
-    window.location.protocol = "https";
-</script>
- <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
-   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', '', 'auto');
-ga('send', 'pageview');
-
-</script>
- 
-
-
-<!--
-/*
- * Airspace
- * Ported to Jekyll by Andrew Lee
- * https://github.com/luminousrubyist/airspace-jekyll
- * Designed and Developed by ThemeFisher
- * https://themefisher.com/
- *
- */
--->
-
-
-  </head>
-  <body>
-
-
-    <!-- Header Start -->
-<header>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <!-- header Nav Start -->
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            
-          </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="/">Home</a></li>
-                <li><a href="/assets/cv_current.pdf">CV</a></li>
-                <li><a href="/fully">Fully Grown</a></li>
-                <li><a href="/book">Textbook</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/research">Research</a></li>
-                <li><a href="/topics">Topics</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-      </div>
-    </div>
-  </div>
-</header><!-- header close -->
-
-
-
-    <!-- Slider Start -->
+<!-- Slider Start -->
 <section id="slider">
   <div class="container">
     <div class="row">
@@ -186,31 +48,15 @@ ga('send', 'pageview');
       </div>
     </div>
   <div class="posts">
-      
+      {% for post in site.categories.feed limit:3 %}
       <div class="post-area">
-        <a href="/blog/Return-Spending/" class="bold">The return to public capital spending</a>
-        <p class="post-date">18 May 2021</p>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+        <p class="post-date">{{ post.date | date_to_long_string }}</p>
         <p>
-          In the time-honored tradition of the Growth Economics Blog, I am coming into a discussion about four weeks late. In...
+          {{ post.content | strip_html | truncatewords: 20 }}
         </p>
       </div>
-      
-      <div class="post-area">
-        <a href="/blog/Elasticity/" class="bold">How sensitive is GDP to capital?</a>
-        <p class="post-date">28 April 2021</p>
-        <p>
-          This is an odd post because it is an advertisement for a new paper that is …. in an advanced...
-        </p>
-      </div>
-      
-      <div class="post-area">
-        <a href="/blog/CBO-Potential/" class="bold">Pandemic relief and potential GDP (plus CBO methodology appendices!)</a>
-        <p class="post-date">24 March 2021</p>
-        <p>
-          The figure below is from the Hamilton Project but you could have found something similar in a lot of evaluations...
-        </p>
-      </div>
-      
+      {% endfor %}
 </div>
 
 
@@ -291,44 +137,3 @@ ga('send', 'pageview');
   </div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-    <!-- footer Start -->
-
-<!-- Disqus comment count script -->
-<script id="dsq-count-scr" src="//growthecon.disqus.com/count.js" async></script>
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="footer-manu">
-          <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/book">Book</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/classes">Classes</a></li>
-                <li><a href="/research">Research</a></li>
-                <li><a href="/references">References</a></li>
-                <li><a href="/topics">Topics</a></li>
-          </ul>
-        </div>
-        <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
-        <p>Site theme developed by <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-    </body>
-</html>

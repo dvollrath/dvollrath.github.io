@@ -1,0 +1,57 @@
+
+exclude:
+  - "/vendor/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "LICENSE.md"
+  - "*.gemspec"
+  - "Rakefile"
+  - _posts/**/*.jpg
+  - _posts/**/*.png
+  - _posts/**/*.pdf
+  - _posts/**/*.eps
+
+keep_files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
+
+# Site settings
+title: "Dietrich Vollrath"
+subtitle: "Growth Economics Blog"
+url: "https://growthecon.com" # the base hostname & protocol for your site
+baseurl: ""
+cover: "/img/slider-bg.jpg"
+logo: "/img/logo.png"
+enforce_ssl: growthecon.com
+storage: "/assets"
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+
+# Tracking ID's
+google_analytics: "UA-72839737-1"
+disqus_shortname: growthecon
+
+# Jekyll Scholar settings
+scholar:
+  style: harvard-cite-them-right #chicago-author-date
+  sort_by: author, year
+  order: ascending, descending
+  bibliography: growthbib
+  bibtex_filters:
+    - latex
+    - dietz
+  bibliography_list_tag: ol
+  bibliography_template: bib
+
+# Pagination and preview
+paginate: 3
+paginate_path: "blog/page:num"
+permalink: blog/:title/
+plugins: [jekyll-paginate]
+
+visiblewords: 20
+str_continue_reading: "Continue Reading..."

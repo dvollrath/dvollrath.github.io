@@ -1,0 +1,14 @@
+---
+---
+{{ reference }} {% if entry.paper %} &nbsp; <a href="{{ site.storage }}/{{ entry.paper }}">Paper</a> {% endif %} {% if entry.data %} &nbsp; <a href="{{ site.storage }}/{{ entry.data }}">Data</a> {% endif %}
+
+<div id="materials">
+	{% if entry.abstract %}
+		<ul style="list-style: none;">
+		<li><details>
+		<summary>Abstract</summary>
+		<p>{{ entry.abstract }}</p>
+		</details></li>
+		</ul>
+	{% endif %}
+</div>
