@@ -1,0 +1,75 @@
+I"�0<p>A few weeks ago I participated in a discourse on <a href="https://www.pairagraph.com/dialogue/ee04c261817f45f39e1d0bb5f63e0b90">Pairagraph</a> with <a href="https://twitter.com/elidourado">Eli Dourado</a> of the Center for Growth and Opportunity. The prompt was “Economic growth is stagnating, but there’s more to the story.” I argued that one should not interpret stagnation as implying something is wrong with the economy, and Eli argued that there was evidence of a real slowdown not just in technological growth, but in growth of welfare/well-being. You will be shocked to learn that I think my take on this subject is more accurate. But you should check out both sides of this because Eli’s position is a credible one and he does a good job of arguing it.</p>
+
+<p>One thing Eli and I agreed on was that looking at growth in <em>total factor productivity</em> (TFP) was more relevant than looking at growth in GDP per capita. Growth in productivity allows you to either produce more stuff (good for growth in GDP per capita) or use fewer inputs (which is not good for growth in GDP per capita even if it is good for you or the environment). The growth rate of TFP is the better thing to focus on in asking whether stagnation matters.</p>
+
+<p>Here’s where I want to jump off from the original discussion. The received wisdom is that we are living through a period of slow TFP growth, and that this slowdown in TFP growth kicked in around the early 2000s.</p>
+
+<p>But I’m not sure that’s the whole story. When you zoom out further you’ll find that if there was a slowdown in productivity growth it started in the late 1960s or early 1970s and has continued through today. If we’re having a discussion about what went “wrong”, then we need to look <em>way</em> earlier than the early 2000s to figure it out.</p>
+
+<h3 id="measuring-tfp-growth">Measuring TFP growth</h3>
+<p>The series on TFP that Eli and I reference in our discussion is from <a href="https://www.frbsf.org/economic-research/indicators-data/total-factor-productivity-tfp/">John Fernald of the SF Fed</a> and you can download his series from that link. This series of TFP growth incorporates an adjustment for the utilization of inputs (capital and labor) based on John’s work with <a href="https://ideas.repec.org/a/aea/aecrev/v96y2006i5p1418-1448.html">Susanto Basu and Miles Kimball</a>. The unadjusted growth in TFP he starts with is essentially just the standard BLS series on <a href="https://www.bls.gov/mfp/mprdload.htm">multi-factor productivity</a>, which is just a synonym for TFP.</p>
+
+<p>In the following figure there are a few things going on. First, since I figured out how to use Plotly this fall, you get an interactive figure. You’re welcome.</p>
+
+<p>Second, and more important, there are three series plotted. The “Fernald Baseline” is the un-adjusted series on TFP growth. The “Fernald Util-Adjust” is that series adjusted for utilization of capital and labor. The “Original BLS” is my own calculation from the BLS data on the growth rate of TFP that Fernald’s work starts with. As you can see there are some very slight discrepancies in the Fernald Baseline and Original BLS series, but those are so insignificant I’m not worried.</p>
+
+<iframe width="900" height="600" frameborder="0" scrolling="no" src="//plotly.com/~dvollrath/173.embed"></iframe>
+
+<p>The utilization adjustment is apparent, and seems to smooth out the growth rate of TFP somewhat over time. Those big dips in the baseline data are, in part, due to low output induced by having low capacity utilization for capital or labor during recessions.</p>
+
+<p>What is kinda-sorta apparent from the figure is the slowdown in the growth rate of TFP. It definitely looks as if around 2010 the average growth rate of TFP was lower than during the early 2000s and late 1990s. It was as low as you see in the early 1980s, and definitely seems lower than the average rates you see in the 1950s and 1960s.</p>
+
+<p>With growth rates like this it is often hard to see real trends because of the noisiness. One option is to smooth the growth rates, but I find a very handy way to clarify things is just to look at the <em>log level</em> of TFP that each of these growth rates implies over time. When you plot something in log terms (or a “ratio scale” as some people like to call it) over time, the slope of the line tells you about the growth rate, and can make trend breaks pop out.</p>
+
+<iframe width="900" height="600" frameborder="0" scrolling="no" src="//plotly.com/~dvollrath/175.embed"></iframe>
+
+<p>This second figure shows those log TFP levels. To me, this makes it less obvious that 2000 was the real trend break we should be looking at. Yes, I know you’re all staring at that orange line with the “Fernald Util-Adjust” series and how it flatlines after 2000. Hang in there, and in the next section I’m going to tell you why the capacity utilization series doesn’t really change the conclusion.</p>
+
+<p>If you back up and look at the Fernald Baseline (blue) and BLS Original (green) series, they definitively grow faster from 1948 to around the early 1970s, and then things slow down. Yes there is some recovery in the 1990s (a higher slope) but that looks a lot like a temporary spike in a long series of slow TFP growth.</p>
+
+<p>To focus on that, zoom in on just the Fernald Baseline. We’d get a similar story using the BLS Original series. What I’ve done in the following figure is plot two trendlines. The first is for 1948-1972 (orange) and the second is for 1973-2019 (green).</p>
+
+<iframe width="900" height="600" frameborder="0" scrolling="no" src="//plotly.com/~dvollrath/177.embed"></iframe>
+
+<p>It is clear that the earlier trend line had a much higher slope, and hence a much higher TFP growth rate, of about 1.98% per year. The 1973-2019 trend line had growth of only about 0.87% per year. Are the trendlines perfect fits? Nope. Notice how in the early 1990s actual TFP is below trend for a while, and then there is a spike in TFP growth until about 2005 which puts actual TFP growth above trend. After 2005 the growth rate of TFP is slow, but notice that this means we’re falling almost exactly on the trendline that kicked in around 1972. The <em>level</em> of productivity by 2019 is not very far from what we’d have guessed if we had made a projection around 1990.</p>
+
+<p>Why was 1972 the cutoff? Because I’m a narcissist, and that’s the year I was born. If you cut the series at any year from about 1968 to 1978 you’ll get the same story. Extremely rapid growth in the middle-20th century, and relatively slow growth in productivity in the late 20th-early 21st century. The productivity growth slowdown is not just a 21st century issue.</p>
+
+<p>To give a sense of the scale of the effects of the slowdown that started around 1972, take a look at the extrapolation of the orange line. That is where productivity would have been, roughly, if we had continued at 1.98% TFP growth after my birth. By 2019, TFP would have been $e^{6.01}/e^{5.44} = 1.77$ times higher. That’s a massive difference.</p>
+
+<p>Hence my conclusion that if we’re going to argue about a productivity growth slowdown, we need to be arguing about what happened in the late 1960s and early 1970s and not what happened in 1999 or 2001 or 2009. We’ve been a slow-TFP growth economy for <em>decades</em>.</p>
+
+<h3 id="to-adjust-or-not">To adjust or not</h3>
+<p>But what about the capacity utilization adjustment? If you back up two figures, that orange line for “Fernald Util-Adjust” just looks ugly starting in about 2005. The following figure does the same trendline breakdown for this series around 1972 as above. It has a very similar flavor, except that around 2005 things just plateau and we end up farther below the trendline by 2019.</p>
+
+<iframe width="900" height="600" frameborder="0" scrolling="no" src="//plotly.com/~dvollrath/179.embed"></iframe>
+
+<p>Hover over the figure and you can see that log TFP in 2005 was 5.41, and in 2019 was …. 5.43. That’s a sum total of 2% TFP growth in 14 years, or about 0.14% per year. That <em>has</em> to indicate there is a problem, right?</p>
+
+<p>Maybe. Even with the 2005-2019 slowdown, the economy isn’t that far off the trendline for 1973-2019. The gap between the actual series (blue) and the trendline (green) implies TFP is about 3% below where it “should” have been given the trend. But it’s 73% behind the 1948-1972 trend. Relatively speaking, the recent sluggish growth in TFP isn’t really important to the larger story of what happened somewhere between Stevie Wonder’s release of <em>Music of My Mind</em> and <em>Innervisions</em>.</p>
+
+<p>Even if you want to contend that 1995-2005 is the right period to compare our current TFP growth to, that still leaves 1972 (or thereabouts) as the more important breakpoint. Consider the red line, which plots the trendline as if 1995-2005 became the “new normal” starting in 2005, with a growth rate of TFP of 2%. By 2019 actual TFP was 31% behind that 1995-2005 trend.</p>
+
+<p>But in 2019 even that “new normal” trendline was <em>still</em> 36% behind the 1948-1972 trendline. You cannot escape the fact that the slowdown in TFP growth starting in the early 1970s was a massive event in the history of TFP growth. Explaining why TFP growth slowed down in 2005 is less imperative than explaining why it slowed down in 1972. And that is not just my narcissim or love of Stevie Wonder talking (well, okay, maybe a little).</p>
+
+<h3 id="dont-you-worry-about-a-thing">Don’t you worry about a thing?</h3>
+<p>This isn’t to say that the slowdown in TFP growth was a good thing. But trying to locate it in some breakdown or policy change around 2005 or the financial crisis is misguided. Conceiving of this as a early-70s change in trends rearranges my priors on a few things.</p>
+
+<p>First, I think it makes the argument that structural change is important for productivity growth. The early 1970s coincide roughly with the peak of American manufacturing as a share of economic activity. Is this the a demonstration of Baumol effects really kicking in? Or did the rise of competitors like Japan, and less favorable exchange rates, constrict manufacturing activity enough to make its weight felt on productivity growth?</p>
+
+<p>Second, even if it is due to changes in manufacturing activity, does a trend break around 1972 absolve China (WTO acession) and Mexico (NAFTA) of blame for a TFP growth slowdown? Probably?</p>
+
+<p>Third, is it evidence that significant financial events have lasting real effects? Did the inflation of the 70s and the Volcker disinflation do <em>something</em> to productivity growth? You’d have to entertain that possibility, right?</p>
+
+<p>Fourth, is Bob Gordon more right than he thinks? Did the build-out of things like the interstate highway system, major airports, the electrical grid, and the telephone system exhaust the possibilities for significant step-ups in productivity? Should we think more about general purpose technologiges (GPTs) as drivers or bursts of productivity growth?</p>
+
+<p>Fifth, this puts another hole in the “market power” story of slow TFP growth. None of the series I see on this suggest any kind of prima facie case for market power changing until well after this slowdown starts in the early 1970s. Might one make the case that market power is a consequence of slow TFP growth, and not a cause?</p>
+
+<p>Sixth, demographics matter even more than I thought? The late 1960s/early 1970s coincide with the flood of Baby Boomers into the labor market. Are the returns to experience much more severe than we think from Mincer regressions, and so their entry lowered productivity growth before creating a spike in the late 90s as they really reached their peak?</p>
+
+<p>Seventh, is it possible that <em>Innervisions</em> was so good that people no longer felt it was worth trying to innovate? Once you have that album in your life, is there a reason to ask for more?</p>
+
+<p>I have no answers to these questions, and I probably have more. If we’re looking too closely at the early 2000s we are probably missing the larger story. Don’t let recency bias narrow the field of inquiry!</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RxsBc5p-dPU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+:ET

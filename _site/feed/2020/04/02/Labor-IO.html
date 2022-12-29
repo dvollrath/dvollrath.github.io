@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Economic impacts of the coronavirus - part 3/n(?) - Dietrich Vollrath
+    
+  </title>
+
+  <meta name="description" content="If you’re wondering what I’m attempting to do in these posts, then join the club. I’m just sort of grasping around for a way of thinking about the aggregate ...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/feed/2020/04/02/Labor-IO.html">
+  <link rel="alternate" type="application/rss+xml" title="Dietrich Vollrath" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Dietrich Vollrath</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/assets/cv_vollrath.pdf">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/fully">Fully Grown</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/textbook">Textbook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/research">Research</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Economic impacts of the coronavirus - part 3/n(?)</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">Dietrich Vollrath</a>
+              on April 02, 2020 &middot; <span class="reading-time" title="Estimated read time">
+  
+   17 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p>If you’re wondering what I’m attempting to do in these posts, then join the club. I’m just sort of grasping around for a way of thinking about the aggregate impacts of the shutdowns that takes into account the fact that it will hit particular industries directly (e.g. restaurants) but that this will have ripple effects on other sectors. The prior posts (<a href="https://growthecon.com/blog/IO-Tables/">here</a>, <a href="https://growthecon.com/blog/Base-IO/">here</a>) were building up some understanding of a baseline model to do this.</p>
+
+<p>The big problem with the baseline model is the fact that it assumes a lot of flexibility in the economy, especially in terms of labor moving around between industries in response to productivity or demand shocks. We’re not seeing the kind of perfect flexibility the baseline model assumes. We are seeing <em>some</em> flexibility, as Amazon, Costco, and other firms are hiring even as many industries are laying people off. But there is nowhere close to enough of this new hiring to offset the massive job losses that have occurred. We’re at 10 million UI claims in the last two weeks as of today.</p>
+
+<p>Like a lot of macro models, the baseline version I started with is useful for thinking about relatively long-run changes when the frictions (search and match, for example) have had time to work themselves out. But I think I can still leverage this baseline model to get some idea of the short-run impacts by ignoring some of it and then making some simplifying assumptions of my own.</p>
+
+<h3 id="the-industries">The industries</h3>
+<p>To explain, let me start with the input/output structure. I’m going to play around with fifteen industries (okay, 17, but the last two are tiny and mainly there so that things add up). I could do this for 71 or (God forbid) 405 industries using I/O tables provided by the BEA, but this is sufficient to get the idea and calculate some effects.</p>
+
+<p>You can see the 15 main industries and some summary information in the following figure. Yes, that’s just a clip from a spreadsheet, which you can find <a href="https://www.dropbox.com/s/sk1o0xd8omjrbll/IO_sim.xlsx?dl=0">here</a> if you want to play with it. This data is all from 2018 - I know, I know - but that is the latest version of the full I/O tables you can get. For my purpose of seeing how things spread around the economy, I’m okay with that. I’m not trying to give you a precise estimate of GDP in the 2nd quarter of 2020.</p>
+
+<p><img src="/assets/IOsetup.png" alt="Industry information" /></p>
+
+<p>The first column shows the share of “final use”, which is another way of referring to GDP. Final use of an industry’s output is that output which is not used as an intermediate good by some other industry. The sum of final use across industries adds up to GDP. Agriculture constitutes 0.3% of GDP, and manufacturing is 9.6%, for example.</p>
+
+<p>The second and third columns show the Domar weight for each industry, which I explained in the prior post. It’s calculated twice as a check on myself. Once calculated the normal way, by dividing gross output of an industry (Q) by GDP. The second time is calculated by using the I/O matrix itself, and this was just to make sure I wasn’t making some mistake with that matrix. If you take a look at the Domar weights, you can see which industries have a lot of connections as suppliers to other industries. Manufacturing, for example, has a Domar weight of 29.2% even though it is only 9.6% of GDP. That is because manufacturing produces a lot of output that is used as intermediates by <em>other</em> industries, so its influence on the economy outweighs its final use. Retail, on the other hand, has a Domar weight of 8.3% compared to a share of GDP of 7.5%, not much different. That is because retail isn’t used much as an input by <em>other</em> industries.</p>
+
+<p>Following that you can see the total final use and gross output of each industry. And next to those in the final columns are the payroll of each industry (labor compensation as reported in the I/O accounts) and the number of employees (in thousands, which I pulled from a different BEA account).</p>
+
+<h3 id="the-shock">The shock</h3>
+<p>I said I was going to ignore some of the baseline model in order to make sense of the current shock. I’m going to shove through an exogenous drop in final use spending on a few industries (e.g. art, entertainment, and food service) and then <em>ignore</em> that in the baseline model this spending would end up being done on other industries. In the baseline model there is no place for consumers money to go other than spending on final use goods or services from the industries. So if you spend less on food service, you would spend that money in the retail industry, for example.</p>
+
+<p>What I’m doing is assuming that you can just not spend that money. I’m allowing people to have a bank account, or a mattress, or a shoebox, or whatever, and to just stop spending as much. If people spend less on goods and services, GDP will shrink. This is all pretty old school Keynsian cross stuff. And for the purposes of evaluating the effect of a massive spending shock over the horizon of a couple of weeks, I’m good with that. We’re well within the window of time when it makes sense that things like relative prices, wages, and labor allocations across industries aren’t able to adjust. If you aren’t comfortable with that, I could also introduce a “household production” industry into the mix which people spend resources on, but which doesn’t get added up as part of GDP. The drop in spending on food service and other industries would be matched by an increase in “spending” on home production.</p>
+
+<p>Either way, measured GDP will fall. What is more interesting to me here is the impact of these immediate spending shocks on the gross output of <em>other</em> industries. When we all spend less at restaurants and hotels, that impacts the industries they use like wholesalers, professional services, and finance. And that in turn impacts their suppliers, which in the restaurant example you might imagine includes the agricultural sector.</p>
+
+<p>The gross output of each industry is going to be affected negatively by this spending shock, and the size of the negative effect is going to depend on how tied together they are by the I/O matrix. Without my Keynsian-like assumption, there would be some countervailing force propping up other industries as spending shifted from restaurants towards other areas. That could well be part of a response. We already see that some retail institutions (Amazon, some grocery stores) are seeing increased activity. You could play with that in the spreadsheet if you want.</p>
+
+<h3 id="the-effect">The effect</h3>
+<p>I pushed some numbers through this, and the figure below shows what I’m getting. I assumed that spending on retail fell by 50%, on arts/entertainment/food service by 75%, and on other services by 75%. This is nothing other than gut feel. This is a back of the (very large) envelope stuff. The column showing these percent changes in outlined in red in the figure.</p>
+
+<p><img src="/assets/IOeffect.png" alt="Effects of shock" /></p>
+
+<p>What follows are the implications. First comes the absolute change in final use spending in each industry. That’s 766 billion less in retail spending, 944 billion less on arts/ent/food, and 488 billion less on other services. Next comes the impact on <em>all</em> the industries due to this shock to final use spending. The “Chg Gross Output” column takes the spending shock and pushes it through the I/O matrix to figure out the impact on each industry due to the logic I explained above.</p>
+
+<p>Gross output in agriculture falls by 24 billion, and in mining by 26 billion, for example. You get big effects in manufacturing, with a drop in 287 billion, in finance with a 388 billion hit, and in professional services with 415 billion. Also notice that in retail, arts/ent/food, and other services, the drop in gross output is <em>bigger</em> than just that from the drop in spending. The ripple effects from other industries come back to haunt them further.</p>
+
+<p>Next to the absolute change in gross output is the percent change in each industry, giving you a better idea of the shock to each. No one really escapes here, except perhaps education/health, with only a drop of 0.2%. This small effect is due to the fact that education/health isn’t a big <em>supplier</em> of intermediate goods to other industries, and so lower demand for things like retail don’t really impact this industry much.</p>
+
+<p>We can now get to the additional simplifying assumptions I am making to parse through the effects. First, I’m assuming that the share of industry gross output used on payrolls stays constant, as if the industry had a Cobb Douglas production function. This means that payrolls scale up and down with gross output, or that the percent change in total payroll in an industry is the same as the percent change in gross output. This is the last column in the above figure.</p>
+
+<p>The second assumption is that within an industry the wage is sticky. If the wage is sticky, then any drop in payroll has to be accomplished by firing people. So the percent change in employment in an industry is <em>also</em> the same as the percent change in gross output. This is in the second to last column of the figure.</p>
+
+<p>For retail, this implies a drop in employees of 7,336,000, and in arts/ent/food a drop of 1,454,000. Other services lose 4,145,000 workers. But note that professional services sees a substantial drop of 1,802,000, all because of the ripple effects of the initial spending shocks. There are hundreds of thousands of jobs lost in other industries like manufacturing and finance. None of these should be taken too seriously, as again I’m just doing back of the envelope stuff here.</p>
+
+<p><img src="/assets/IOaggregate.png" alt="Aggregate" /></p>
+
+<p>I can aggregate all this as well. The last figure here shows those aggregations. GDP falls by 11%, which is entirely due to the assumed collapse in final use spending in those three industries. There is nothing magic about getting that number, but I did choose the shocks to get something like this, as it jives with some reports about the size of the drop in GDP we might expect over the next few months. Gross output drops by 10%, in line with GDP, and payrolls by 11%, neither of which are surprising given the assumed drop in GDP.</p>
+
+<p>Total employment in this scenario falls by 16,886,000, which is 12% of employment in 2018. That’s not something I was trying to hit, but it is line with reports that the unemployment rate could jump by something in that neighborhood. We’re already at 10 million UI claims, so the question may be whether the negative shocks I threw in the spreadsheet are large enough.</p>
+
+<p>What you can play with in the spreadsheet are also stimulus scenarios. Be careful here. The stimulus involves very little spending <em>on</em> government services directly, but instead is mainly transfers by the government to others to spend on any industry they like. So don’t add a big percent increase in the “Government” final use line. Instead add a positive percent to industries you think people will spend UI benefits or the $1200 checks on.</p>
+
+<h3 id="doing-it-right">Doing it right</h3>
+<p>I can’t emphasize enough that this is not some kind of calibrated forecast of what is going to happen in Q2 or Q3 of this year. It is solely an exercise in seeing how <em>some</em> kind of shocks will permeate throughout the entire economy, even if they are centered on only a handful of industries.</p>
+
+<p>If you <em>did</em> want to do something more accurate, what else would you have to do? I can think of several important ones.</p>
+
+<ol>
+  <li>
+    <p>Expectations. It’s not like the pandemic is a secret, so people are presumably adjusting their spending on other industries in <em>anticipation</em> of the possible effects this year. For example, businesses may be lowering capex because they don’t think demand will materialize until end of this year. That would act like another spending shock to manufacturing or construction. Workers who are worried about getting laid off in the future will pull back on spending as well.</p>
+  </li>
+  <li>
+    <p>Payrolls and spending. I’m not enforcing any relationship between the drop in payrolls and the drop in spending. If my little exercise is the “through mid-April” forecast, then you have to think through how the drop in payrolls will influence spending across industries in the “mid-April to mid-May” period, and so on.</p>
+  </li>
+  <li>
+    <p>Relative price changes. I didn’t say it explicitly, but this little exercise assumes that the relative prices of industries don’t change. If retail locations slash prices to salvage <em>something</em> out of the next few weeks, then this may get people to substitute spending towards them. Although perhaps lockdowns prevent this from doing anything about it?</p>
+  </li>
+  <li>
+    <p>Industry substitutions. Similar to above, if relative prices change then industries may decide to spend more on cheaper intermediates and less of more expensive ones. That changes the I/O matrix. I’m assuming the matrix stays constant, or that the “recipe” each industry follows for production stays constant. That may not be a bad assumption for small shocks, but is probably wrong for large shocks like these.</p>
+  </li>
+</ol>
+
+<p>A lot of things missing, as you can tell. The farther forward you want to forecast, the more things my simplistic model is going to get wrong. But I find the simplistic model useful just for thinking about the rough scale of the shocks occurring and how they influence the whole economy. We’re starting to see papers coming online that are doing more sophisticated macro modeling of the impact of the virus, which from my very brief scan of intros are taking at least some of these effects into account. Those will be helpful for thinking about how long the dip will last and how significant the rebound will be, which my little spreadsheet has zero information about.</p>
+
+<p>Stay safe. Stay home. Wash your hands. And you should probably wear a mask.</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/feed/2020/03/21/Base-IO.html" data-toggle="tooltip" data-placement="top" title="Economic impacts of the coronavirus - part 2/n(?)">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/feed/2020/08/13/Silicon-Valley.html" data-toggle="tooltip" data-placement="top" title="The Silicon and Industrial Revolutions">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:dietz.vollrath@gmail.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/DietzVollrath">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/dvollrath">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+        </ul>
+        <center>          
+          <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+          <style type="text/css">
+            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:1000px;}
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          </style>
+          <div id="mc_embed_signup">
+          <a name="mc_anchor"></a>
+          <form action="//growthecon.us12.list-manage.com/subscribe/post?u=bc4921b82e22a7df72ab34622&amp;id=c99e71f9d7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+            <label for="mce-EMAIL">Receive new posts via email</label>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bc4921b82e22a7df72ab34622_c99e71f9d7" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+              </div>
+          </form>
+          </div>
+          </center>
+
+        <p class="copyright text-muted">Copyright &copy; Dietrich Vollrath 2022</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+    }
+    });
+</script>
+<script type="text/javascript" async
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72839737-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-72839737-1');
+</script>
+
+
+
+</body>
+
+</html>

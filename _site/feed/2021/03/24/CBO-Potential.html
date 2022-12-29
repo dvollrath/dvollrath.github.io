@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Pandemic relief and potential GDP (plus CBO methodology appendices!) - Dietrich Vollrath
+    
+  </title>
+
+  <meta name="description" content="The figure below is from the Hamilton Project but you could have found something similar in a lot of evaluations of the relief bill. It compares the projecte...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/feed/2021/03/24/CBO-Potential.html">
+  <link rel="alternate" type="application/rss+xml" title="Dietrich Vollrath" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Dietrich Vollrath</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/assets/cv_vollrath.pdf">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/fully">Fully Grown</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/textbook">Textbook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/research">Research</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Pandemic relief and potential GDP (plus CBO methodology appendices!)</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">Dietrich Vollrath</a>
+              on March 24, 2021 &middot; <span class="reading-time" title="Estimated read time">
+  
+   18 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p>The figure below is from the <a href="https://www.hamiltonproject.org/blog/the_macroeconomic_implications_of_bidens_1.9_trillion_fiscal_package">Hamilton Project</a> but you could have found something similar in a lot of evaluations of the relief bill. It compares the projected path of GDP with the relief bill to the CBO projection of potential GDP formed in January 2020, prior to the pandemic.</p>
+
+<p><img src="/assets/hamiltonfig1.png" alt="" /></p>
+
+<p>As you can see it projects that the relief bill will put us the earlier CBO projection by the end of 2021 and early in 2022. This is one argument used against the bill, or at least against the size of the bill. The idea is that the relief bill will “overheat” the economy or cause the economy to run “over potential”. Some leave that complaint as is, assuming it is self-evident that this would be bad. Others take time to explain that they think running above potential raises the risk of inflation.</p>
+
+<p>The problem is that while the CBO refers to their projection as “potential GDP”, that is misleading. When most people think of “potential GDP” they think “The maximum GDP that we could produce before running into physical constraints”, or “The maximum GDP that we can produce before firms start jacking up prices rather than expanding real production”. That is the notion of “potential GDP” that lies at the heart of this particular inflation-based argument against the relief bill.</p>
+
+<p>However, what the CBO projection actually means is “The GDP you might get if the economy was sorta like in 2005, but we took into account population aging”. It has nothing to do with physical limits, and nothing to do with firms being willing or able to increase output.</p>
+
+<p>I’m going to walk through how the CBO projection is formed, and why my slightly snarky definition is in fact the correct one. And it might come off like I’m dumping on the CBO. I’m not. Aside from some quibbles about semantics, the numbers they produce are useful for specific purposes. The problem is that people use these numbers for the <em>wrong</em> purposes, mainly because they don’t understand how these projections are formed.</p>
+
+<p>I’m not dismissing <em>all</em> arguments about inflation risks from the relief bill, I’m just working through this <em>one</em> argument about inflation risk, and why it is probably unfounded.</p>
+
+<p>Oh, since apparently you are only allowed to have an opinion on inflation risks if you were alive during the 1970s, I’ll just say that I have sat in a car waiting in a gas line, watched the original Muppet Show when it was on broadcast TV, and at some point owned plaid bell-bottom pants.</p>
+
+<p>Having established my macro credentials, let’s get started.</p>
+
+<h3 id="you-have-no-potential">You have no potential</h3>
+<p>The answer, as always, is to read the f$&amp;#ing manual. You can find the CBO methodology from 2018 <a href="https://www.cbo.gov/publication/53558">here</a>. That site includes software and data you can download to replicate their projections, although it is written for EViews. So for the four of you out there that still use EViews, it is your time to shine. There is also a supplement on estimating labor force participation <a href="https://www.cbo.gov/system/files/115th-congress-2017-2018/workingpaper/53616-wp-laborforceparticipation.pdf">here</a> that is relevant to the process.</p>
+
+<p>“Potential GDP” is a terrible description for what the CBO estimates. “Smoothed historical GDP” is more accurate. The figure below is from the methodology paper linked above. The dashed blue line is “potential GDP”, and you can see that it is a smoothed version of actual GDP. Their goal is just to remove business cycle effects.</p>
+
+<p><img src="/assets/cbofig8.png" alt="" /></p>
+
+<p>You can also see that we have to distinguish between the historical series of potential GDP (1950-2018), and the projected series of potential GDP (after 2018). The projected series, which is what went into that Hamilton Project figure that I started with, is based on information from the historical series, along with assumptions about things like productivity growth.</p>
+
+<p>That projected series is what is important here, as it forms the basis of the argument that the relief bill will “overheat” the economy. So let’s break down how the CBO forms that projection.</p>
+
+<p>Projected GDP for the CBO comes from a basic Cobb-Douglas production function</p>
+
+\[Y^{Proj} = A^{Proj} \left(K^{Proj}\right)^{\alpha} \left(E^{Proj}\right)^{1-\alpha}.\]
+
+<p>To create an estimate of projected GDP they need an estimate of the projected size of each of these three items: TFP (A), capital (K), and employed labor (E). In each case they are extrapolations and/or flat-out guesses based on the smoothed historical series, and <em>not</em> based on some notion of physical capacity or limits on production.</p>
+
+<p>Let’s start with TFP. “The agency therefore applies a substantial degree of judgement to its projections of potential TFP rather than simply projecting the most recent estimated trend,” (p. 35 in the 2018 report). Well, of course they do. There is no way to project TFP into the future that isn’t just a wild-ass guess. As the CBO notes in their report, TFP tends to grow at a steady rate for a while….until it doesn’t. And you don’t know when one of these jumps up or down in the growth rate of TFP is going to occur.</p>
+
+<p>What the CBO does is assume that the rate of TFP growth will converge from its recent short-run trend (say about 0.7% per year) to a long-run average growth rate (say about 1.2% per year). This isn’t any worse or better than just assuming the rate will stay at 0.7%, or jump to 2%, or anything else.</p>
+
+<p>But it is clear that this isn’t an estimate of how fast TFP <em>could</em> grow. It’s not an upper bound on the rate of TFP growth, above which the economy couldn’t possibly go.</p>
+
+<h3 id="work-it">Work it</h3>
+<p>The second, and more relevant, piece of information going into the CBO projection is employment, E. In principle, what the CBO is projecting for employment is</p>
+
+\[E^{Proj} = (1-u^{Proj}) \times LFPR^{Proj} \times POP^{Proj}\]
+
+<p>where $u^{Proj}$ is the projected unemployment rate, $LFPR^{Proj}$ is the labor force participation rate, and $POP^{Proj}$ is the working-age population. In practice, this is a sum of employment projections for 516 different sub-groups distinguished by age, sex, race/ethnicity, and education. The second link above about labor force projections gives you all the info you want about how those sub-groups are formed.</p>
+
+<p>Regardless, the game for the CBO projection goes like this. First, get the projected working age population, $POP^{Proj}$. That’s pretty easily done from normal demographic tables, and in that sense there is little that is controversial about it.</p>
+
+<p>Next they need to come up with a projected labor-force participation rate and projected unemployment rate (for each group). Here is where the CBO’s meaning of “potential” comes into focus, and why it does not mean what you think it means.</p>
+
+<h4 id="participation-rates">Participation rates</h4>
+<p>The projected labor-force participation rate is found primarily by taking the average or smoothed LFPR from the past for each sub-group, while also incorporating a few actual projections by the CBO of the effects of federal policies. But the projection is not what the LFPR <em>could</em> be, it is what the LFPR <em>was</em> during “normal” economic times in the past. For example, if married females with young children had a low LFPR in the past, then the CBO projects them to have a low LFPR in the future. There is no sense of potential LFPR here, in the sense of asking what the LFPR of married females with young children <em>could</em> be.</p>
+
+<p>The same idea holds with all the LFPR projected on the basis of race/ethnicity, disability, education attainment, birth-year, and the like. The CBO embeds all the accrued historical factors leading to variation in the LFPR across groups into their projection. It’s a sensible way to approach the projection. And it is probably a good projection of what LFPR will be in the next few years. But it is not a measure of some physical upper bound on how much the economy could produce.</p>
+
+<p>Take the birth-year cohort effects they embed in their projection. This is the observation that some cohorts happen to have lower LFPR than others, presumably because of past experiences in the job market. Think of kids born around 1988-1992, who graduated from HS or college around 2009-10, had no luck finding entry level jobs, and now are more likely to be out of the labor force because of that experience. The CBO projection assumes that this cohort will <em>always</em> participate less in the labor force in the future. It is as if there is a fixed technological limit to their participation.</p>
+
+<p>Age effects dominate the projection of LFPR by the CBO. Given historical patterns of LFPR, the aging of Baby Boomers is projected to lower the LFPR by 2.8 percentage points from 2017-2028. The historical pattern implies that LFPR starts to fall at age 50, well before standard retirement age. Does this mean that this represents a physical limit on the ability to work by people aged 50+? Is it literally impossible that more people over 50 might continue to work? If the answer is no, then the CBO projection doesn’t represent an upper bound on LFPR.</p>
+
+<p>Again, the CBO is not doing anything wrong. The mistake lies is interpreting the CBO projection of LFPR as some unbreakable limit on labor-force participation (and hence GDP).</p>
+
+<h4 id="unemployment-rates">Unemployment rates</h4>
+<p>The last bit involved in the projection of employment is the unemployment rate, $u^{Proj}$. Again, the CBO is going to actually project the unemployment rate for all the different sub-groups they track, and again they are going to assume that historical unemployment rates during “normal” economic times will continue in the future.</p>
+
+<p>What constitutes “normal”? Well, here is a screenshot of Appendix B of the CBO’s 2018 documentation on potential GDP calculations, and you can use the link above to go look it up yourself.</p>
+
+<p><img src="/assets/cboapp1.png" alt="" /></p>
+
+<p>The “natural rate” for each one of the sub-groups tracked by the CBO is assumed to be whatever the unemployment rate was for that group in …. 2005? Because 2005 was the year when unemployment rates were “natural” and unaffected by a business cycle, apparently. Let that settle in for a little bit, and think about it. This has all of the same issues as the projection of LFPR.</p>
+
+<p>The unemployment rate for those with less than a HS diploma, aged 25+, was 7.4% in December 2005. The CBO methodology assumes that this is the natural rate of unemployment for that group, hence they project that the unemployment rate for this group will be 7.4% in the future. As with LFPR, does this imply that 7.4% is a physical limit on how low the unemployment rate can go for those with less than a HS diploma? No, of course not.</p>
+
+<p>There is no sense that the CBO projection represents a lower bound on unemployment (and hence an upper bound on employment). It’s just using a guess as to what a “normal” economy might look like. It is a mistake to use this projection as an upper bound on what the economy <em>could</em> do in the future.</p>
+
+<h3 id="so-what-is-it">So what is it?</h3>
+<p>What, then, is the CBO projection found in the first figure of this post telling us? At the beginning of the post I said it was: “The GDP you might get if the economy was sorta like in 2005, but we took into account population aging.” And that is the right way to look at it.</p>
+
+<p>Their projection involves a guess about the future path of TFP growth. Not an unreasonable guess, but a guess. Their projection then involves a projection of labor-force participation rates based on historical experience, and population aging implies that this participation rate will continue to fall. Last, they plug in unemployment numbers from 2005 to figure out how many people will actually be working. I didn’t cover their assumptions about capital services because those get really into the weeds and from what I can tell have only a marginal impact on their projection.</p>
+
+<p>Unfortunately they call this projection “potential GDP” and I think that screws a lot of people up. The words “potential GDP” connote some sort of upper bound or hypothetical limit. The CBO projections are nothing of the sort. Using “potential GDP” as a reference point to argue about the likelihood of inflation is wrong. Not wrong-technically-but-kinda-sorta-okay-anyway, just wrong.</p>
+
+<p>It is quite possible for actual GDP to be above their potential GDP and yet no increase in inflation can occur. We just saw almost four years of that being the case. It also is quite possible for actual GDP to be <em>below</em> CBO potential GDP and yet see an increase in inflation, perhaps because Jay Powell starts doing shrooms. There is no mechanical relationship between actual GDP, CBO potential GDP, and inflation. There isn’t even a solid empirical regularity.</p>
+
+<p>Here is where I am going to chuck some rocks in the CBO’s direction. Even <em>they</em> succumb to this notion that their projection has some real meaning regarding upper bounds. They use a form of this definition at various points throughout their documentation.</p>
+
+<blockquote>
+  <p>Potential output is the amount of real GDP that can be produced if labor and capital are employed at maximum sustainable rates.</p>
+</blockquote>
+
+<p>What is the definition of “sustainable”? None is given by the CBO. It implies that their projection represents some sort of hard limit we must be wary of crossing lest …. some undefined entity be not sustained. Like, if the unemployment rate for people without HS diplomas drops below 7.4% will the sun explode? If TFP growth turns out to be higher than that guess, does <em>that</em> mean the sun explodes? Should I be worried about a Chernobyl type incident?</p>
+
+<p>If you want to jump in with “sustainable means not increasing the inflation rate”, then you better be prepared to explain why 2005 is the crux of all macroeconomic history around which inflation expectations were formed. You also have to explain why people forming inflation expectations are savvy enough to account for population aging and other demographic trends, but too stupid to understand when TFP growth over- or under-shoots a guess made by the CBO. Oh, you’d also need to come up with a coherent explanation for why 1-1.5% inflation is okay, why 2-2.5% inflation is not, and why if inflation did get to 2-2.5% the Fed would suddenly lose the ability to influence said inflation rate.</p>
+
+<p>I love you, CBO peeps. But you gotta clean up the language on this, because the projections are getting misused to make bad economic arguments.</p>
+
+<p>Your projections are “The GDP you might get if the economy was sorta like in 2005, but we took into account population aging.” That’s a really useful set of numbers! It just isn’t a set of numbers that have much, if anything, to do with the prospects of future inflation.</p>
+
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/feed/2021/02/01/TFP-Again.html" data-toggle="tooltip" data-placement="top" title="Judge me by my TFP, do you?">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/wp/2021/04/01/paper-Elasticity.html" data-toggle="tooltip" data-placement="top" title="The Elasticity of Aggregate Output with Respect to Capital and Labor">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:dietz.vollrath@gmail.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/DietzVollrath">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/dvollrath">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+        </ul>
+        <center>          
+          <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+          <style type="text/css">
+            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:1000px;}
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          </style>
+          <div id="mc_embed_signup">
+          <a name="mc_anchor"></a>
+          <form action="//growthecon.us12.list-manage.com/subscribe/post?u=bc4921b82e22a7df72ab34622&amp;id=c99e71f9d7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+            <label for="mce-EMAIL">Receive new posts via email</label>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bc4921b82e22a7df72ab34622_c99e71f9d7" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+              </div>
+          </form>
+          </div>
+          </center>
+
+        <p class="copyright text-muted">Copyright &copy; Dietrich Vollrath 2022</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+    }
+    });
+</script>
+<script type="text/javascript" async
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72839737-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-72839737-1');
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Measuring Real GDP - Dietrich Vollrath
+    
+  </title>
+
+  <meta name="description" content="This morning Angus Deaton and Bettina Aten released an NBER working paper (gated, sorry) about understanding changes to international measures of real GDP an...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/feed/2014/06/23/measuring-real-gdp.html">
+  <link rel="alternate" type="application/rss+xml" title="Dietrich Vollrath" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Dietrich Vollrath</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/assets/cv_vollrath.pdf">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/fully">Fully Grown</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/textbook">Textbook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/research">Research</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Measuring Real GDP</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">{"login"=>"dvollrath", "email"=>"dietz.vollrath@gmail.com", "display_name"=>"dvollrath", "first_name"=>"", "last_name"=>""}</a>
+              on June 23, 2014 &middot; <span class="reading-time" title="Estimated read time">
+  
+   8 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p>This morning Angus Deaton and Bettina Aten released an <a href="http://www.nber.org/papers/w20244">NBER working paper</a> (gated, sorry) about understanding changes to international measures of real GDP and poverty that occurred following the release of a new round of price indices from the International Comparison Project (ICP).</p>
+<p>
+Price indices? Methodological nuance? I know, ideal subject matter to drive my web traffic to zero. </p>
+<p>
+For those of you still here (thanks mom!), the paper by Deaton and Aten is a great chance to understand where comparisons of real GDP across countries come from, and to highlight that these comparisons are inherently imprecise and should be used with that in mind.</p>
+<p>
+The basic idea of the Penn World Tables, or any other attempt to measure real GDP across countries, is to compute the following
+<p align="center">$$  RGDP_i = \frac{NGDP_i}{PPP_i} $$</p>
+<p> where ${RGDP_i}$ is the real GDP number we want, ${NGDP_i}$ is the nominal GDP reported by a country, and ${PPP_i}$ is the "purchasing-power-parity" price index for that country. While there can be severe issues with the reporting of nominal GDP, particularly from poor countries with a bare-bones (or no) national statistics office, the primary concern in these calculations is with the ${PPP_i}$.</p>
+<p>
+Think of ${PPP_i}$ as the cost of one "bundle of goods" in country ${i}$. So dividing nominal GDP by ${PPP_i}$ gives us the number of real bundles that a country produced. If we do that for every country, we can compare the number of real bundles produced across countries, and that crudely captures real GDP.</p>
+<p>
+The ICP produces these measures of ${PPP_i}$ for each country. I'm going to avoid the worst sausage-making aspect of this, because it involves lots of details about surveys to find prices for specific goods, how to get the right "average" price for each good, and then how to roll those back up to ${PPP_i}$ for each country. The important thing about the methodology for computing ${PPP_i}$ is that there is no right way to do it. There are methods that might be less sensible (i.e. let ${PPP_i}$ be the price of a can of Diet Coke in a country) than what the ICP does, but that doesn't imply that the ICP is correct in some absolute sense. </p>
+<p>
+It also means that the ICP can, and does, change methodology over time. The paper by Deaton and Aten works through the changes in methodology from 1993/5 to 2005 to 2011 and how we measure real GDP. The tentative conclusion is that the 2005 iteration of the ICP probably was <i>over</i>-stating the ${PPP_i}$ levels for many developing African and Asian countries. From the equation above, you can see that over-stating the ${PPP_i}$ means <i>under</i>-stating real GDP. So in 2005, we were likely too pessimistic about the economic conditions in a lot of these developing countries. <a href="http://www.brookings.edu/blogs/up-front/posts/2014/05/05-data-extreme-poverty-chandy-kharas">Chandy and Kharas</a> found that using the 2005 values of ${PPP_i}$ implied that 1.215 billion people in 2010 lived below the World Bank's &#036;1.25 per day poverty line. Using the 2011 values of ${PPP_i}$ instead, there are only 571 million people living below &#036;1.25 per day. That's a reclassification of some 700 million people. Their domestic income stayed the same, but the 2011 ICP suggests that they were paying lower prices for their "bundle of goods" than we assumed in 2005, and hence their real income went above &#036;1.25.</p>
+<p>
+But as I said before, these are tentative conclusions because there is no way of knowing this for sure. Deaton and Aten's conclusion is that the 1993/5 and 2011 rounds of the ICP seem more consistent with each other, and 2005 looks like an outlier. So just to keep things comparable over time, we should probably avoid the 2005 numbers. But again, who knows. It's quite possible that mankind's true welfare is measured in the number of cans of Diet Coke that we can produce. </p>
+<p>
+Measuring real GDP or global poverty levels is - to put it kindly - a fuzzy process. There is not <i>the</i> right method for this. As you can see, the measurements can be pushed around a lot by differences in methodology that are inherently trying to make apples-to-oranges comparison (I mean that literally - how do you value apples compared to oranges in national output? What's the right price? It's different in Washington, Florida, and Wisconsin. So how do you compare the total "real" value of fruit consumption in different states or countries?).</p>
+<p>
+The implication is that we shouldn't be asking real GDP measures or poverty line measures to do too much. For really crude comparisons, real GDP from the Penn World Tables is fine. The U.S. has higher real GDP per capita than Kenya, and the Penn World Tables pick that up. Is it a 40/1 ratio? A 35/1 ratio? A 20/1 ratio? Not entirely clear. Different methodologies for computing ${PPP_i}$ in the US and Kenya will yield different results. But is it really important if it is 40/1 versus 20/1? In either case, it is clear that Kenya is poorer. We can go forth and try to explain why, or make some policy advice to Kenya to help close the gap, or go to Kenya to work on interventions to alleviate poverty there.</p>
+<p>
+Where these real GDP comparisons, or poverty line counts, should not be used is in finer-grain comparisons. Is Kenya's real GDP per capita lower or higher than Lesotho's? According to the Penn World Tables, in 2011 Kenya's was lower. But should we do any kind of serious analysis based on this? No. The difference is as likely to be from discrepancies in how we measure ${PPP_i}$ for those countries as from real economic differences in capital stocks, human capital, technology, or institutions. </p>
+<p>Real GDP comparisons are best thought of as similar to baseball stats. The top career OPS (on-base plus slugging percent) players are Babe Ruth, Ted Williams, Lou Gehrig, Barry Bonds, and other names you might recognize. Players like Albert Pujols and Miguel Cabrera are in the top 20, giving you a good idea that these guys are playing at a level similar to the greats of all time. You can't use this career OPS to tell me that Pujols is definitively better than Stan Musial or definitively worse than Rogers Hornsby. But career OPS does make it clear that Pujols and Cabrera are definitely better than guys like Davey Lopes, Edgar Renteria, and Devon White (and distinguishing between Lopes, Renteria, and White is hopeless using OPS).</p>
+<p>
+The fact that ICP revises the ${PPP_i}$ values over time doesn't make them useless, just as OPS isn't useless even though it ignores defense and steals. But you cannot ask too much of the real GDP measures that are derived using them. They are useful for big, crude comparisons, not fine-grained analysis. </p></p></p></p></p></p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/feed/2014/06/18/does-culture-matter-for-economic-growth.html" data-toggle="tooltip" data-placement="top" title="Does Culture Matter for Economic Growth?">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/feed/2014/06/25/does-culture-matter-for-economic-growth-part-deux.html" data-toggle="tooltip" data-placement="top" title="Does Culture Matter for Economic Growth? Part Deux.">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:dietz.vollrath@gmail.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/DietzVollrath">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/dvollrath">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+        </ul>
+        <center>          
+          <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+          <style type="text/css">
+            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:1000px;}
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          </style>
+          <div id="mc_embed_signup">
+          <a name="mc_anchor"></a>
+          <form action="//growthecon.us12.list-manage.com/subscribe/post?u=bc4921b82e22a7df72ab34622&amp;id=c99e71f9d7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+            <label for="mce-EMAIL">Receive new posts via email</label>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bc4921b82e22a7df72ab34622_c99e71f9d7" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+              </div>
+          </form>
+          </div>
+          </center>
+
+        <p class="copyright text-muted">Copyright &copy; Dietrich Vollrath 2022</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+    }
+    });
+</script>
+<script type="text/javascript" async
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72839737-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-72839737-1');
+</script>
+
+
+
+</body>
+
+</html>
