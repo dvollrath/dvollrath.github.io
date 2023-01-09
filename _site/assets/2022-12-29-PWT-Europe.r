@@ -7,6 +7,7 @@
 library(pwt10)
 library(plotly)
 library(htmlwidgets)
+library(dplyr)
 
 #########################################################################
 # Pick an elasticity of GDP w.r.t. capital
@@ -30,7 +31,7 @@ f.grate <- function(data,name,lags){
   data$g <- (data$v/data$vlag)^(1/lags) - 1 # calculate the growth rate
   data$isolag <- lag(data$isocode,lags) # lag the isocode
   data$g[data$isocode != data$isolag] <- NA # replace with NA if eval goes x country
-  return(round(data$g,digits=4))
+  return(data$g)
 }
 
 p$y <- p$rgdpna/p$pop # create log GDP per capita
