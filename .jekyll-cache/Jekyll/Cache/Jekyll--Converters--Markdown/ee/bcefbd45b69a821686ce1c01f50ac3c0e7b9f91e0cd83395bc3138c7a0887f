@@ -1,4 +1,4 @@
-I"�5<p>One of the long-running arguments in growth is “geography versus institutions”. A lot of ink and a tiny amount of computing power was thrown at this question. The early stages of this involved a lot of cross-country regressions that attempted to figure out empirically whether measures of institutions or geography had explanatory power for GDP per capita. (By the way, I’m talking here just about the economic growth literature’s take on this. The general question goes back centuries.)</p>
+I"46<p>One of the long-running arguments in growth is “geography versus institutions”. A lot of ink and a tiny amount of computing power was thrown at this question. The early stages of this involved a lot of cross-country regressions that attempted to figure out empirically whether measures of institutions or geography had explanatory power for GDP per capita. (By the way, I’m talking here just about the economic growth literature’s take on this. The general question goes back centuries.)</p>
 
 <p>A tweet by <a href="https://twitter.com/GarettJones">Garett Jones</a> recently reminded me of one of the entries in this literature, Bill Easterly and Ross Levine’s “<a href="https://ideas.repec.org/a/eee/moneco/v50y2003i1p3-39.html">Tropics, Germs, and Crops</a>” paper. EL want to assess the role of geography in explaining cross-country incomes per capita. Their main questions are summed up nicely in the abstract.</p>
 
@@ -17,7 +17,7 @@
 
 <p>Regress log income per capita on the three geography measures. You get</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>------------------------------------
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>------------------------------------
                               .   
 Dep var: GDP p.c.            b/se   
 ------------------------------------
@@ -47,7 +47,7 @@ N                              72
 
 <p>Here’s the result:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>------------------------------------
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>------------------------------------
                             .   
 Dep var: GDP p.c.            b/se   
 ------------------------------------
@@ -102,7 +102,7 @@ N                              72
 
 <p>What is true is that <strong>if</strong> the true effect of institutions were larger (say a coefficient of 2.22 versus 1.16), then the estimated effects of geography would end up statistically insignificant. How do I know that? Because I can run a regression where I force the coefficient on institutions to be 2.22, and see what happens to the geography variables. Here you go:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>------------------------------------
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>------------------------------------
                                 .   
 Dep var: GDP p.c.            b/se   
 ------------------------------------

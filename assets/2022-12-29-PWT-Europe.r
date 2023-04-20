@@ -50,7 +50,7 @@ p$ghc <- round(p$gLN + p$gavh + p$ged,digits=4) # sum of all HC terms
 #########################################################################
 # Subset data for Europe and accounting terms
 #########################################################################
-europe <- p[which(p$isocode %in% c("USA","FRA","GBR","ESP","NLD","ITA","DEU")),]
+europe <- p[which(p$isocode %in% c("USA","JPN","FRA","GBR","DEU")),]
 france <- p[which(p$isocode %in% c("USA","FRA")),]
 
 fig_france <- plot_ly(france, x = ~year, y = ~gy, linetype = ~isocode, type = 'scatter', mode = 'lines')
@@ -62,7 +62,7 @@ fig_france <- layout(fig_france, title = list(text = '10-year growth rate of GDP
 fig_europe <- plot_ly(europe, x = ~year, y = ~gy, linetype = ~isocode, type = 'scatter', mode = 'lines')
 fig_europe <- layout(fig_europe, title = list(text = '10-year growth rate of GDP per capita', x=0), 
               xaxis = list(title = 'Year'),
-              yaxis = list (title = '10-year growth rate', range=c(-.01,.08)),
+              yaxis = list (title = '10-year growth rate', range=c(-.01,.10)),
               hovermode="x unified")
 
 fig_cap <- plot_ly(europe, x = ~year, y = ~gcap, linetype = ~isocode, type = 'scatter', mode = 'lines')
@@ -104,13 +104,13 @@ fig_avh <- layout(fig_avh, title = list(text = '10-year growth rate of average h
 # The following commands bundle up each figure so I can self-host them on my site.
 # You can safely comment these out if you just want to work with the figures themselves
 # If you leave this, it will probably fail unless you have a folder called "plotly" created
-saveWidget(partial_bundle(fig_europe), "./plotly/fig_europe.html",selfcontained = F, libdir = "lib")
-saveWidget(partial_bundle(fig_france), "./plotly/fig_france.html",selfcontained = F, libdir = "lib")
+#saveWidget(partial_bundle(fig_europe), "./plotly/fig_europe.html",selfcontained = F, libdir = "lib")
+#saveWidget(partial_bundle(fig_france), "./plotly/fig_france.html",selfcontained = F, libdir = "lib")
 
-saveWidget(partial_bundle(fig_cap), "./plotly/fig_europe_cap.html",selfcontained = F, libdir = "lib")
-saveWidget(partial_bundle(fig_hc), "./plotly/fig_europe_hc.html",selfcontained = F, libdir = "lib")
-saveWidget(partial_bundle(fig_prod), "./plotly/fig_europe_prod.html",selfcontained = F, libdir = "lib")
-
-saveWidget(partial_bundle(fig_ed), "./plotly/fig_europe_ed.html",selfcontained = F, libdir = "lib")
-saveWidget(partial_bundle(fig_LN), "./plotly/fig_europe_LN.html",selfcontained = F, libdir = "lib")
-saveWidget(partial_bundle(fig_avh), "./plotly/fig_europe_avh.html",selfcontained = F, libdir = "lib")
+#saveWidget(partial_bundle(fig_cap), "./plotly/fig_europe_cap.html",selfcontained = F, libdir = "lib")
+#saveWidget(partial_bundle(fig_hc), "./plotly/fig_europe_hc.html",selfcontained = F, libdir = "lib")
+#saveWidget(partial_bundle(fig_prod), "./plotly/fig_europe_prod.html",selfcontained = F, libdir = "lib")
+#
+#saveWidget(partial_bundle(fig_ed), "./plotly/fig_europe_ed.html",selfcontained = F, libdir = "lib")
+#saveWidget(partial_bundle(fig_LN), "./plotly/fig_europe_LN.html",selfcontained = F, libdir = "lib")
+#saveWidget(partial_bundle(fig_avh), "./plotly/fig_europe_avh.html",selfcontained = F, libdir = "lib")
