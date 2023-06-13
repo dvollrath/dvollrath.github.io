@@ -1,5 +1,7 @@
 # Do growth accounting and prepare figures of results
 
+setwd("~/dropbox/GrowthBlog/dvollrath.github.io/assets") # obv change to wherever you store things
+
 #########################################################################
 # Housekeeping
 #########################################################################
@@ -114,3 +116,5 @@ fig_avh <- layout(fig_avh, title = list(text = '10-year growth rate of average h
 #saveWidget(partial_bundle(fig_ed), "./plotly/fig_europe_ed.html",selfcontained = F, libdir = "lib")
 #saveWidget(partial_bundle(fig_LN), "./plotly/fig_europe_LN.html",selfcontained = F, libdir = "lib")
 #saveWidget(partial_bundle(fig_avh), "./plotly/fig_europe_avh.html",selfcontained = F, libdir = "lib")
+
+save_image(fig_europe, "./figures/fig_europe.png")

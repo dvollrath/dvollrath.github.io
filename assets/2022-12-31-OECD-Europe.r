@@ -195,3 +195,5 @@ saveWidget(partial_bundle(figLN), "fig_europe_LN.html",selfcontained = F, libdir
 saveWidget(partial_bundle(figLWlevel), "fig_europe_LWlevel.html",selfcontained = F, libdir = "lib")
 saveWidget(partial_bundle(figWNlevel), "fig_europe_WNlevel.html",selfcontained = F, libdir = "lib")
 saveWidget(partial_bundle(figavhlevel), "fig_europe_avhlevel.html",selfcontained = F, libdir = "lib")
+
+write.csv(p, "../data/PWT_calcs_Europe.csv", row.names=FALSE)
