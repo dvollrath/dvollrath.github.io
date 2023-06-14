@@ -66,7 +66,7 @@ Having said that, I'm going to go ahead and take seriously the idea that the fig
 
 One of the reasons this is worth exploring is the trend in labor force participation. It isn't obvious in the prior posts, so the above figure uses the same binning procedure to plot the raw difference in labor force participation across these six European countries over time. From 1960 to around 1990 these differences tend to be negative. But starting then, and with some big fluctuations involved, the differences become positive, and the average creeps up. For the large European economies, labor force participation was shifting up, and shifting up at precisely the time that productivity growth was starting to decline. 
 
-Another reason this idea is worth considering is the nature of measuring productivity growth. That productivity growth number is a residual. You calculation $g_{Prod}$ from this equation
+Another reason this idea is worth considering is the nature of measuring productivity growth. That productivity growth number is a residual. You calculate $g_{Prod}$ from this equation
 
 $$
 g_y = g_{Cap} + g_{Human} + g_{Prod},

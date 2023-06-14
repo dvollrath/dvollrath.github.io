@@ -4,6 +4,9 @@ KLEMS growth accounting for Europe
 
 cd "~/dropbox/GrowthBlog/dvollrath.github.io/assets"
 
+
+
+
 use "./data/KLEMSnational19952020.dta", clear
 
 
