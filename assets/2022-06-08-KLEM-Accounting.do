@@ -2,12 +2,11 @@
 KLEMS growth accounting for Europe
 */
 
-cd "~/dropbox/GrowthBlog/dvollrath.github.io/assets"
+//cd "~/dropbox/GrowthBlog/dvollrath.github.io/assets"
+cd "~/dropbox/work"
 
 
-
-
-use "./data/KLEMSnational19952020.dta", clear
+use "./KLEMSnational19952020.dta", clear
 
 
 destring year, replace
@@ -19,6 +18,7 @@ rename geo_code country
 rename nace_r2_code code
 
 gen keep_industry = 0
+
 replace keep_industry=1 if inlist(code,"A","B","C","D","E","F","G")
 replace keep_industry=1 if inlist(code,"H","I","J","K")
 replace keep_industry=1 if inlist(code,"M","N","O","P","Q","R","S")

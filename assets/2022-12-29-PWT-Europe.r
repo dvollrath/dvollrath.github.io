@@ -52,8 +52,12 @@ p$ghc <- round(p$gLN + p$gavh + p$ged,digits=4) # sum of all HC terms
 #########################################################################
 # Subset data for Europe and accounting terms
 #########################################################################
-europe <- p[which(p$isocode %in% c("USA","JPN","FRA","GBR","DEU")),]
+europe <- p[which(p$isocode %in% c("USA","JPN","FRA","GBR","DEU","ESP","ITA","NLD")),]
 france <- p[which(p$isocode %in% c("USA","FRA")),]
+
+share <- europe[,c('year','isocode','gy')]
+share <-share[which(share$year > 1959),]
+write.csv(share,"~/dropbox/work/VsF-data.csv",row.names=FALSE)
 
 fig_france <- plot_ly(france, x = ~year, y = ~gy, linetype = ~isocode, type = 'scatter', mode = 'lines')
 fig_france <- layout(fig_france, title = list(text = '10-year growth rate of GDP per capita', x=0), 
