@@ -2,7 +2,7 @@
 layout: post
 title: The Elasticity of Aggregate Output with Respect to Capital and Labor
 published: true
-category: wp
+category: me
 author: D. Vollrath
 journal: American Economic Journal - Macroeconomics
 volume: 16(4):470-504
