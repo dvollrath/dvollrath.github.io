@@ -7,7 +7,7 @@ author: D. Vollrath
 journal: American Economic Journal - Macroeconomics
 volume: 16(4):470-504
 pdf: /assets/vollrath-2024-the-elasticity-of-aggregate-output-with-respect-to-capital-and-labor.pdf
-data: https://github.com/dvollrath/Elasticity
+data: https://www.openicpsr.org/openicpsr/project/194858/version/V1/view
 appendix: /assets/Elasticity-Appendix.pdf
 ---
 
