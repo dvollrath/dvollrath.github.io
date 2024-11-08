@@ -1,0 +1,19 @@
+---
+layout: page
+title: Course Materials
+background: '/img/fig_cap_all_comparison-eps-converted-to.pdf'
+---
+
+<div class="block">
+<hr>
+{% for post in site.categories.class %}
+
+<article class="post-preview">
+  <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+    <h4>{{ post.title }}</h4>
+  </a>
+<hr>
+
+{% endfor %}
+</div>
+
