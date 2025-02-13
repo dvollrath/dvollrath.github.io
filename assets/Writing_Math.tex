@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage{setspace}
+\usepackage[top=1.25in,bottom=1.25in,left=1in,right=1in]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+\onehalfspacing
+
+\title{Economics 7340 - Growth and Development II}
+\author{Prof. Vollrath\\
+University of Houston, Spring 2025} \maketitle
+
+\section*{Mathematical writing conventions}
+
+\subsection*{Equations in sentences}
+Equations are a part of your sentences. That means they get punctuation even if block set. For example, this equation
+\begin{equation}
+    Y = mx + b \label{EQ_slope}
+\end{equation}
+is part of this sentence. There is no punctuation here because the equation naturallye fits within the sentence. However, in this next case the equation that comes at the end of the sentence is
+\begin{equation}
+    \hat{\beta} = (X'X)^{-1}X'y. \nonumber
+\end{equation}
+Note that it has a period at the end, because it ended the sentence.
+
+It's quite possible that an equation like this, 
+\begin{equation}
+    Y = K^{\alpha}(AL)^{1-\alpha}, \nonumber
+\end{equation}
+will fit in the middle of a sentence and need to have a comma at the end of it, even when block set. 
+
+\subsection*{Mentioning notation}
+My strong preference is that you describe variables or notation \textit{after} you show me the equation. I, and most readers, are not going to stop and memorize your notation ahead of time. Show us the equation and then tell us what the components are. For example, in this equation
+\begin{equation*}
+    \epsilon_K = b'(I-\alpha)^{-1} B_K
+\end{equation*}
+the vector $b$ is $J\times1$ and shows the expenditure shares on the $J$ goods and $B_K$ is a $J\times1$ vector showing the cost share of capital for each industry. The matrix $\alpha$ are intermediate cost shares for each industry, and $(I-\alpha)^{-1}$ is the Leontief inverse. Note that you don't have to talk through the terms in exactly the order they appear. Start with simple descriptions, and then explain more complex ones. 
+
+Once you have introduced notation, you do not need to explain it again when used later. 
+
+\subsection*{Numbering and Referring}
+The ideal structure for a paper is that the equations that are block set in the text are numbered \textit{only} if they are later referenced by number. For example, if may be of interest to refer back to Equation (\ref{EQ_slope}) when explaining a concept. But note that the other equations in this document do not have numbers, because they are never again referenced. 
+
+You can achieve this in two ways. One is to add the ``nonumber'' command after your equation. The other is to use the equation* environment. You can find examples of both in the Latex version of this document. 
+
+When referring to the equations, note that I capitalized ``Equation'', and then included the equation reference in parentheses. This is a default standard, and various journals will have alternatives they require. For working papers and your write-ups, stick with this standard. 
+
+\subsection*{In-line math}
+You'll often find it useful to put some math terms in-line, such as telling the reader that there are $J$ industries or that $\sum_i b_i = 1$ for expenditure shares. These are great and you should use them. You should \textit{not} ever put a fraction in these, as it breaks up the text and will make for an odd spacing in your text. If you have a fraction you can do something like this $\overline{x} = \sum_i x_i / N$. 
+
+My preference for things like indices - $J$, $N$, etc. - is that you type-set them in-line, even though you could just pu in J or N. This will ensure that $J$ and $N$ match to the equations used in the text, and is a reminder for the reader that these represent something for your theory. 
+
+\subsection*{Times and x}
+Use the ``times'' command in Latex when you need to. A $Jx1$ vector looks funny but a $J \times 1$ vector is type-set in a readable way. 
+
+\subsection*{Parentheses}
+Perhaps most important is that you should not write things that leave multiple nests of parentheses bumping into one another like this:
+\begin{equation*}
+    Y = (1-\alpha(\beta+\gamma(1+\epsilon))).
+\end{equation*}
+That's almost impossible to read. You can re-arrange or likely substitute in something to make it more readable. Consider 
+\begin{equation*}
+    Y = 1-\alpha \Omega
+\end{equation*}
+where $\Omega = \beta+ \gamma(1+\epsilon)$ which is easier to parse. The things left aside in the $\Omega$ should be unimportant parameters, and that's where knowing the economics and theory well matters. 
+
+You should also get comfortable using big parentheses. The ``left'' and ``right'' modifiers are your friend. 
+\begin{equation}
+    k^{\ast} = \left(\frac{s_K}{\delta+g_A+g_L}\right)^{\frac{1}{1-\alpha}}. \nonumber
+\end{equation}
+
+\subsection*{Text}
+One of the most useful things you can do in text, and in particular in presentations, is to under or over-set text in the equation,
+\begin{equation}
+    \underset{\text{Growth in GDP}}{d \ln Y} = \underset{\text{Growth in factors}}{d \ln L} + \underset{\text{Growth in productivity}}{d \ln A}. \nonumber
+\end{equation}
+The example uses a lot of text that is probably too much, but it gives you the idea. You can also over-set, and you can mix them up as in
+\begin{equation}
+    \overset{\text{Growth in GDP}}{d \ln Y} = \overset{\text{Growth in factors}}{d \ln L} + \underset{\text{Growth in productivity}}{d \ln A}. \nonumber
+\end{equation}
+
+There are also options to do braces, so that you can have
+\begin{equation}
+    \underset{\text{Growth in GDP}}{d \ln Y} = \underbrace{d \ln L + d \ln K}_{\text{Growth in factors}} + \underbrace{d \ln A}_{\text{Growth in productivity}}. \nonumber
+\end{equation}
+
+\subsection*{Things that annoy me}
+I find some of these tendencies annoying in papers as they are useful for the writer in working through algebra, but make it harder as a reader to understand what is going on. 
+
+\begin{itemize}
+    \item Tick marks to indicate time. $k' = i + (1-\delta)k$ is an example where they mean $k_{t+1} = i_t + (1-\delta)k_t$. Use the time subscripts. The apostrophe thing worked on typewriters. 
+    \item Over-simplification. Let $\tilde{x} = X^{\beta}/(G^{\gamma} + H^{\eta})$. Unless you can give me a very strong intuition for what $\tilde{x}$ represents, you are going to need to use the whole expression again. Use the simpler notation on paper to solve things, then do the work and show the reader what you found. 
+    \item Obscure Greek letters. Sometimes you end up using the obvious ones. But for the most part I should not see $\varrho$ or $\iota$ or $\Xi$ in your paper.
+    \item Don't use $\upsilon$, it looks like a regular ``v''. Don't use $\kappa$, it looks too much like a ``K''. Don't use both $\epsilon$ and $\varepsilon$; pick one. 
+    \item Using letters that have no intuitive connection to a concept. Don't say ``I use $D$ to represent wages''. I know, sometimes you run out of letters, but try to avoid things like this. 
+\end{itemize}
+
+\subsection*{Simplifications that recognized}
+These are some things that save space and time and seem general enough that all/most readers will understand:
+\begin{itemize}
+    \item Simple summations. You can say $\sum_j b_j$ if it is obvious that you mean $\sum_{j \in J} b_j$ or $\sum_{j=1}^J b_j$. 
+    \item Lower case logs. You could establish that ``lower case terms are in logs'' so that $\ln Y = \alpha + \beta \ln X$ can be rendered as $y = \alpha + \beta x$. But you have to say it up front and be consistent!
+    \item Dropping time subscripts. Again, be up front and consistent. But you could say $\Delta K = s Y - \delta K$ for the change in capital from $t$ to $t+1$ without having to subscript things. 
+\end{itemize}
+
+\end{document}
