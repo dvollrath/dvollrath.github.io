@@ -21,6 +21,20 @@ background: '/img/Rich-Ch5-Fig4.pdf'
 <p>The book relies on text and figures to tell the story of the prosperity problem. Behind the scenes is some economic theory and more empirical work to produce those figures. Both are explained in a set of chapter notes that got a little long for an actual printed book, but which you can access here in full. The material is still organized by chapter, but as the material builds on itself you'll find references in one chapter's notes to prior ones. 
 </p>
 
+<p>  
+  <ol>
+  {% for post in site.categories.prosperity %}
+    {% if post.url %}
+      <li>
+        <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          {{ post.title }}
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+  </ol>
+</p>
+
 <h3>Data and Code</h3>
 <p> Everything in the book can be replicated using the code and data in the <a href="https://github.com/dvollrath/FullyGrown">Github</a> repository for this project. There is nothing super technical about that - you can easily download everything in a convenient zip file to use on your own computer. The advantage of Github is that the link will always point to the latest version of my code if I fix anything.
 
