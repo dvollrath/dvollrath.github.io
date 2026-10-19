@@ -5,17 +5,17 @@ background: '/img/fig_cap_all_comparison-eps-converted-to.pdf'
 ---
 
 <div class="block">
-<h1>Working papers</h1>
+<h3>Working papers</h3>
 <hr>
 {% for post in site.categories.wp %}
 
 <article class="post-preview">
   <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-    <h6>{{ post.title }}</h6>
+    <h5>{{ post.title }}</h5>
   </a>
-  <p style="font-size:20px">{{ post.date | date: "%Y" }}. &nbsp; {{ post.author }}. &nbsp;
+  <p style="font-size:16px">{{ post.date | date: "%Y" }}. &nbsp; {{ post.author }}. &nbsp;
                         <i>{{ post.journal }}.</i> &nbsp; {{ post.volume }}. {% if post.data %}
-                        &nbsp; <a href="{{ post.data }}" style="font-size:20px">Data/Code</a>{% endif %} {% if post.appendix %} &nbsp; <a href="{{ post.appendix }}" style="font-size:20px">Appendix</a>{% endif %} {% if post.pdf %}&nbsp; <a href="{{ post.pdf }}" style="font-size:20px">Paper</a>{% endif %}</p>
+                        &nbsp; <a href="{{ post.data }}" style="font-size:16px">Data/Code</a>{% endif %} {% if post.appendix %} &nbsp; <a href="{{ post.appendix }}" style="font-size:16px">Appendix</a>{% endif %} {% if post.pdf %}&nbsp; <a href="{{ post.pdf }}" style="font-size:16px">Paper</a>{% endif %}</p>
 </article>
 
 <hr>
@@ -24,17 +24,17 @@ background: '/img/fig_cap_all_comparison-eps-converted-to.pdf'
 </div>
 
 <div>
-<h1>Published</h1>
+<h3>Published</h3>
 <hr>
 {% for post in site.categories.me %}
 
 <article class="post-preview">
   <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-    <h6>{{ post.title }}</h6>
+    <h5>{{ post.title }}</h5>
   </a>
-  <p style="font-size:20px">{{ post.date | date: "%Y" }}. &nbsp; {{ post.author }}. &nbsp;
+  <p style="font-size:16px">{{ post.date | date: "%Y" }}. &nbsp; {{ post.author }}. &nbsp;
                         <i>{{ post.journal }}.</i> &nbsp; {{ post.volume }}. &nbsp;{% if post.data %}
-                        <a href="{{ post.data }}" style="font-size:20px">Data/Code</a>{% endif %} &nbsp;{% if post.appendix %}<a href="{{ post.appendix }}" style="font-size:20px">Appendix</a>{% endif %} &nbsp; {% if post.pdf %}<a href="{{ post.pdf }}" style="font-size:20px">Paper</a>{% endif %}</p>
+                        <a href="{{ post.data }}" style="font-size:16px">Data/Code</a>{% endif %} &nbsp;{% if post.appendix %}<a href="{{ post.appendix }}" style="font-size:16px">Appendix</a>{% endif %} &nbsp; {% if post.pdf %}<a href="{{ post.pdf }}" style="font-size:16px">Paper</a>{% endif %}</p>
 </article>
 
 <hr>
