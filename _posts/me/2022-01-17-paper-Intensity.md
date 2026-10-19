@@ -2,10 +2,10 @@
 layout: post
 title: Agrarian Origins of Indivualism and Collectivism
 published: true
-category: wp
+category: me
 author: M. Fiszbein, Y. Jung, and D. Vollrath
-journal: NBER working paper
-volume: W29643
+journal: Economic Journal
+volume: Forthcoming
 pdf: /assets/w29643.pdf
 ---
 
