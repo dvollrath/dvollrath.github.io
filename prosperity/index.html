@@ -24,13 +24,11 @@ background: '/img/Rich-Ch5-Fig4.pdf'
 <p>  
   <ol>
   {% for post in site.categories.prosperity %}
-    {% if post.url %}
       <li>
         <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}">
           {{ post.title }}
         </a>
       </li>
-    {% endif %}
   {% endfor %}
   </ol>
 </p>
